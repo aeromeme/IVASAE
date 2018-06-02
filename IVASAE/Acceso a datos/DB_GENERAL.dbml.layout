@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 17.5" name="DB_GENERAL">
+  <DataContextMoniker Name="/DB_GENERALDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9be5be1e-7cab-4447-b1da-dcf784f0e428" absoluteBounds="4.375, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_MENU_PERFIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b789f0d4-ffed-4419-9015-6875ef8ec3a7" absoluteBounds="4.39, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6fd72878-c870-46fd-8709-6f6a0632bac2" absoluteBounds="1.625, 7, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_OPCION_MENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="913917f7-2d68-4888-9683-d90406265a27" absoluteBounds="1.6399999999999997, 7.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 7.78929768880208); (5.375 : 7.78929768880208); (5.375 : 6.45359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_OPCION_MENU/GEN_OPCION_MENU_GEN_MENU_PERFIL" />
+      <nodes>
+        <classShapeMoniker Id="6fd72878-c870-46fd-8709-6f6a0632bac2" />
+        <classShapeMoniker Id="9be5be1e-7cab-4447-b1da-dcf784f0e428" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="32a99e3a-9569-41c7-9638-18cb0845764d" absoluteBounds="0.5, 9.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_MENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f46ad6ca-3beb-4e47-ab9b-93c4977a1053" absoluteBounds="0.515, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.0625 : 9.75); (2.0625 : 8.57859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_MENU/GEN_MENU_GEN_OPCION_MENU" />
+      <nodes>
+        <classShapeMoniker Id="32a99e3a-9569-41c7-9638-18cb0845764d" />
+        <classShapeMoniker Id="6fd72878-c870-46fd-8709-6f6a0632bac2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="05540404-3634-401a-b173-8503b175227f" absoluteBounds="0.5, 11.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DB_GENERALDataContext/V_GEN_MENU_PERFIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd75ea5b-8926-4ce4-bcde-f75e5ccd7b19" absoluteBounds="0.51500000000000012, 11.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61dead30-5866-4d8f-8532-126a2bc7ba10" absoluteBounds="4.375, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_CONFIG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40480300-f2a9-4bba-beff-5966bbfa82bd" absoluteBounds="4.39, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ef6cb84-71db-4708-947e-4c4702dc032d" absoluteBounds="7, 3.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_HIST_PASS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98ce40b4-68a8-4149-ba1d-02c2e2d2b304" absoluteBounds="7.015, 4.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a3f645e-fff4-49bd-8484-0874a6a84a37" absoluteBounds="4.75, 14.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_PERFIL_ANDROID" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf504214-59d4-418f-a16b-c6bc97eee7d6" absoluteBounds="4.765, 14.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="104b795f-c96e-4be8-983c-45eae2aa2f18" absoluteBounds="1.375, 1.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_USUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3cdcc4e-9304-430f-a4fd-0ae1d9f9bdcc" absoluteBounds="1.3900000000000001, 2.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.75 : 14.9719962565104); (2.75 : 14.9719962565104); (2.75 : 8.82859537760417); (1.125 : 8.82859537760417); (1.125 : 4.5401025390625); (2.124998 : 4.5401025390625); (2.124998 : 4.1651025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_PERFIL_ANDROID/GEN_PERFIL_ANDROID_GEN_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="2a3f645e-fff4-49bd-8484-0874a6a84a37" />
+        <classShapeMoniker Id="104b795f-c96e-4be8-983c-45eae2aa2f18" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d099b7b4-98dd-4a4a-9af8-b1e6b0d7e07f" absoluteBounds="6.875, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/V_GEN_USUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87b89e31-be26-4f23-b057-4ab83a709490" absoluteBounds="6.89, 0.96000000000000085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b304dd48-6cae-4004-8fc3-137d60e662bb" absoluteBounds="1.375, 4.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_PERFIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="134dd20b-ded6-4ed5-ae53-24ea31fc1c0f" absoluteBounds="1.3900000000000001, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 5.66429768880208); (4.375 : 5.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_PERFIL/GEN_PERFIL_GEN_MENU_PERFIL" />
+      <nodes>
+        <classShapeMoniker Id="b304dd48-6cae-4004-8fc3-137d60e662bb" />
+        <classShapeMoniker Id="9be5be1e-7cab-4447-b1da-dcf784f0e428" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.9375 : 4.75); (2.9375 : 4.1651025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_PERFIL/GEN_PERFIL_GEN_USUARIO" />
+      <nodes>
+        <classShapeMoniker Id="b304dd48-6cae-4004-8fc3-137d60e662bb" />
+        <classShapeMoniker Id="104b795f-c96e-4be8-983c-45eae2aa2f18" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fd61fa64-3715-4685-855a-acca405af167" absoluteBounds="8, 9.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DB_GENERALDataContext/V_GEN_FORMULARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a0902ec-291c-477e-880b-7dab7100f232" absoluteBounds="8.015, 9.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b17e3801-d4f2-4939-b4e4-57ac3a08bd6e" absoluteBounds="6, 11.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DB_GENERALDataContext/V_GEN_OPCION_MENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dee25a7c-88ec-41b2-ad1d-0ebf0ac957c8" absoluteBounds="6.015, 12.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0aa511a1-e993-421d-9fee-ed4ae1d36d5f" absoluteBounds="7, 7.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_MODULO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd156065-f799-4262-b50d-57569e369aac" absoluteBounds="7.015, 7.8350000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb485987-e7f6-4319-89cb-77abcde6878a" absoluteBounds="5.5, 9.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_FORMULARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="736b4fe9-d135-43f5-81c1-3cbfadb324fb" absoluteBounds="5.515, 10.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.21875 : 9.625); (6.21875 : 7.15625); (5.45833333333333 : 7.15625 : JumpStart); (5.29166666666667 : 7.15625 : JumpEnd); (3.625 : 7.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_FORMULARIO/GEN_FORMULARIO_GEN_OPCION_MENU" />
+      <nodes>
+        <classShapeMoniker Id="eb485987-e7f6-4319-89cb-77abcde6878a" />
+        <classShapeMoniker Id="6fd72878-c870-46fd-8709-6f6a0632bac2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 8.7612939453125); (7.25 : 9.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DB_GENERALDataContext/GEN_MODULO/GEN_MODULO_GEN_FORMULARIO" />
+      <nodes>
+        <classShapeMoniker Id="0aa511a1-e993-421d-9fee-ed4ae1d36d5f" />
+        <classShapeMoniker Id="eb485987-e7f6-4319-89cb-77abcde6878a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="be01dda1-a2ee-4309-8cb1-6656a4c342de" absoluteBounds="0.5, 13.5, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/DB_GENERALDataContext/V_GEN_MENU_PERFIL_AUX" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52ca2d9e-af91-4604-8c9d-3610d8380617" absoluteBounds="0.51500000000000012, 13.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62ee5d5c-0269-4a74-8d24-b736faddb202" absoluteBounds="7, 5.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/GEN_PIVOT_LAYOUT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8096075-9710-4ea1-b39c-cf581e399e0b" absoluteBounds="7.0150000000000006, 6.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d7ba386a-0526-4554-8890-81d7d07c6079" absoluteBounds="8.375, 13.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_GENERALDataContext/AUDI_CUEN_MONEDAS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed055d63-154f-4311-a489-0d7b5037ba4b" absoluteBounds="8.39, 14.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d679c59-cc07-40c0-8842-80a3da3390ae" absoluteBounds="8.375, 12.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DB_GENERALDataContext/AUDI_CUEN_FILIALES" />
+      <nestedChildShapes>
+        <elementListCompartment Id="803014a3-c5c1-4dc4-a328-5361410b0db2" absoluteBounds="8.39, 12.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

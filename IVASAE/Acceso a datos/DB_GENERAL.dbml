@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IMACANET" Class="DB_GENERALDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=PC-INF002;Initial Catalog=IMACANET;Persist Security Info=True;User ID=ASPEL" SettingsObjectName="IMACANET.My.MySettings" SettingsPropertyName="IMACANETConnectionString13" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GEN_MENU_PERFIL" Member="GEN_MENU_PERFIL">
+    <Type Name="GEN_MENU_PERFIL">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_PERFIL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_OPC_MENU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FLG_LECTURA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="GEN_OPCION_MENU_GEN_MENU_PERFIL" Member="GEN_OPCION_MENU" ThisKey="ID_OPC_MENU" OtherKey="ID" Type="GEN_OPCION_MENU" IsForeignKey="true" />
+      <Association Name="GEN_PERFIL_GEN_MENU_PERFIL" Member="GEN_PERFIL" ThisKey="ID_PERFIL" OtherKey="ID" Type="GEN_PERFIL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_OPCION_MENU" Member="GEN_OPCION_MENU">
+    <Type Name="GEN_OPCION_MENU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_MENU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_FORM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GEN_OPCION_MENU_GEN_MENU_PERFIL" Member="GEN_MENU_PERFIL" ThisKey="ID" OtherKey="ID_OPC_MENU" Type="GEN_MENU_PERFIL" />
+      <Association Name="GEN_MENU_GEN_OPCION_MENU" Member="GEN_MENU" ThisKey="ID_MENU" OtherKey="ID" Type="GEN_MENU" IsForeignKey="true" />
+      <Association Name="GEN_FORMULARIO_GEN_OPCION_MENU" Member="GEN_FORMULARIO" ThisKey="ID_FORM" OtherKey="ID" Type="GEN_FORMULARIO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_MENU" Member="GEN_MENU">
+    <Type Name="GEN_MENU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="COD_MENU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="GEN_MENU_GEN_OPCION_MENU" Member="GEN_OPCION_MENU" ThisKey="ID" OtherKey="ID_MENU" Type="GEN_OPCION_MENU" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_GEN_MENU_PERFIL" Member="V_GEN_MENU_PERFIL">
+    <Type Name="V_GEN_MENU_PERFIL">
+      <Column Name="COD_MENU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PERFIL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_CONFIG" Member="GEN_CONFIG">
+    <Type Name="GEN_CONFIG">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="COD_TIPO_SYM_BAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COD_TIPO_SYM_BAR_INNER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COD_TIPO_SYM_BAR_MASTER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_HIST_PASS" Member="GEN_HIST_PASS">
+    <Type Name="GEN_HIST_PASS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_USUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FECHA_HIST" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_PERFIL_ANDROID" Member="GEN_PERFIL_ANDROID">
+    <Type Name="GEN_PERFIL_ANDROID">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DS_NOMBRE_PERFIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="GEN_PERFIL_ANDROID_GEN_USUARIO" Member="GEN_USUARIO" ThisKey="ID" OtherKey="ID_PERFIL_ANDROID" Type="GEN_USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_USUARIO" Member="GEN_USUARIO">
+    <Type Name="GEN_USUARIO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CD_LOGIN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CD_PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESC_NOMBRE_USUARIO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ID_PERFIL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_PERFIL_ANDROID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_ESTADO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CD_BAR_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CD_CORREO_E" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="GEN_PERFIL_ANDROID_GEN_USUARIO" Member="GEN_PERFIL_ANDROID" ThisKey="ID_PERFIL_ANDROID" OtherKey="ID" Type="GEN_PERFIL_ANDROID" IsForeignKey="true" />
+      <Association Name="GEN_PERFIL_GEN_USUARIO" Member="GEN_PERFIL" ThisKey="ID_PERFIL" OtherKey="ID" Type="GEN_PERFIL" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_GEN_USUARIO" Member="V_GEN_USUARIO">
+    <Type Name="V_GEN_USUARIO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CD_LOGIN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CD_PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESC_NOMBRE_USUARIO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ID_PERFIL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_PERFIL_ANDROID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_ESTADO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CD_BAR_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CD_CORREO_E" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_PERFIL_ANDROID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_PERFIL" Member="GEN_PERFIL">
+    <Type Name="GEN_PERFIL">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DS_NOMBRE_PERFIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CD_NIVEL_ACCESO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FLG_NOTI_PROD" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FLG_NOTI_PROD_CDI" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Association Name="GEN_PERFIL_GEN_MENU_PERFIL" Member="GEN_MENU_PERFIL" ThisKey="ID" OtherKey="ID_PERFIL" Type="GEN_MENU_PERFIL" />
+      <Association Name="GEN_PERFIL_GEN_USUARIO" Member="GEN_USUARIO" ThisKey="ID" OtherKey="ID_PERFIL" Type="GEN_USUARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_GEN_FORMULARIO" Member="V_GEN_FORMULARIO">
+    <Type Name="V_GEN_FORMULARIO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="COD_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_CORTO" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ID_MODULO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_MODULO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_GEN_OPCION_MENU" Member="V_GEN_OPCION_MENU">
+    <Type Name="V_GEN_OPCION_MENU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COD_MENU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COD_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_CORTO" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ID_MENU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_FORM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DS_NOMBRE_MODULO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_MODULO" Member="GEN_MODULO">
+    <Type Name="GEN_MODULO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DS_NOMBRE_MODULO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CD_IMAGEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GEN_MODULO_GEN_FORMULARIO" Member="GEN_FORMULARIO" ThisKey="ID" OtherKey="ID_MODULO" Type="GEN_FORMULARIO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_FORMULARIO" Member="GEN_FORMULARIO">
+    <Type Name="GEN_FORMULARIO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="COD_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_CORTO" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ID_MODULO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GEN_FORMULARIO_GEN_OPCION_MENU" Member="GEN_OPCION_MENU" ThisKey="ID" OtherKey="ID_FORM" Type="GEN_OPCION_MENU" />
+      <Association Name="GEN_MODULO_GEN_FORMULARIO" Member="GEN_MODULO" ThisKey="ID_MODULO" OtherKey="ID" Type="GEN_MODULO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_GEN_MENU_PERFIL_AUX" Member="V_GEN_MENU_PERFIL_AUX">
+    <Type Name="V_GEN_MENU_PERFIL_AUX">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PERFIL" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_OPC_MENU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FLG_LECTURA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="ORDEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COD_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_FORM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_CORTO" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="COD_MENU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_MENU" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_FORM" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DS_NOMBRE_PERFIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CD_NIVEL_ACCESO" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_MODULO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CD_IMAGEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GEN_PIVOT_LAYOUT" Member="GEN_PIVOT_LAYOUT">
+    <Type Name="GEN_PIVOT_LAYOUT">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CD_CLAVE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DS_LAYOUT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DT_LAYOUT" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUDI_CUEN_MONEDAS" Member="AUDI_CUEN_MONEDAS">
+    <Type Name="AUDI_CUEN_MONEDAS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DS_NOM_MODENA" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="DS_SIMBO_MONEDA" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FACT_CONVERSION" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUDI_CUEN_FILIALES" Member="AUDI_CUEN_FILIALES">
+    <Type Name="AUDI_CUEN_FILIALES">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DS_NOMB_FILIAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.VALI_USUARIO" Method="VALI_USUARIO">
+    <Parameter Name="CD_LOGIN" Parameter="cD_LOGIN" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CD_PASSWORD" Parameter="cD_PASSWORD" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RESPUESTA" Parameter="rESPUESTA" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Parameter Name="MSJ" Parameter="mSJ" Type="System.String" DbType="VarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

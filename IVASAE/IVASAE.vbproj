@@ -73,6 +73,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceso a datos\DB_GENERAL.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_GENERAL.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso a datos\DB_IVA.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_IVA.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +107,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Acceso a datos\DB_GENERAL.dbml.layout">
+      <DependentUpon>DB_GENERAL.dbml</DependentUpon>
+    </None>
+    <None Include="Acceso a datos\DB_IVA.dbml.layout">
+      <DependentUpon>DB_IVA.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +124,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Acceso a datos\DB_GENERAL.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB_GENERAL.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Acceso a datos\DB_IVA.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB_IVA.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -123,7 +149,6 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Acceso a datos\" />
     <Folder Include="Formularios\" />
     <Folder Include="Logica de negocios\" />
     <Folder Include="Reportes\" />
