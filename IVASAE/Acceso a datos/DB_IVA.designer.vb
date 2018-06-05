@@ -173,7 +173,7 @@ Namespace IMACANET_IVA
     #End Region
 		
 		Public Sub New()
-			MyBase.New(Global.IMACANET.My.MySettings.Default.IMACANETConnectionString8, mappingSource)
+			MyBase.New(Global.IVASAE.My.MySettings.Default.IMACANETConnectionString8, mappingSource)
 			OnCreated
 		End Sub
 		

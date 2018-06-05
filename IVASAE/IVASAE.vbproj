@@ -47,6 +47,33 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -90,6 +117,30 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Configuracion\FcambiarPwd.designer.vb">
+      <DependentUpon>FcambiarPwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\FcambiarPwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DialogoCons.designer.vb">
+      <DependentUpon>DialogoCons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DialogoCons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MasterForm.designer.vb">
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MasterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MasterFormTab.designer.vb">
+      <DependentUpon>MasterFormTab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MasterFormTab.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -105,8 +156,48 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Principal.designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilidades\cImagen.vb" />
+    <Compile Include="Utilidades\clasegenericapares.vb" />
+    <Compile Include="Utilidades\conexion.vb" />
+    <Compile Include="Utilidades\DataSistema.vb" />
+    <Compile Include="Utilidades\errorlog.vb" />
+    <Compile Include="Utilidades\ImportarArchivos.vb" />
+    <Compile Include="Utilidades\InterfazForms.vb" />
+    <Compile Include="Utilidades\MetodosForm.vb" />
+    <Compile Include="Utilidades\saveconx.vb" />
+    <Compile Include="Utilidades\subirArchivoFTP.vb" />
+    <Compile Include="Formularios\Configuracion\WFEspere.designer.vb">
+      <DependentUpon>WFEspere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\WFEspere.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Configuracion\FcambiarPwd.resx">
+      <DependentUpon>FcambiarPwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DialogoCons.resx">
+      <DependentUpon>DialogoCons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MasterForm.resx">
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MasterFormTab.resx">
+      <DependentUpon>MasterFormTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion\WFEspere.resx">
+      <DependentUpon>WFEspere.vb</DependentUpon>
+    </EmbeddedResource>
     <None Include="Acceso a datos\DB_GENERAL.dbml.layout">
       <DependentUpon>DB_GENERAL.dbml</DependentUpon>
     </None>
@@ -149,10 +240,830 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formularios\" />
     <Folder Include="Logica de negocios\" />
     <Folder Include="Reportes\" />
-    <Folder Include="Utilidades\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_brand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_cerrar_ventana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_close_window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_dialog-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_dialog-error23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_finance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_finanzas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_go-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_go-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_list-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_list-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_media-floppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_receta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_recetabig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_reporte2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_settin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_signature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_signature_mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_signaturebig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_stat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070247_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070280_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070292_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070364_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070383_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070398_Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070409_Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070421_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070434_Stock Index Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070445_Log Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070454_Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070465_Synchronize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070475_Stock Index Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070484_Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070495_Previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070511_Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070522_Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070548_User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070596_Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070614_Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070634_Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070650_Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070705_Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070717_Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070735_Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070802_Preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070835_Copy v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070856_Hard Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070964_html5-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422070976_css3-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071152_php.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071552_Bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071581_Factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071628_industry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071632_industry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071683_industry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071710_Bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071763_Bank_account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071769_Bank_account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422071775_Bank_account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311720_New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311745_Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311765_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311811_Flash Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311833_Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311845_Picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311861_Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311874_Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311931_Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422311941_Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314627_Shutdown_Box_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314635_Shutdown_Box_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314663_Box_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314672_Hourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314680_Checked_Shield_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314688_Circle_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314696_Circle_Grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314703_Circle_Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314710_Circle_Orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314718_Clock4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314729_Clock4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314742_Book3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314754_Circle_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314762_Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314788_Shield_Grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314805_Shield_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314872_Shield_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314878_Shield_Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314884_Shield_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314890_Shield_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314897_Flag1_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314903_Minus_Circle_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314909_Circle_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314916_User1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314922_Warning_Shield_Grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314928_DrawingPin2_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314934_DrawingPin1_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314940_PaperClip3_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422314968_Globe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315010_Power__Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315071_shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315084_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315091_shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315363_calc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315369_ktip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315375_kaddressbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315381_Community Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315388_quick_restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315394_switchuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315400_irc_protocol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315414_agt_softwareD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315420_bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315431_java.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315437_kuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315443_help_index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315450_kcmmemory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315456_kcalc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315462_sms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315469_folder_outbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315475_access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315480_khelpcenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315486_ksysguard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1422315929_new-file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930410_maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930462_window_fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930566_full screen_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930594_application_side_expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930626_change_password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930629_category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930641_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930656_connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930664_categories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930667_table_select_row.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930680_arrow_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930781_mac-user-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930792_edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930797_file-roller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930800_application-pgp-signature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930812_package-purge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930815_dialog-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930818_stock_view-details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930822_edit-clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930832_emblem-library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930838_config-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930840_mp_viewer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930843_old-go-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930846_edit-clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930856_gnome-help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930883_window-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930887_window-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424930997_Close_Box_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1424931020_-trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1430966130_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1430966140_Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1430966150_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1430966201_New_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1438115529_bar-code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1438115537_Bardcode Scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1474582231_graphs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1474582282_statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1478728467_unlock green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486169171_shield-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1486169186_dialog-error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptarmini.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptarmini1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptarmini2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje221.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje231.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenaje232.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelarmini.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelarmini1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelarmini2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comentario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comentario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comentario2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemini.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemini1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemini2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemini3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemini11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemini12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_help1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_help2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir31.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir32.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir33.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir34.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir311.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir312.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir321.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir322.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_edit-find-replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-imacasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrescar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrescar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrescar2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrescar3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrescar11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrescar12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

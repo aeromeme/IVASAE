@@ -112,7 +112,7 @@ Partial Public Class DB_GENERALDataContext
   #End Region
 	
 	Public Sub New()
-		MyBase.New(Global.IMACANET.My.MySettings.Default.IMACANETConnectionString13, mappingSource)
+		MyBase.New(Global.IVASAE.My.MySettings.Default.IMACANETConnectionString13, mappingSource)
 		OnCreated
 	End Sub
 	
