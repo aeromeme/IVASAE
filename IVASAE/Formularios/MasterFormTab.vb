@@ -29,7 +29,7 @@ Public Class MasterFormTab
 
     Private Sub ExportarAExcelToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportarAExcelToolStripMenuItem.Click
         Try
-            If UIDIALOGO_GUARDAREXCEL.ShowDialog = Windows.Forms.DialogResult.OK Then
+            If UIDIALOGO_GUARDAREXCEL.ShowDialog = DialogResult.OK Then
                 UIGRIDVIEW.ExportToXlsx(UIDIALOGO_GUARDAREXCEL.FileName)
             End If
         Catch ex As Exception

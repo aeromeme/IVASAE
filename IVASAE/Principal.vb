@@ -357,11 +357,11 @@ Public Class Principal
 
 
     Private Sub uinvperf_andr_LinkClicked(sender As Object, e As DevExpress.XtraNavBar.NavBarLinkEventArgs) Handles uinvperf_andr.LinkClicked
-        _datasistema.NombreVentana = "Perfil android"
-        _datasistema.NombreOpcion = "Perfil android"
-        Dim f As New FORM_PERF_ANDR(_datasistema)
-        f.MdiParent = Me
-        f.Show()
+        '_datasistema.NombreVentana = "Perfil android"
+        '_datasistema.NombreOpcion = "Perfil android"
+        'Dim f As New FORM_PERF_ANDR(_datasistema)
+        'f.MdiParent = Me
+        'f.Show()
     End Sub
     Private Sub uinbmodulos_LinkClicked(sender As Object, e As DevExpress.XtraNavBar.NavBarLinkEventArgs) Handles uinbmodulos.LinkClicked
         _datasistema.NombreVentana = "Modulos"
