@@ -49,23 +49,11 @@ Partial Public Class DB_GENERALDataContext
     End Sub
   Partial Private Sub DeleteGEN_MENU(instance As GEN_MENU)
     End Sub
-  Partial Private Sub InsertGEN_CONFIG(instance As GEN_CONFIG)
-    End Sub
-  Partial Private Sub UpdateGEN_CONFIG(instance As GEN_CONFIG)
-    End Sub
-  Partial Private Sub DeleteGEN_CONFIG(instance As GEN_CONFIG)
-    End Sub
   Partial Private Sub InsertGEN_HIST_PASS(instance As GEN_HIST_PASS)
     End Sub
   Partial Private Sub UpdateGEN_HIST_PASS(instance As GEN_HIST_PASS)
     End Sub
   Partial Private Sub DeleteGEN_HIST_PASS(instance As GEN_HIST_PASS)
-    End Sub
-  Partial Private Sub InsertGEN_PERFIL_ANDROID(instance As GEN_PERFIL_ANDROID)
-    End Sub
-  Partial Private Sub UpdateGEN_PERFIL_ANDROID(instance As GEN_PERFIL_ANDROID)
-    End Sub
-  Partial Private Sub DeleteGEN_PERFIL_ANDROID(instance As GEN_PERFIL_ANDROID)
     End Sub
   Partial Private Sub InsertGEN_USUARIO(instance As GEN_USUARIO)
     End Sub
@@ -96,18 +84,6 @@ Partial Public Class DB_GENERALDataContext
   Partial Private Sub UpdateGEN_PIVOT_LAYOUT(instance As GEN_PIVOT_LAYOUT)
     End Sub
   Partial Private Sub DeleteGEN_PIVOT_LAYOUT(instance As GEN_PIVOT_LAYOUT)
-    End Sub
-  Partial Private Sub InsertAUDI_CUEN_MONEDAS(instance As AUDI_CUEN_MONEDAS)
-    End Sub
-  Partial Private Sub UpdateAUDI_CUEN_MONEDAS(instance As AUDI_CUEN_MONEDAS)
-    End Sub
-  Partial Private Sub DeleteAUDI_CUEN_MONEDAS(instance As AUDI_CUEN_MONEDAS)
-    End Sub
-  Partial Private Sub InsertAUDI_CUEN_FILIALES(instance As AUDI_CUEN_FILIALES)
-    End Sub
-  Partial Private Sub UpdateAUDI_CUEN_FILIALES(instance As AUDI_CUEN_FILIALES)
-    End Sub
-  Partial Private Sub DeleteAUDI_CUEN_FILIALES(instance As AUDI_CUEN_FILIALES)
     End Sub
   #End Region
 	
@@ -160,21 +136,9 @@ Partial Public Class DB_GENERALDataContext
 		End Get
 	End Property
 	
-	Public ReadOnly Property GEN_CONFIG() As System.Data.Linq.Table(Of GEN_CONFIG)
-		Get
-			Return Me.GetTable(Of GEN_CONFIG)
-		End Get
-	End Property
-	
 	Public ReadOnly Property GEN_HIST_PASS() As System.Data.Linq.Table(Of GEN_HIST_PASS)
 		Get
 			Return Me.GetTable(Of GEN_HIST_PASS)
-		End Get
-	End Property
-	
-	Public ReadOnly Property GEN_PERFIL_ANDROID() As System.Data.Linq.Table(Of GEN_PERFIL_ANDROID)
-		Get
-			Return Me.GetTable(Of GEN_PERFIL_ANDROID)
 		End Get
 	End Property
 	
@@ -229,18 +193,6 @@ Partial Public Class DB_GENERALDataContext
 	Public ReadOnly Property GEN_PIVOT_LAYOUT() As System.Data.Linq.Table(Of GEN_PIVOT_LAYOUT)
 		Get
 			Return Me.GetTable(Of GEN_PIVOT_LAYOUT)
-		End Get
-	End Property
-	
-	Public ReadOnly Property AUDI_CUEN_MONEDAS() As System.Data.Linq.Table(Of AUDI_CUEN_MONEDAS)
-		Get
-			Return Me.GetTable(Of AUDI_CUEN_MONEDAS)
-		End Get
-	End Property
-	
-	Public ReadOnly Property AUDI_CUEN_FILIALES() As System.Data.Linq.Table(Of AUDI_CUEN_FILIALES)
-		Get
-			Return Me.GetTable(Of AUDI_CUEN_FILIALES)
 		End Get
 	End Property
 	
@@ -831,134 +783,6 @@ Partial Public Class V_GEN_MENU_PERFIL
 	End Property
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.GEN_CONFIG")>  _
-Partial Public Class GEN_CONFIG
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _ID As Integer
-	
-	Private _COD_TIPO_SYM_BAR As System.Nullable(Of Integer)
-	
-	Private _COD_TIPO_SYM_BAR_INNER As System.Nullable(Of Integer)
-	
-	Private _COD_TIPO_SYM_BAR_MASTER As System.Nullable(Of Integer)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnIDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnIDChanged()
-    End Sub
-    Partial Private Sub OnCOD_TIPO_SYM_BARChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnCOD_TIPO_SYM_BARChanged()
-    End Sub
-    Partial Private Sub OnCOD_TIPO_SYM_BAR_INNERChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnCOD_TIPO_SYM_BAR_INNERChanged()
-    End Sub
-    Partial Private Sub OnCOD_TIPO_SYM_BAR_MASTERChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnCOD_TIPO_SYM_BAR_MASTERChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property ID() As Integer
-		Get
-			Return Me._ID
-		End Get
-		Set
-			If ((Me._ID = value)  _
-						= false) Then
-				Me.OnIDChanging(value)
-				Me.SendPropertyChanging
-				Me._ID = value
-				Me.SendPropertyChanged("ID")
-				Me.OnIDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_COD_TIPO_SYM_BAR", DbType:="Int")>  _
-	Public Property COD_TIPO_SYM_BAR() As System.Nullable(Of Integer)
-		Get
-			Return Me._COD_TIPO_SYM_BAR
-		End Get
-		Set
-			If (Me._COD_TIPO_SYM_BAR.Equals(value) = false) Then
-				Me.OnCOD_TIPO_SYM_BARChanging(value)
-				Me.SendPropertyChanging
-				Me._COD_TIPO_SYM_BAR = value
-				Me.SendPropertyChanged("COD_TIPO_SYM_BAR")
-				Me.OnCOD_TIPO_SYM_BARChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_COD_TIPO_SYM_BAR_INNER", DbType:="Int")>  _
-	Public Property COD_TIPO_SYM_BAR_INNER() As System.Nullable(Of Integer)
-		Get
-			Return Me._COD_TIPO_SYM_BAR_INNER
-		End Get
-		Set
-			If (Me._COD_TIPO_SYM_BAR_INNER.Equals(value) = false) Then
-				Me.OnCOD_TIPO_SYM_BAR_INNERChanging(value)
-				Me.SendPropertyChanging
-				Me._COD_TIPO_SYM_BAR_INNER = value
-				Me.SendPropertyChanged("COD_TIPO_SYM_BAR_INNER")
-				Me.OnCOD_TIPO_SYM_BAR_INNERChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_COD_TIPO_SYM_BAR_MASTER", DbType:="Int")>  _
-	Public Property COD_TIPO_SYM_BAR_MASTER() As System.Nullable(Of Integer)
-		Get
-			Return Me._COD_TIPO_SYM_BAR_MASTER
-		End Get
-		Set
-			If (Me._COD_TIPO_SYM_BAR_MASTER.Equals(value) = false) Then
-				Me.OnCOD_TIPO_SYM_BAR_MASTERChanging(value)
-				Me.SendPropertyChanging
-				Me._COD_TIPO_SYM_BAR_MASTER = value
-				Me.SendPropertyChanged("COD_TIPO_SYM_BAR_MASTER")
-				Me.OnCOD_TIPO_SYM_BAR_MASTERChanged
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.GEN_HIST_PASS")>  _
 Partial Public Class GEN_HIST_PASS
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -1087,113 +911,6 @@ Partial Public Class GEN_HIST_PASS
 	End Sub
 End Class
 
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.GEN_PERFIL_ANDROID")>  _
-Partial Public Class GEN_PERFIL_ANDROID
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _ID As Integer
-	
-	Private _DS_NOMBRE_PERFIL As String
-	
-	Private _GEN_USUARIO As EntitySet(Of GEN_USUARIO)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnIDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnIDChanged()
-    End Sub
-    Partial Private Sub OnDS_NOMBRE_PERFILChanging(value As String)
-    End Sub
-    Partial Private Sub OnDS_NOMBRE_PERFILChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		Me._GEN_USUARIO = New EntitySet(Of GEN_USUARIO)(AddressOf Me.attach_GEN_USUARIO, AddressOf Me.detach_GEN_USUARIO)
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", DbType:="Int NOT NULL", IsPrimaryKey:=true)>  _
-	Public Property ID() As Integer
-		Get
-			Return Me._ID
-		End Get
-		Set
-			If ((Me._ID = value)  _
-						= false) Then
-				Me.OnIDChanging(value)
-				Me.SendPropertyChanging
-				Me._ID = value
-				Me.SendPropertyChanged("ID")
-				Me.OnIDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMBRE_PERFIL", DbType:="VarChar(100)")>  _
-	Public Property DS_NOMBRE_PERFIL() As String
-		Get
-			Return Me._DS_NOMBRE_PERFIL
-		End Get
-		Set
-			If (String.Equals(Me._DS_NOMBRE_PERFIL, value) = false) Then
-				Me.OnDS_NOMBRE_PERFILChanging(value)
-				Me.SendPropertyChanging
-				Me._DS_NOMBRE_PERFIL = value
-				Me.SendPropertyChanged("DS_NOMBRE_PERFIL")
-				Me.OnDS_NOMBRE_PERFILChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="GEN_PERFIL_ANDROID_GEN_USUARIO", Storage:="_GEN_USUARIO", ThisKey:="ID", OtherKey:="ID_PERFIL_ANDROID")>  _
-	Public Property GEN_USUARIO() As EntitySet(Of GEN_USUARIO)
-		Get
-			Return Me._GEN_USUARIO
-		End Get
-		Set
-			Me._GEN_USUARIO.Assign(value)
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-	
-	Private Sub attach_GEN_USUARIO(ByVal entity As GEN_USUARIO)
-		Me.SendPropertyChanging
-		entity.GEN_PERFIL_ANDROID = Me
-	End Sub
-	
-	Private Sub detach_GEN_USUARIO(ByVal entity As GEN_USUARIO)
-		Me.SendPropertyChanging
-		entity.GEN_PERFIL_ANDROID = Nothing
-	End Sub
-End Class
-
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.GEN_USUARIO")>  _
 Partial Public Class GEN_USUARIO
 	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -1210,15 +927,9 @@ Partial Public Class GEN_USUARIO
 	
 	Private _ID_PERFIL As System.Nullable(Of Integer)
 	
-	Private _ID_PERFIL_ANDROID As System.Nullable(Of Integer)
-	
 	Private _CD_ESTADO As System.Nullable(Of Char)
 	
-	Private _CD_BAR_CODE As String
-	
 	Private _CD_CORREO_E As String
-	
-	Private _GEN_PERFIL_ANDROID As EntityRef(Of GEN_PERFIL_ANDROID)
 	
 	Private _GEN_PERFIL As EntityRef(Of GEN_PERFIL)
 	
@@ -1249,17 +960,9 @@ Partial Public Class GEN_USUARIO
     End Sub
     Partial Private Sub OnID_PERFILChanged()
     End Sub
-    Partial Private Sub OnID_PERFIL_ANDROIDChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnID_PERFIL_ANDROIDChanged()
-    End Sub
     Partial Private Sub OnCD_ESTADOChanging(value As System.Nullable(Of Char))
     End Sub
     Partial Private Sub OnCD_ESTADOChanged()
-    End Sub
-    Partial Private Sub OnCD_BAR_CODEChanging(value As String)
-    End Sub
-    Partial Private Sub OnCD_BAR_CODEChanged()
     End Sub
     Partial Private Sub OnCD_CORREO_EChanging(value As String)
     End Sub
@@ -1269,7 +972,6 @@ Partial Public Class GEN_USUARIO
 	
 	Public Sub New()
 		MyBase.New
-		Me._GEN_PERFIL_ANDROID = CType(Nothing, EntityRef(Of GEN_PERFIL_ANDROID))
 		Me._GEN_PERFIL = CType(Nothing, EntityRef(Of GEN_PERFIL))
 		OnCreated
 	End Sub
@@ -1358,25 +1060,6 @@ Partial Public Class GEN_USUARIO
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID_PERFIL_ANDROID", DbType:="Int")>  _
-	Public Property ID_PERFIL_ANDROID() As System.Nullable(Of Integer)
-		Get
-			Return Me._ID_PERFIL_ANDROID
-		End Get
-		Set
-			If (Me._ID_PERFIL_ANDROID.Equals(value) = false) Then
-				If Me._GEN_PERFIL_ANDROID.HasLoadedOrAssignedValue Then
-					Throw New System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException()
-				End If
-				Me.OnID_PERFIL_ANDROIDChanging(value)
-				Me.SendPropertyChanging
-				Me._ID_PERFIL_ANDROID = value
-				Me.SendPropertyChanged("ID_PERFIL_ANDROID")
-				Me.OnID_PERFIL_ANDROIDChanged
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_ESTADO", DbType:="Char(1)")>  _
 	Public Property CD_ESTADO() As System.Nullable(Of Char)
 		Get
@@ -1393,22 +1076,6 @@ Partial Public Class GEN_USUARIO
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_BAR_CODE", DbType:="VarChar(50)")>  _
-	Public Property CD_BAR_CODE() As String
-		Get
-			Return Me._CD_BAR_CODE
-		End Get
-		Set
-			If (String.Equals(Me._CD_BAR_CODE, value) = false) Then
-				Me.OnCD_BAR_CODEChanging(value)
-				Me.SendPropertyChanging
-				Me._CD_BAR_CODE = value
-				Me.SendPropertyChanged("CD_BAR_CODE")
-				Me.OnCD_BAR_CODEChanged
-			End If
-		End Set
-	End Property
-	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_CORREO_E", DbType:="VarChar(100)")>  _
 	Public Property CD_CORREO_E() As String
 		Get
@@ -1421,34 +1088,6 @@ Partial Public Class GEN_USUARIO
 				Me._CD_CORREO_E = value
 				Me.SendPropertyChanged("CD_CORREO_E")
 				Me.OnCD_CORREO_EChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="GEN_PERFIL_ANDROID_GEN_USUARIO", Storage:="_GEN_PERFIL_ANDROID", ThisKey:="ID_PERFIL_ANDROID", OtherKey:="ID", IsForeignKey:=true)>  _
-	Public Property GEN_PERFIL_ANDROID() As GEN_PERFIL_ANDROID
-		Get
-			Return Me._GEN_PERFIL_ANDROID.Entity
-		End Get
-		Set
-			Dim previousValue As GEN_PERFIL_ANDROID = Me._GEN_PERFIL_ANDROID.Entity
-			If ((Object.Equals(previousValue, value) = false)  _
-						OrElse (Me._GEN_PERFIL_ANDROID.HasLoadedOrAssignedValue = false)) Then
-				Me.SendPropertyChanging
-				If ((previousValue Is Nothing)  _
-							= false) Then
-					Me._GEN_PERFIL_ANDROID.Entity = Nothing
-					previousValue.GEN_USUARIO.Remove(Me)
-				End If
-				Me._GEN_PERFIL_ANDROID.Entity = value
-				If ((value Is Nothing)  _
-							= false) Then
-					value.GEN_USUARIO.Add(Me)
-					Me._ID_PERFIL_ANDROID = value.ID
-				Else
-					Me._ID_PERFIL_ANDROID = CType(Nothing, Nullable(Of Integer))
-				End If
-				Me.SendPropertyChanged("GEN_PERFIL_ANDROID")
 			End If
 		End Set
 	End Property
@@ -1661,10 +1300,6 @@ Partial Public Class GEN_PERFIL
 	
 	Private _CD_NIVEL_ACCESO As System.Nullable(Of Char)
 	
-	Private _FLG_NOTI_PROD As System.Nullable(Of Char)
-	
-	Private _FLG_NOTI_PROD_CDI As System.Nullable(Of Char)
-	
 	Private _GEN_MENU_PERFIL As EntitySet(Of GEN_MENU_PERFIL)
 	
 	Private _GEN_USUARIO As EntitySet(Of GEN_USUARIO)
@@ -1687,14 +1322,6 @@ Partial Public Class GEN_PERFIL
     Partial Private Sub OnCD_NIVEL_ACCESOChanging(value As System.Nullable(Of Char))
     End Sub
     Partial Private Sub OnCD_NIVEL_ACCESOChanged()
-    End Sub
-    Partial Private Sub OnFLG_NOTI_PRODChanging(value As System.Nullable(Of Char))
-    End Sub
-    Partial Private Sub OnFLG_NOTI_PRODChanged()
-    End Sub
-    Partial Private Sub OnFLG_NOTI_PROD_CDIChanging(value As System.Nullable(Of Char))
-    End Sub
-    Partial Private Sub OnFLG_NOTI_PROD_CDIChanged()
     End Sub
     #End Region
 	
@@ -1750,38 +1377,6 @@ Partial Public Class GEN_PERFIL
 				Me._CD_NIVEL_ACCESO = value
 				Me.SendPropertyChanged("CD_NIVEL_ACCESO")
 				Me.OnCD_NIVEL_ACCESOChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_NOTI_PROD", DbType:="Char(1)")>  _
-	Public Property FLG_NOTI_PROD() As System.Nullable(Of Char)
-		Get
-			Return Me._FLG_NOTI_PROD
-		End Get
-		Set
-			If (Me._FLG_NOTI_PROD.Equals(value) = false) Then
-				Me.OnFLG_NOTI_PRODChanging(value)
-				Me.SendPropertyChanging
-				Me._FLG_NOTI_PROD = value
-				Me.SendPropertyChanged("FLG_NOTI_PROD")
-				Me.OnFLG_NOTI_PRODChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_NOTI_PROD_CDI", DbType:="Char(1)")>  _
-	Public Property FLG_NOTI_PROD_CDI() As System.Nullable(Of Char)
-		Get
-			Return Me._FLG_NOTI_PROD_CDI
-		End Get
-		Set
-			If (Me._FLG_NOTI_PROD_CDI.Equals(value) = false) Then
-				Me.OnFLG_NOTI_PROD_CDIChanging(value)
-				Me.SendPropertyChanging
-				Me._FLG_NOTI_PROD_CDI = value
-				Me.SendPropertyChanged("FLG_NOTI_PROD_CDI")
-				Me.OnFLG_NOTI_PROD_CDIChanged
 			End If
 		End Set
 	End Property
@@ -2739,218 +2334,6 @@ Partial Public Class GEN_PIVOT_LAYOUT
 				Me._DT_LAYOUT = value
 				Me.SendPropertyChanged("DT_LAYOUT")
 				Me.OnDT_LAYOUTChanged
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.AUDI_CUEN_MONEDAS")>  _
-Partial Public Class AUDI_CUEN_MONEDAS
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _ID As Integer
-	
-	Private _DS_NOM_MODENA As String
-	
-	Private _DS_SIMBO_MONEDA As String
-	
-	Private _FACT_CONVERSION As System.Nullable(Of Decimal)
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnIDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnIDChanged()
-    End Sub
-    Partial Private Sub OnDS_NOM_MODENAChanging(value As String)
-    End Sub
-    Partial Private Sub OnDS_NOM_MODENAChanged()
-    End Sub
-    Partial Private Sub OnDS_SIMBO_MONEDAChanging(value As String)
-    End Sub
-    Partial Private Sub OnDS_SIMBO_MONEDAChanged()
-    End Sub
-    Partial Private Sub OnFACT_CONVERSIONChanging(value As System.Nullable(Of Decimal))
-    End Sub
-    Partial Private Sub OnFACT_CONVERSIONChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property ID() As Integer
-		Get
-			Return Me._ID
-		End Get
-		Set
-			If ((Me._ID = value)  _
-						= false) Then
-				Me.OnIDChanging(value)
-				Me.SendPropertyChanging
-				Me._ID = value
-				Me.SendPropertyChanged("ID")
-				Me.OnIDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOM_MODENA", DbType:="VarChar(25)")>  _
-	Public Property DS_NOM_MODENA() As String
-		Get
-			Return Me._DS_NOM_MODENA
-		End Get
-		Set
-			If (String.Equals(Me._DS_NOM_MODENA, value) = false) Then
-				Me.OnDS_NOM_MODENAChanging(value)
-				Me.SendPropertyChanging
-				Me._DS_NOM_MODENA = value
-				Me.SendPropertyChanged("DS_NOM_MODENA")
-				Me.OnDS_NOM_MODENAChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_SIMBO_MONEDA", DbType:="VarChar(10)")>  _
-	Public Property DS_SIMBO_MONEDA() As String
-		Get
-			Return Me._DS_SIMBO_MONEDA
-		End Get
-		Set
-			If (String.Equals(Me._DS_SIMBO_MONEDA, value) = false) Then
-				Me.OnDS_SIMBO_MONEDAChanging(value)
-				Me.SendPropertyChanging
-				Me._DS_SIMBO_MONEDA = value
-				Me.SendPropertyChanged("DS_SIMBO_MONEDA")
-				Me.OnDS_SIMBO_MONEDAChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FACT_CONVERSION", DbType:="Decimal(18,6)")>  _
-	Public Property FACT_CONVERSION() As System.Nullable(Of Decimal)
-		Get
-			Return Me._FACT_CONVERSION
-		End Get
-		Set
-			If (Me._FACT_CONVERSION.Equals(value) = false) Then
-				Me.OnFACT_CONVERSIONChanging(value)
-				Me.SendPropertyChanging
-				Me._FACT_CONVERSION = value
-				Me.SendPropertyChanged("FACT_CONVERSION")
-				Me.OnFACT_CONVERSIONChanged
-			End If
-		End Set
-	End Property
-	
-	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-	
-	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-	
-	Protected Overridable Sub SendPropertyChanging()
-		If ((Me.PropertyChangingEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-		End If
-	End Sub
-	
-	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-		If ((Me.PropertyChangedEvent Is Nothing)  _
-					= false) Then
-			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-		End If
-	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.AUDI_CUEN_FILIALES")>  _
-Partial Public Class AUDI_CUEN_FILIALES
-	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-	
-	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-	
-	Private _ID As Integer
-	
-	Private _DS_NOMB_FILIAL As String
-	
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnIDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnIDChanged()
-    End Sub
-    Partial Private Sub OnDS_NOMB_FILIALChanging(value As String)
-    End Sub
-    Partial Private Sub OnDS_NOMB_FILIALChanged()
-    End Sub
-    #End Region
-	
-	Public Sub New()
-		MyBase.New
-		OnCreated
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-	Public Property ID() As Integer
-		Get
-			Return Me._ID
-		End Get
-		Set
-			If ((Me._ID = value)  _
-						= false) Then
-				Me.OnIDChanging(value)
-				Me.SendPropertyChanging
-				Me._ID = value
-				Me.SendPropertyChanged("ID")
-				Me.OnIDChanged
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMB_FILIAL", DbType:="VarChar(50)")>  _
-	Public Property DS_NOMB_FILIAL() As String
-		Get
-			Return Me._DS_NOMB_FILIAL
-		End Get
-		Set
-			If (String.Equals(Me._DS_NOMB_FILIAL, value) = false) Then
-				Me.OnDS_NOMB_FILIALChanging(value)
-				Me.SendPropertyChanging
-				Me._DS_NOMB_FILIAL = value
-				Me.SendPropertyChanged("DS_NOMB_FILIAL")
-				Me.OnDS_NOMB_FILIALChanged
 			End If
 		End Set
 	End Property

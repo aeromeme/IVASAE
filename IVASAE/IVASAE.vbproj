@@ -123,6 +123,24 @@
     <Compile Include="Formularios\Configuracion\FcambiarPwd.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Configuracion\FormDialogoTexto.designer.vb">
+      <DependentUpon>FormDialogoTexto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\FormDialogoTexto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\FORM_PERF.designer.vb">
+      <DependentUpon>FORM_PERF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\FORM_PERF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\Fusuarios.designer.vb">
+      <DependentUpon>Fusuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\Fusuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\DialogoCons.designer.vb">
       <DependentUpon>DialogoCons.vb</DependentUpon>
     </Compile>
@@ -183,6 +201,15 @@
     <EmbeddedResource Include="Formularios\Configuracion\FcambiarPwd.resx">
       <DependentUpon>FcambiarPwd.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion\FormDialogoTexto.resx">
+      <DependentUpon>FormDialogoTexto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion\FORM_PERF.resx">
+      <DependentUpon>FORM_PERF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion\Fusuarios.resx">
+      <DependentUpon>Fusuarios.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DialogoCons.resx">
       <DependentUpon>DialogoCons.vb</DependentUpon>
     </EmbeddedResource>
@@ -217,7 +244,6 @@
   <ItemGroup>
     <None Include="Acceso a datos\DB_GENERAL.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DB_GENERAL.designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="Acceso a datos\DB_IVA.dbml">

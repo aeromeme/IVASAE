@@ -161,12 +161,10 @@ Public Class DataSistema
 
     Function ObtenerConfiguracion() As Boolean
         Try
-            Dim u As GEN_CONFIG
-            u = (From r In _ContextoGeneral.GEN_CONFIG
-               Select r).ToList()(0)
-            '_Cod_tipo_sym_bar = u.COD_TIPO_SYM_BAR
-            '_Cod_tipo_sym_bar_inner = u.COD_TIPO_SYM_BAR_INNER
-            '_Cod_tipo_sym_bar_master = u.COD_TIPO_SYM_BAR_MASTER
+            'Dim u As GEN_CONFIG
+            'u = (From r In _ContextoGeneral.GEN_CONFIG
+            '   Select r).ToList()(0)
+
             Return True
         Catch ex As Exception
             MetodosForm.MensajeErrorDefault()

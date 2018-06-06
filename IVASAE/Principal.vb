@@ -340,11 +340,11 @@ Public Class Principal
     End Sub
 
     Private Sub uinvconfig_LinkClicked(sender As Object, e As DevExpress.XtraNavBar.NavBarLinkEventArgs) Handles uinvconfig.LinkClicked
-        _datasistema.NombreVentana = "Configuracion"
-        _datasistema.NombreOpcion = "Configuracion"
-        Dim f As New Fconfig(_datasistema)
-        f.MdiParent = Me
-        f.Show()
+        '_datasistema.NombreVentana = "Configuracion"
+        '_datasistema.NombreOpcion = "Configuracion"
+        'Dim f As New Fconfig(_datasistema)
+        'f.MdiParent = Me
+        'f.Show()
     End Sub
 
     Private Sub uinvopci_menu_LinkClicked(sender As Object, e As DevExpress.XtraNavBar.NavBarLinkEventArgs) Handles uinvopci_menu.LinkClicked
@@ -404,11 +404,11 @@ Public Class Principal
 
 
     Private Sub uinvbar_pruebas_LinkClicked(sender As Object, e As DevExpress.XtraNavBar.NavBarLinkEventArgs) Handles uinvbar_pruebas.LinkClicked
-        _datasistema.NombreVentana = "Pruebas"
-        _datasistema.NombreOpcion = "Pruebas"
-        Dim f As New frmpruebas(_datasistema)
-        f.MdiParent = Me
-        f.Show()
+        '_datasistema.NombreVentana = "Pruebas"
+        '_datasistema.NombreOpcion = "Pruebas"
+        'Dim f As New frmpruebas(_datasistema)
+        'f.MdiParent = Me
+        'f.Show()
     End Sub
 
     Private Sub asignarperiodo()
