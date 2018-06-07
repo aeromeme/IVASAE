@@ -1156,11 +1156,7 @@ Partial Public Class V_GEN_USUARIO
 	
 	Private _CD_ESTADO As System.Nullable(Of Char)
 	
-	Private _CD_BAR_CODE As String
-	
 	Private _CD_CORREO_E As String
-	
-	Private _DS_NOMBRE_PERFIL_ANDROID As String
 	
 	Public Sub New()
 		MyBase.New
@@ -1227,17 +1223,6 @@ Partial Public Class V_GEN_USUARIO
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID_PERFIL_ANDROID", DbType:="Int")>  _
-	Public Property ID_PERFIL_ANDROID() As System.Nullable(Of Integer)
-		Get
-			Return Me._ID_PERFIL_ANDROID
-		End Get
-		Set
-			If (Me._ID_PERFIL_ANDROID.Equals(value) = false) Then
-				Me._ID_PERFIL_ANDROID = value
-			End If
-		End Set
-	End Property
 	
 	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_ESTADO", DbType:="Char(1)")>  _
 	Public Property CD_ESTADO() As System.Nullable(Of Char)
@@ -1247,18 +1232,6 @@ Partial Public Class V_GEN_USUARIO
 		Set
 			If (Me._CD_ESTADO.Equals(value) = false) Then
 				Me._CD_ESTADO = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_BAR_CODE", DbType:="VarChar(50)")>  _
-	Public Property CD_BAR_CODE() As String
-		Get
-			Return Me._CD_BAR_CODE
-		End Get
-		Set
-			If (String.Equals(Me._CD_BAR_CODE, value) = false) Then
-				Me._CD_BAR_CODE = value
 			End If
 		End Set
 	End Property
@@ -1275,17 +1248,6 @@ Partial Public Class V_GEN_USUARIO
 		End Set
 	End Property
 	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMBRE_PERFIL_ANDROID", DbType:="VarChar(100)")>  _
-	Public Property DS_NOMBRE_PERFIL_ANDROID() As String
-		Get
-			Return Me._DS_NOMBRE_PERFIL_ANDROID
-		End Get
-		Set
-			If (String.Equals(Me._DS_NOMBRE_PERFIL_ANDROID, value) = false) Then
-				Me._DS_NOMBRE_PERFIL_ANDROID = value
-			End If
-		End Set
-	End Property
 End Class
 
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.GEN_PERFIL")>  _

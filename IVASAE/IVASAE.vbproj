@@ -295,6 +295,7 @@
     <None Include="Acceso a datos\DB_GENERAL.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>DB_GENERAL1.designer.vb</LastGenOutput>
     </None>
     <None Include="Acceso a datos\DB_IVA.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

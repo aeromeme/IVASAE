@@ -11,8 +11,6 @@ Public Class FORM_PERF
         UIID.DataBindings.Add("EditValue", varlista, "ID", False, DataSourceUpdateMode.Never)
         UIDS_NOMBRE_PERFIL.DataBindings.Add("EditValue", varlista, "DS_NOMBRE_PERFIL", False, DataSourceUpdateMode.Never)
         UICD_NVL_ACCESO.DataBindings.Add("EditValue", varlista, "CD_NIVEL_ACCESO", False, DataSourceUpdateMode.Never)
-        UIFLG_NOTI_PROD.DataBindings.Add("EditValue", varlista, "FLG_NOTI_PROD", False, DataSourceUpdateMode.Never)
-        UIFLG_NOTI_PROD_CDI.DataBindings.Add("EditValue", varlista, "FLG_NOTI_PROD_CDI", False, DataSourceUpdateMode.Never)
     End Sub
     Public Sub prepararcombos()
         varNvlAcceso = MetodosForm.listaNivelesAcceso
@@ -41,8 +39,6 @@ Public Class FORM_PERF
         UIID.DataBindings.Clear()
         UIDS_NOMBRE_PERFIL.DataBindings.Clear()
         UICD_NVL_ACCESO.DataBindings.Clear()
-        UIFLG_NOTI_PROD.DataBindings.Clear()
-        UIFLG_NOTI_PROD_CDI.DataBindings.Clear()
     End Sub
 
     Public Sub Eliminar() Implements InterfazForms.Eliminar
@@ -89,8 +85,6 @@ Public Class FORM_PERF
         UIID.EditValue = ""
         UIDS_NOMBRE_PERFIL.EditValue = ""
         UICD_NVL_ACCESO.EditValue = Nothing
-        UIFLG_NOTI_PROD.Checked = False
-        UIFLG_NOTI_PROD_CDI.Checked = False
     End Sub
 
     Public Sub Modificar() Implements InterfazForms.Modificar
@@ -157,10 +151,7 @@ Public Class FORM_PERF
 
     Public Overrides Sub Refrescar()
         Consultar()
-        For i As Integer = 0 To UITABCONTROL_DETA.TabPages.Count
-            UITABCONTROL_DETA.SelectedTabPageIndex = i
-        Next
-        UITABCONTROL_DETA.SelectedTabPageIndex = 0
+        
     End Sub
 
 #Region "Detalle"

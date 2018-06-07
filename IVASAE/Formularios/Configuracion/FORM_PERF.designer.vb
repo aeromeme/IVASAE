@@ -33,9 +33,6 @@ Partial Class FORM_PERF
         Me.UICD_NVL_ACCESO = New DevExpress.XtraEditors.LookUpEdit()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.LayoutControl1 = New DevExpress.XtraLayout.LayoutControl()
-        Me.PanelControl2 = New DevExpress.XtraEditors.PanelControl()
-        Me.UIFLG_NOTI_PROD_CDI = New DevExpress.XtraEditors.CheckEdit()
-        Me.UIFLG_NOTI_PROD = New DevExpress.XtraEditors.CheckEdit()
         Me.UIGRID_CONTROL_DETA = New DevExpress.XtraGrid.GridControl()
         Me.VGENMENUPERFILAUXBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UIGRID_VIEW_DETA = New DevExpress.XtraGrid.Views.Grid.GridView()
@@ -68,108 +65,103 @@ Partial Class FORM_PERF
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
         Me.LayoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.UITABCONTROL_DETA = New DevExpress.XtraLayout.TabbedControlGroup()
-        Me.LayoutControlGroup2 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.SplitterItem1 = New DevExpress.XtraLayout.SplitterItem()
-        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.LayoutControlGroup4 = New DevExpress.XtraLayout.LayoutControlGroup()
         Me.LayoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
-        Me.LayoutControlGroup5 = New DevExpress.XtraLayout.LayoutControlGroup()
-        Me.LayoutControlItem4 = New DevExpress.XtraLayout.LayoutControlItem()
-        CType(Me.UITABCONTROL, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UITABCONTROL.SuspendLayout()
-        CType(Me.UIGRIDCONTROL, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIPANELDATOS, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIPANELDATOS.SuspendLayout()
-        CType(Me.UIPANELSTATUS, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIPANELSTATUS.SuspendLayout()
-        CType(Me.UIBARRAPROGRESO.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UITABPAG_GEN.SuspendLayout()
-        Me.UITABPAG_DET.SuspendLayout()
-        CType(Me.UIGRIDVIEW, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGROUP_MAIN, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIGROUP_MAIN.SuspendLayout()
-        CType(Me.GENPERFILBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGRID_CD_NIVEL_ACCESO, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ClasegenericaparesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIID.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIDS_NOMBRE_PERFIL.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UICD_NVL_ACCESO.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LayoutControl1.SuspendLayout()
-        CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelControl2.SuspendLayout()
-        CType(Me.UIFLG_NOTI_PROD_CDI.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIFLG_NOTI_PROD.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGRID_CONTROL_DETA, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VGENMENUPERFILAUXBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGRID_VIEW_DETA, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGRID_CONTROL_OPC, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.VGENOPCIONMENUBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGRID_VIEW_OPC, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelControl1.SuspendLayout()
-        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UITABCONTROL_DETA, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        Me.LayoutControlGroup3 = New DevExpress.XtraLayout.LayoutControlGroup()
+        Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
+        Me.SplitterItem1 = New DevExpress.XtraLayout.SplitterItem()
+        CType(Me.UITABCONTROL,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UITABCONTROL.SuspendLayout
+        CType(Me.UIGRIDCONTROL,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIPANELDATOS,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIPANELDATOS.SuspendLayout
+        CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIPANELSTATUS.SuspendLayout
+        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UITABPAG_GEN.SuspendLayout
+        Me.UITABPAG_DET.SuspendLayout
+        CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIGROUP_MAIN.SuspendLayout
+        CType(Me.GENPERFILBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIGRID_CD_NIVEL_ACCESO,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ClasegenericaparesBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIID.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIDS_NOMBRE_PERFIL.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UICD_NVL_ACCESO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControl1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.LayoutControl1.SuspendLayout
+        CType(Me.UIGRID_CONTROL_DETA,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.VGENMENUPERFILAUXBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIGRID_VIEW_DETA,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIGRID_CONTROL_OPC,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.VGENOPCIONMENUBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIGRID_VIEW_OPC,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PanelControl1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.PanelControl1.SuspendLayout
+        CType(Me.LayoutControlGroup1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlItem1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlGroup4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlItem2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlGroup3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlItem3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.SplitterItem1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'UITABCONTROL
         '
-        Me.UITABCONTROL.AppearancePage.Header.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.UITABCONTROL.AppearancePage.Header.Options.UseFont = True
+        Me.UITABCONTROL.AppearancePage.Header.Font = New System.Drawing.Font("Arial", 10!)
+        Me.UITABCONTROL.AppearancePage.Header.Options.UseFont = true
+        Me.UITABCONTROL.Location = New System.Drawing.Point(2, 38)
+        Me.UITABCONTROL.Size = New System.Drawing.Size(961, 478)
         '
         'UIGRIDCONTROL
         '
         Me.UIGRIDCONTROL.DataSource = Me.GENPERFILBindingSource
         Me.UIGRIDCONTROL.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.UIGRID_CD_NIVEL_ACCESO})
-        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 446)
+        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 447)
         '
         'UIPANELDATOS
         '
         Me.UIPANELDATOS.Controls.Add(Me.LayoutControl1)
+        Me.UIPANELDATOS.Size = New System.Drawing.Size(955, 447)
         '
         'UINAV
         '
-        Me.UINAV.Buttons.Append.Visible = False
-        Me.UINAV.Buttons.CancelEdit.Visible = False
-        Me.UINAV.Buttons.Edit.Visible = False
-        Me.UINAV.Buttons.EndEdit.Visible = False
-        Me.UINAV.Buttons.Remove.Visible = False
+        Me.UINAV.Buttons.Append.Visible = false
+        Me.UINAV.Buttons.CancelEdit.Visible = false
+        Me.UINAV.Buttons.Edit.Visible = false
+        Me.UINAV.Buttons.EndEdit.Visible = false
+        Me.UINAV.Buttons.Remove.Visible = false
         '
         'UIBARRAPROGRESO
         '
         '
+        'UITABPAG_GEN
+        '
+        Me.UITABPAG_GEN.Size = New System.Drawing.Size(955, 447)
+        '
         'UITABPAG_DET
         '
-        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 446)
+        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 447)
         '
         'UIGRIDVIEW
         '
         Me.UIGRIDVIEW.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colID, Me.colDS_NOMBRE_PERFIL, Me.colCD_NIVEL_ACCESO})
-        Me.UIGRIDVIEW.OptionsBehavior.Editable = False
-        Me.UIGRIDVIEW.OptionsMenu.EnableColumnMenu = False
-        Me.UIGRIDVIEW.OptionsMenu.EnableFooterMenu = False
-        Me.UIGRIDVIEW.OptionsMenu.EnableGroupPanelMenu = False
-        Me.UIGRIDVIEW.OptionsView.ColumnAutoWidth = False
-        Me.UIGRIDVIEW.OptionsView.ShowAutoFilterRow = True
-        Me.UIGRIDVIEW.OptionsView.ShowDetailButtons = False
+        Me.UIGRIDVIEW.OptionsBehavior.Editable = false
+        Me.UIGRIDVIEW.OptionsMenu.EnableColumnMenu = false
+        Me.UIGRIDVIEW.OptionsMenu.EnableFooterMenu = false
+        Me.UIGRIDVIEW.OptionsMenu.EnableGroupPanelMenu = false
+        Me.UIGRIDVIEW.OptionsView.ColumnAutoWidth = false
+        Me.UIGRIDVIEW.OptionsView.ShowAutoFilterRow = true
+        Me.UIGRIDVIEW.OptionsView.ShowDetailButtons = false
         '
         'UIGROUP_MAIN
         '
-        Me.UIGROUP_MAIN.AppearanceCaption.Font = New System.Drawing.Font("Arial Narrow", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UIGROUP_MAIN.AppearanceCaption.Font = New System.Drawing.Font("Arial Narrow", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.UIGROUP_MAIN.AppearanceCaption.ForeColor = System.Drawing.Color.White
-        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseFont = True
-        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = True
+        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseFont = true
+        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = true
         '
         'GENPERFILBindingSource
         '
@@ -180,7 +172,7 @@ Partial Class FORM_PERF
         Me.colID.Caption = "ID"
         Me.colID.FieldName = "ID"
         Me.colID.Name = "colID"
-        Me.colID.Visible = True
+        Me.colID.Visible = true
         Me.colID.VisibleIndex = 0
         '
         'colDS_NOMBRE_PERFIL
@@ -188,15 +180,15 @@ Partial Class FORM_PERF
         Me.colDS_NOMBRE_PERFIL.Caption = "Perfil"
         Me.colDS_NOMBRE_PERFIL.FieldName = "DS_NOMBRE_PERFIL"
         Me.colDS_NOMBRE_PERFIL.Name = "colDS_NOMBRE_PERFIL"
-        Me.colDS_NOMBRE_PERFIL.Visible = True
+        Me.colDS_NOMBRE_PERFIL.Visible = true
         Me.colDS_NOMBRE_PERFIL.VisibleIndex = 1
         Me.colDS_NOMBRE_PERFIL.Width = 199
         '
         'UIGRID_CD_NIVEL_ACCESO
         '
-        Me.UIGRID_CD_NIVEL_ACCESO.AutoHeight = False
+        Me.UIGRID_CD_NIVEL_ACCESO.AutoHeight = false
         Me.UIGRID_CD_NIVEL_ACCESO.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.UIGRID_CD_NIVEL_ACCESO.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Codigo", "Nombre1", 20, DevExpress.Utils.FormatType.None, "", False, DevExpress.Utils.HorzAlignment.[Default]), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Estado")})
+        Me.UIGRID_CD_NIVEL_ACCESO.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Codigo", "Nombre1", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.[Default]), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Estado")})
         Me.UIGRID_CD_NIVEL_ACCESO.DataSource = Me.ClasegenericaparesBindingSource
         Me.UIGRID_CD_NIVEL_ACCESO.DisplayMember = "Descripcion"
         Me.UIGRID_CD_NIVEL_ACCESO.Name = "UIGRID_CD_NIVEL_ACCESO"
@@ -212,7 +204,7 @@ Partial Class FORM_PERF
         Me.colCD_NIVEL_ACCESO.ColumnEdit = Me.UIGRID_CD_NIVEL_ACCESO
         Me.colCD_NIVEL_ACCESO.FieldName = "CD_NIVEL_ACCESO"
         Me.colCD_NIVEL_ACCESO.Name = "colCD_NIVEL_ACCESO"
-        Me.colCD_NIVEL_ACCESO.Visible = True
+        Me.colCD_NIVEL_ACCESO.Visible = true
         Me.colCD_NIVEL_ACCESO.VisibleIndex = 2
         '
         'LabelControl2
@@ -227,7 +219,7 @@ Partial Class FORM_PERF
         '
         Me.UIID.Location = New System.Drawing.Point(65, 15)
         Me.UIID.Name = "UIID"
-        Me.UIID.Properties.ReadOnly = True
+        Me.UIID.Properties.ReadOnly = true
         Me.UIID.Size = New System.Drawing.Size(100, 20)
         Me.UIID.TabIndex = 4
         '
@@ -251,7 +243,7 @@ Partial Class FORM_PERF
         Me.UICD_NVL_ACCESO.Location = New System.Drawing.Point(65, 86)
         Me.UICD_NVL_ACCESO.Name = "UICD_NVL_ACCESO"
         Me.UICD_NVL_ACCESO.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.UICD_NVL_ACCESO.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Codigo", "Codigo", 56, DevExpress.Utils.FormatType.None, "", False, DevExpress.Utils.HorzAlignment.Near), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Descripcion", 64, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.Near)})
+        Me.UICD_NVL_ACCESO.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Codigo", "Codigo", 56, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Descripcion", 64, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)})
         Me.UICD_NVL_ACCESO.Properties.DataSource = Me.ClasegenericaparesBindingSource
         Me.UICD_NVL_ACCESO.Properties.DisplayMember = "Descripcion"
         Me.UICD_NVL_ACCESO.Properties.NullText = "Seleccione"
@@ -269,7 +261,6 @@ Partial Class FORM_PERF
         '
         'LayoutControl1
         '
-        Me.LayoutControl1.Controls.Add(Me.PanelControl2)
         Me.LayoutControl1.Controls.Add(Me.UIGRID_CONTROL_DETA)
         Me.LayoutControl1.Controls.Add(Me.UIGRID_CONTROL_OPC)
         Me.LayoutControl1.Controls.Add(Me.PanelControl1)
@@ -278,48 +269,17 @@ Partial Class FORM_PERF
         Me.LayoutControl1.Name = "LayoutControl1"
         Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(280, 294, 250, 350)
         Me.LayoutControl1.Root = Me.LayoutControlGroup1
-        Me.LayoutControl1.Size = New System.Drawing.Size(951, 442)
+        Me.LayoutControl1.Size = New System.Drawing.Size(951, 443)
         Me.LayoutControl1.TabIndex = 10
         Me.LayoutControl1.Text = "LayoutControl1"
-        '
-        'PanelControl2
-        '
-        Me.PanelControl2.Controls.Add(Me.UIFLG_NOTI_PROD_CDI)
-        Me.PanelControl2.Controls.Add(Me.UIFLG_NOTI_PROD)
-        Me.PanelControl2.Location = New System.Drawing.Point(24, 172)
-        Me.PanelControl2.Name = "PanelControl2"
-        Me.PanelControl2.Size = New System.Drawing.Size(903, 246)
-        Me.PanelControl2.TabIndex = 14
-        '
-        'UIFLG_NOTI_PROD_CDI
-        '
-        Me.UIFLG_NOTI_PROD_CDI.EditValue = Global.Microsoft.VisualBasic.ChrW(78)
-        Me.UIFLG_NOTI_PROD_CDI.Location = New System.Drawing.Point(51, 51)
-        Me.UIFLG_NOTI_PROD_CDI.Name = "UIFLG_NOTI_PROD_CDI"
-        Me.UIFLG_NOTI_PROD_CDI.Properties.Caption = "Produccion toma pdte. CDI"
-        Me.UIFLG_NOTI_PROD_CDI.Properties.ValueChecked = Global.Microsoft.VisualBasic.ChrW(83)
-        Me.UIFLG_NOTI_PROD_CDI.Properties.ValueUnchecked = Global.Microsoft.VisualBasic.ChrW(78)
-        Me.UIFLG_NOTI_PROD_CDI.Size = New System.Drawing.Size(165, 19)
-        Me.UIFLG_NOTI_PROD_CDI.TabIndex = 1
-        '
-        'UIFLG_NOTI_PROD
-        '
-        Me.UIFLG_NOTI_PROD.EditValue = Global.Microsoft.VisualBasic.ChrW(78)
-        Me.UIFLG_NOTI_PROD.Location = New System.Drawing.Point(51, 26)
-        Me.UIFLG_NOTI_PROD.Name = "UIFLG_NOTI_PROD"
-        Me.UIFLG_NOTI_PROD.Properties.Caption = "Produccion pdte. procesar"
-        Me.UIFLG_NOTI_PROD.Properties.ValueChecked = Global.Microsoft.VisualBasic.ChrW(83)
-        Me.UIFLG_NOTI_PROD.Properties.ValueUnchecked = Global.Microsoft.VisualBasic.ChrW(78)
-        Me.UIFLG_NOTI_PROD.Size = New System.Drawing.Size(152, 19)
-        Me.UIFLG_NOTI_PROD.TabIndex = 0
         '
         'UIGRID_CONTROL_DETA
         '
         Me.UIGRID_CONTROL_DETA.DataSource = Me.VGENMENUPERFILAUXBindingSource
-        Me.UIGRID_CONTROL_DETA.Location = New System.Drawing.Point(36, 203)
+        Me.UIGRID_CONTROL_DETA.Location = New System.Drawing.Point(24, 168)
         Me.UIGRID_CONTROL_DETA.MainView = Me.UIGRID_VIEW_DETA
         Me.UIGRID_CONTROL_DETA.Name = "UIGRID_CONTROL_DETA"
-        Me.UIGRID_CONTROL_DETA.Size = New System.Drawing.Size(425, 203)
+        Me.UIGRID_CONTROL_DETA.Size = New System.Drawing.Size(417, 251)
         Me.UIGRID_CONTROL_DETA.TabIndex = 13
         Me.UIGRID_CONTROL_DETA.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.UIGRID_VIEW_DETA})
         '
@@ -332,8 +292,8 @@ Partial Class FORM_PERF
         Me.UIGRID_VIEW_DETA.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colID1, Me.colID_PERFIL, Me.colID_OPC_MENU, Me.colFLG_LECTURA, Me.colORDEN, Me.colCOD_FORM, Me.colDS_NOMBRE_FORM, Me.colDS_NOMBRE_CORTO, Me.colCOD_MENU, Me.colID_MENU, Me.colID_FORM, Me.colDS_NOMBRE_PERFIL1, Me.colCD_NIVEL_ACCESO1, Me.colDS_NOMBRE_MODULO1})
         Me.UIGRID_VIEW_DETA.GridControl = Me.UIGRID_CONTROL_DETA
         Me.UIGRID_VIEW_DETA.Name = "UIGRID_VIEW_DETA"
-        Me.UIGRID_VIEW_DETA.OptionsBehavior.Editable = False
-        Me.UIGRID_VIEW_DETA.OptionsView.ShowAutoFilterRow = True
+        Me.UIGRID_VIEW_DETA.OptionsBehavior.Editable = false
+        Me.UIGRID_VIEW_DETA.OptionsView.ShowAutoFilterRow = true
         '
         'colID1
         '
@@ -370,7 +330,7 @@ Partial Class FORM_PERF
         Me.colDS_NOMBRE_FORM.Caption = "Formulario"
         Me.colDS_NOMBRE_FORM.FieldName = "DS_NOMBRE_FORM"
         Me.colDS_NOMBRE_FORM.Name = "colDS_NOMBRE_FORM"
-        Me.colDS_NOMBRE_FORM.Visible = True
+        Me.colDS_NOMBRE_FORM.Visible = true
         Me.colDS_NOMBRE_FORM.VisibleIndex = 2
         '
         'colDS_NOMBRE_CORTO
@@ -383,7 +343,7 @@ Partial Class FORM_PERF
         Me.colCOD_MENU.Caption = "Menu"
         Me.colCOD_MENU.FieldName = "COD_MENU"
         Me.colCOD_MENU.Name = "colCOD_MENU"
-        Me.colCOD_MENU.Visible = True
+        Me.colCOD_MENU.Visible = true
         Me.colCOD_MENU.VisibleIndex = 1
         '
         'colID_MENU
@@ -411,16 +371,16 @@ Partial Class FORM_PERF
         Me.colDS_NOMBRE_MODULO1.Caption = "Modulo"
         Me.colDS_NOMBRE_MODULO1.FieldName = "DS_NOMBRE_MODULO"
         Me.colDS_NOMBRE_MODULO1.Name = "colDS_NOMBRE_MODULO1"
-        Me.colDS_NOMBRE_MODULO1.Visible = True
+        Me.colDS_NOMBRE_MODULO1.Visible = true
         Me.colDS_NOMBRE_MODULO1.VisibleIndex = 0
         '
         'UIGRID_CONTROL_OPC
         '
         Me.UIGRID_CONTROL_OPC.DataSource = Me.VGENOPCIONMENUBindingSource
-        Me.UIGRID_CONTROL_OPC.Location = New System.Drawing.Point(494, 203)
+        Me.UIGRID_CONTROL_OPC.Location = New System.Drawing.Point(474, 168)
         Me.UIGRID_CONTROL_OPC.MainView = Me.UIGRID_VIEW_OPC
         Me.UIGRID_CONTROL_OPC.Name = "UIGRID_CONTROL_OPC"
-        Me.UIGRID_CONTROL_OPC.Size = New System.Drawing.Size(421, 203)
+        Me.UIGRID_CONTROL_OPC.Size = New System.Drawing.Size(453, 251)
         Me.UIGRID_CONTROL_OPC.TabIndex = 12
         Me.UIGRID_CONTROL_OPC.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.UIGRID_VIEW_OPC})
         '
@@ -433,8 +393,8 @@ Partial Class FORM_PERF
         Me.UIGRID_VIEW_OPC.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colID2, Me.colORDEN1, Me.colCOD_MENU1, Me.colCOD_FORM1, Me.colDS_NOMBRE_FORM1, Me.colDS_NOMBRE_CORTO1, Me.colID_MENU1, Me.colID_FORM1, Me.colDS_NOMBRE_MODULO})
         Me.UIGRID_VIEW_OPC.GridControl = Me.UIGRID_CONTROL_OPC
         Me.UIGRID_VIEW_OPC.Name = "UIGRID_VIEW_OPC"
-        Me.UIGRID_VIEW_OPC.OptionsBehavior.Editable = False
-        Me.UIGRID_VIEW_OPC.OptionsView.ShowAutoFilterRow = True
+        Me.UIGRID_VIEW_OPC.OptionsBehavior.Editable = false
+        Me.UIGRID_VIEW_OPC.OptionsView.ShowAutoFilterRow = true
         '
         'colID2
         '
@@ -451,7 +411,7 @@ Partial Class FORM_PERF
         Me.colCOD_MENU1.Caption = "Menu"
         Me.colCOD_MENU1.FieldName = "COD_MENU"
         Me.colCOD_MENU1.Name = "colCOD_MENU1"
-        Me.colCOD_MENU1.Visible = True
+        Me.colCOD_MENU1.Visible = true
         Me.colCOD_MENU1.VisibleIndex = 1
         '
         'colCOD_FORM1
@@ -464,7 +424,7 @@ Partial Class FORM_PERF
         Me.colDS_NOMBRE_FORM1.Caption = "Formulario"
         Me.colDS_NOMBRE_FORM1.FieldName = "DS_NOMBRE_FORM"
         Me.colDS_NOMBRE_FORM1.Name = "colDS_NOMBRE_FORM1"
-        Me.colDS_NOMBRE_FORM1.Visible = True
+        Me.colDS_NOMBRE_FORM1.Visible = true
         Me.colDS_NOMBRE_FORM1.VisibleIndex = 2
         '
         'colDS_NOMBRE_CORTO1
@@ -487,7 +447,7 @@ Partial Class FORM_PERF
         Me.colDS_NOMBRE_MODULO.Caption = "Modulo"
         Me.colDS_NOMBRE_MODULO.FieldName = "DS_NOMBRE_MODULO"
         Me.colDS_NOMBRE_MODULO.Name = "colDS_NOMBRE_MODULO"
-        Me.colDS_NOMBRE_MODULO.Visible = True
+        Me.colDS_NOMBRE_MODULO.Visible = true
         Me.colDS_NOMBRE_MODULO.VisibleIndex = 0
         '
         'PanelControl1
@@ -507,13 +467,12 @@ Partial Class FORM_PERF
         '
         Me.LayoutControlGroup1.CustomizationFormText = "Root"
         Me.LayoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
-        Me.LayoutControlGroup1.GroupBordersVisible = False
-        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.UITABCONTROL_DETA})
+        Me.LayoutControlGroup1.GroupBordersVisible = false
+        Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem1, Me.LayoutControlGroup4, Me.LayoutControlGroup3, Me.SplitterItem1})
         Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlGroup1.Name = "Root"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(951, 442)
-        Me.LayoutControlGroup1.Text = "Root"
-        Me.LayoutControlGroup1.TextVisible = False
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(951, 443)
+        Me.LayoutControlGroup1.TextVisible = false
         '
         'LayoutControlItem1
         '
@@ -525,67 +484,16 @@ Partial Class FORM_PERF
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
         Me.LayoutControlItem1.Size = New System.Drawing.Size(931, 126)
         Me.LayoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom
-        Me.LayoutControlItem1.Text = "LayoutControlItem1"
         Me.LayoutControlItem1.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem1.TextToControlDistance = 0
-        Me.LayoutControlItem1.TextVisible = False
-        '
-        'UITABCONTROL_DETA
-        '
-        Me.UITABCONTROL_DETA.CustomizationFormText = "TabbedControlGroup1"
-        Me.UITABCONTROL_DETA.Location = New System.Drawing.Point(0, 126)
-        Me.UITABCONTROL_DETA.Name = "UITABCONTROL_DETA"
-        Me.UITABCONTROL_DETA.SelectedTabPage = Me.LayoutControlGroup2
-        Me.UITABCONTROL_DETA.SelectedTabPageIndex = 0
-        Me.UITABCONTROL_DETA.Size = New System.Drawing.Size(931, 296)
-        Me.UITABCONTROL_DETA.TabPages.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlGroup2, Me.LayoutControlGroup5})
-        Me.UITABCONTROL_DETA.Text = "UITABCONTROL_DETA"
-        '
-        'LayoutControlGroup2
-        '
-        Me.LayoutControlGroup2.CustomizationFormText = "Opciones"
-        Me.LayoutControlGroup2.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.SplitterItem1, Me.LayoutControlGroup3, Me.LayoutControlGroup4})
-        Me.LayoutControlGroup2.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup2.Name = "LayoutControlGroup2"
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(907, 250)
-        Me.LayoutControlGroup2.Text = "Opciones"
-        '
-        'SplitterItem1
-        '
-        Me.SplitterItem1.AllowHotTrack = True
-        Me.SplitterItem1.CustomizationFormText = "SplitterItem1"
-        Me.SplitterItem1.Location = New System.Drawing.Point(453, 0)
-        Me.SplitterItem1.Name = "SplitterItem1"
-        Me.SplitterItem1.Size = New System.Drawing.Size(5, 250)
-        '
-        'LayoutControlGroup3
-        '
-        Me.LayoutControlGroup3.CustomizationFormText = "Opciones del perfil"
-        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem3})
-        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
-        Me.LayoutControlGroup3.Size = New System.Drawing.Size(453, 250)
-        Me.LayoutControlGroup3.Text = "Opciones del perfil"
-        '
-        'LayoutControlItem3
-        '
-        Me.LayoutControlItem3.Control = Me.UIGRID_CONTROL_DETA
-        Me.LayoutControlItem3.CustomizationFormText = "LayoutControlItem3"
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(429, 207)
-        Me.LayoutControlItem3.Text = "LayoutControlItem3"
-        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem3.TextToControlDistance = 0
-        Me.LayoutControlItem3.TextVisible = False
+        Me.LayoutControlItem1.TextVisible = false
         '
         'LayoutControlGroup4
         '
         Me.LayoutControlGroup4.CustomizationFormText = "Opciones disponibles"
         Me.LayoutControlGroup4.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem2})
-        Me.LayoutControlGroup4.Location = New System.Drawing.Point(458, 0)
+        Me.LayoutControlGroup4.Location = New System.Drawing.Point(450, 126)
         Me.LayoutControlGroup4.Name = "LayoutControlGroup4"
-        Me.LayoutControlGroup4.Size = New System.Drawing.Size(449, 250)
+        Me.LayoutControlGroup4.Size = New System.Drawing.Size(481, 297)
         Me.LayoutControlGroup4.Text = "Opciones disponibles"
         '
         'LayoutControlItem2
@@ -594,86 +502,81 @@ Partial Class FORM_PERF
         Me.LayoutControlItem2.CustomizationFormText = "LayoutControlItem2"
         Me.LayoutControlItem2.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Size = New System.Drawing.Size(425, 207)
-        Me.LayoutControlItem2.Text = "LayoutControlItem2"
+        Me.LayoutControlItem2.Size = New System.Drawing.Size(457, 255)
         Me.LayoutControlItem2.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem2.TextToControlDistance = 0
-        Me.LayoutControlItem2.TextVisible = False
+        Me.LayoutControlItem2.TextVisible = false
         '
-        'LayoutControlGroup5
+        'LayoutControlGroup3
         '
-        Me.LayoutControlGroup5.CustomizationFormText = "Notificaciones"
-        Me.LayoutControlGroup5.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem4})
-        Me.LayoutControlGroup5.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlGroup5.Name = "LayoutControlGroup5"
-        Me.LayoutControlGroup5.Size = New System.Drawing.Size(907, 250)
-        Me.LayoutControlGroup5.Text = "Notificaciones"
+        Me.LayoutControlGroup3.CustomizationFormText = "Opciones del perfil"
+        Me.LayoutControlGroup3.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.LayoutControlItem3})
+        Me.LayoutControlGroup3.Location = New System.Drawing.Point(0, 126)
+        Me.LayoutControlGroup3.Name = "LayoutControlGroup3"
+        Me.LayoutControlGroup3.Size = New System.Drawing.Size(445, 297)
+        Me.LayoutControlGroup3.Text = "Opciones del perfil"
         '
-        'LayoutControlItem4
+        'LayoutControlItem3
         '
-        Me.LayoutControlItem4.Control = Me.PanelControl2
-        Me.LayoutControlItem4.CustomizationFormText = "LayoutControlItem4"
-        Me.LayoutControlItem4.Location = New System.Drawing.Point(0, 0)
-        Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(907, 250)
-        Me.LayoutControlItem4.Text = "LayoutControlItem4"
-        Me.LayoutControlItem4.TextSize = New System.Drawing.Size(0, 0)
-        Me.LayoutControlItem4.TextToControlDistance = 0
-        Me.LayoutControlItem4.TextVisible = False
+        Me.LayoutControlItem3.Control = Me.UIGRID_CONTROL_DETA
+        Me.LayoutControlItem3.CustomizationFormText = "LayoutControlItem3"
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 0)
+        Me.LayoutControlItem3.Name = "LayoutControlItem3"
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(421, 255)
+        Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
+        Me.LayoutControlItem3.TextVisible = false
+        '
+        'SplitterItem1
+        '
+        Me.SplitterItem1.AllowHotTrack = true
+        Me.SplitterItem1.Location = New System.Drawing.Point(445, 126)
+        Me.SplitterItem1.Name = "SplitterItem1"
+        Me.SplitterItem1.Size = New System.Drawing.Size(5, 297)
         '
         'FORM_PERF
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 15!)
         Me.ClientSize = New System.Drawing.Size(965, 560)
         Me.Name = "FORM_PERF"
-        CType(Me.UITABCONTROL, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UITABCONTROL.ResumeLayout(False)
-        CType(Me.UIGRIDCONTROL, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIPANELDATOS, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIPANELDATOS.ResumeLayout(False)
-        CType(Me.UIPANELSTATUS, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIPANELSTATUS.ResumeLayout(False)
-        CType(Me.UIBARRAPROGRESO.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UITABPAG_GEN.ResumeLayout(False)
-        Me.UITABPAG_DET.ResumeLayout(False)
-        CType(Me.UIGRIDVIEW, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGROUP_MAIN, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIGROUP_MAIN.ResumeLayout(False)
-        CType(Me.GENPERFILBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGRID_CD_NIVEL_ACCESO, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ClasegenericaparesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIID.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIDS_NOMBRE_PERFIL.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UICD_NVL_ACCESO.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LayoutControl1.ResumeLayout(False)
-        CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelControl2.ResumeLayout(False)
-        CType(Me.UIFLG_NOTI_PROD_CDI.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIFLG_NOTI_PROD.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGRID_CONTROL_DETA, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VGENMENUPERFILAUXBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGRID_VIEW_DETA, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGRID_CONTROL_OPC, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.VGENOPCIONMENUBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGRID_VIEW_OPC, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelControl1.ResumeLayout(False)
-        Me.PanelControl1.PerformLayout()
-        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UITABCONTROL_DETA, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SplitterItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        CType(Me.UITABCONTROL,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UITABCONTROL.ResumeLayout(false)
+        CType(Me.UIGRIDCONTROL,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIPANELDATOS,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIPANELDATOS.ResumeLayout(false)
+        CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIPANELSTATUS.ResumeLayout(false)
+        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UITABPAG_GEN.ResumeLayout(false)
+        Me.UITABPAG_DET.ResumeLayout(false)
+        CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIGROUP_MAIN.ResumeLayout(false)
+        CType(Me.GENPERFILBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIGRID_CD_NIVEL_ACCESO,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ClasegenericaparesBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIID.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIDS_NOMBRE_PERFIL.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UICD_NVL_ACCESO.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControl1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.LayoutControl1.ResumeLayout(false)
+        CType(Me.UIGRID_CONTROL_DETA,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.VGENMENUPERFILAUXBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIGRID_VIEW_DETA,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIGRID_CONTROL_OPC,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.VGENOPCIONMENUBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIGRID_VIEW_OPC,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PanelControl1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.PanelControl1.ResumeLayout(false)
+        Me.PanelControl1.PerformLayout
+        CType(Me.LayoutControlGroup1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlItem1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlGroup4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlItem2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlGroup3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlItem3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.SplitterItem1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Friend WithEvents GENPERFILBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents colID As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colDS_NOMBRE_PERFIL As DevExpress.XtraGrid.Columns.GridColumn
@@ -717,19 +620,11 @@ Partial Class FORM_PERF
     Friend WithEvents colDS_NOMBRE_CORTO1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colID_MENU1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colID_FORM1 As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents PanelControl2 As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents UIFLG_NOTI_PROD As DevExpress.XtraEditors.CheckEdit
-    Friend WithEvents UITABCONTROL_DETA As DevExpress.XtraLayout.TabbedControlGroup
-    Friend WithEvents LayoutControlGroup5 As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents LayoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents LayoutControlGroup2 As DevExpress.XtraLayout.LayoutControlGroup
-    Friend WithEvents SplitterItem1 As DevExpress.XtraLayout.SplitterItem
     Friend WithEvents LayoutControlGroup3 As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
     Friend WithEvents LayoutControlGroup4 As DevExpress.XtraLayout.LayoutControlGroup
     Friend WithEvents LayoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
-    Friend WithEvents UIFLG_NOTI_PROD_CDI As DevExpress.XtraEditors.CheckEdit
     Friend WithEvents colDS_NOMBRE_MODULO As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colDS_NOMBRE_MODULO1 As DevExpress.XtraGrid.Columns.GridColumn
-
+    Friend WithEvents SplitterItem1 As DevExpress.XtraLayout.SplitterItem
 End Class

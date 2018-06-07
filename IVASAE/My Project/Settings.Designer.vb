@@ -158,6 +158,16 @@ Namespace My
                 Me("STADOCHECKEN") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\MANUSQL;Initial Catalog=IVASAE;Integrated Security=True")>  _
+        Public ReadOnly Property IVASAEConnectionString() As String
+            Get
+                Return CType(Me("IVASAEConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
