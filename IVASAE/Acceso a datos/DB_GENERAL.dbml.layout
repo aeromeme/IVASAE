@@ -122,10 +122,10 @@
         <elementListCompartment Id="f8096075-9710-4ea1-b39c-cf581e399e0b" absoluteBounds="7.0150000000000006, 6.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="99ebcda9-c09f-46bc-8068-16d1c9b1b690" absoluteBounds="6.875, 1.125, 2, 2.1554996744791666">
+    <classShape Id="f50c8076-3ed7-449c-984d-03c0495f6562" absoluteBounds="7, 1.25, 2, 2.1554996744791666">
       <DataClassMoniker Name="/DB_GENERALDataContext/V_GEN_USUARIO" />
       <nestedChildShapes>
-        <elementListCompartment Id="a7353843-22de-44fc-b296-7527c23c4421" absoluteBounds="6.89, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e46e5539-c0f0-45d0-84b7-7bee43838e28" absoluteBounds="7.015, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

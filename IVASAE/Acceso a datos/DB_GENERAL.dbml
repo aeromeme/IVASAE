@@ -133,7 +133,7 @@
       <Column Name="DT_LAYOUT" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
     </Type>
   </Table>
-  <Table Name="dbo.V_GEN_USUARIO" Member="V_GEN_USUARIOs">
+  <Table Name="dbo.V_GEN_USUARIO" Member="V_GEN_USUARIO">
     <Type Name="V_GEN_USUARIO">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="CD_LOGIN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />

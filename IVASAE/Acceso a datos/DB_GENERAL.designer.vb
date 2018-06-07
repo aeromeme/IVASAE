@@ -22,7 +22,7 @@ Imports System.Linq.Expressions
 Imports System.Reflection
 
 
-<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="IMACANET")>  _
+<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="IVASAE")>  _
 Partial Public Class DB_GENERALDataContext
 	Inherits System.Data.Linq.DataContext
 	
@@ -88,7 +88,7 @@ Partial Public Class DB_GENERALDataContext
   #End Region
 	
 	Public Sub New()
-		MyBase.New(Global.IVASAE.My.MySettings.Default.IMACANETConnectionString13, mappingSource)
+		MyBase.New(Global.IVASAE.My.MySettings.Default.IVASAEConnectionString, mappingSource)
 		OnCreated
 	End Sub
 	
@@ -148,12 +148,6 @@ Partial Public Class DB_GENERALDataContext
 		End Get
 	End Property
 	
-	Public ReadOnly Property V_GEN_USUARIO() As System.Data.Linq.Table(Of V_GEN_USUARIO)
-		Get
-			Return Me.GetTable(Of V_GEN_USUARIO)
-		End Get
-	End Property
-	
 	Public ReadOnly Property GEN_PERFIL() As System.Data.Linq.Table(Of GEN_PERFIL)
 		Get
 			Return Me.GetTable(Of GEN_PERFIL)
@@ -193,6 +187,12 @@ Partial Public Class DB_GENERALDataContext
 	Public ReadOnly Property GEN_PIVOT_LAYOUT() As System.Data.Linq.Table(Of GEN_PIVOT_LAYOUT)
 		Get
 			Return Me.GetTable(Of GEN_PIVOT_LAYOUT)
+		End Get
+	End Property
+	
+	Public ReadOnly Property V_GEN_USUARIO() As System.Data.Linq.Table(Of V_GEN_USUARIO)
+		Get
+			Return Me.GetTable(Of V_GEN_USUARIO)
 		End Get
 	End Property
 	
@@ -1137,117 +1137,6 @@ Partial Public Class GEN_USUARIO
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
 	End Sub
-End Class
-
-<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.V_GEN_USUARIO")>  _
-Partial Public Class V_GEN_USUARIO
-	
-	Private _ID As Integer
-	
-	Private _CD_LOGIN As String
-	
-	Private _CD_PASSWORD As String
-	
-	Private _DESC_NOMBRE_USUARIO As String
-	
-	Private _ID_PERFIL As System.Nullable(Of Integer)
-	
-	Private _ID_PERFIL_ANDROID As System.Nullable(Of Integer)
-	
-	Private _CD_ESTADO As System.Nullable(Of Char)
-	
-	Private _CD_CORREO_E As String
-	
-	Public Sub New()
-		MyBase.New
-	End Sub
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", DbType:="Int NOT NULL")>  _
-	Public Property ID() As Integer
-		Get
-			Return Me._ID
-		End Get
-		Set
-			If ((Me._ID = value)  _
-						= false) Then
-				Me._ID = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_LOGIN", DbType:="VarChar(50)")>  _
-	Public Property CD_LOGIN() As String
-		Get
-			Return Me._CD_LOGIN
-		End Get
-		Set
-			If (String.Equals(Me._CD_LOGIN, value) = false) Then
-				Me._CD_LOGIN = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_PASSWORD", DbType:="VarChar(50)")>  _
-	Public Property CD_PASSWORD() As String
-		Get
-			Return Me._CD_PASSWORD
-		End Get
-		Set
-			If (String.Equals(Me._CD_PASSWORD, value) = false) Then
-				Me._CD_PASSWORD = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DESC_NOMBRE_USUARIO", DbType:="VarChar(100)")>  _
-	Public Property DESC_NOMBRE_USUARIO() As String
-		Get
-			Return Me._DESC_NOMBRE_USUARIO
-		End Get
-		Set
-			If (String.Equals(Me._DESC_NOMBRE_USUARIO, value) = false) Then
-				Me._DESC_NOMBRE_USUARIO = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID_PERFIL", DbType:="Int")>  _
-	Public Property ID_PERFIL() As System.Nullable(Of Integer)
-		Get
-			Return Me._ID_PERFIL
-		End Get
-		Set
-			If (Me._ID_PERFIL.Equals(value) = false) Then
-				Me._ID_PERFIL = value
-			End If
-		End Set
-	End Property
-	
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_ESTADO", DbType:="Char(1)")>  _
-	Public Property CD_ESTADO() As System.Nullable(Of Char)
-		Get
-			Return Me._CD_ESTADO
-		End Get
-		Set
-			If (Me._CD_ESTADO.Equals(value) = false) Then
-				Me._CD_ESTADO = value
-			End If
-		End Set
-	End Property
-	
-	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_CORREO_E", DbType:="VarChar(100)")>  _
-	Public Property CD_CORREO_E() As String
-		Get
-			Return Me._CD_CORREO_E
-		End Get
-		Set
-			If (String.Equals(Me._CD_CORREO_E, value) = false) Then
-				Me._CD_CORREO_E = value
-			End If
-		End Set
-	End Property
-	
 End Class
 
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.GEN_PERFIL")>  _
@@ -2317,4 +2206,111 @@ Partial Public Class GEN_PIVOT_LAYOUT
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
 	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.V_GEN_USUARIO")>  _
+Partial Public Class V_GEN_USUARIO
+	
+	Private _ID As Integer
+	
+	Private _CD_LOGIN As String
+	
+	Private _CD_PASSWORD As String
+	
+	Private _DESC_NOMBRE_USUARIO As String
+	
+	Private _ID_PERFIL As System.Nullable(Of Integer)
+	
+	Private _CD_ESTADO As System.Nullable(Of Char)
+	
+	Private _CD_CORREO_E As String
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.Always, DbType:="Int NOT NULL IDENTITY", IsDbGenerated:=true)>  _
+	Public Property ID() As Integer
+		Get
+			Return Me._ID
+		End Get
+		Set
+			If ((Me._ID = value)  _
+						= false) Then
+				Me._ID = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_LOGIN", DbType:="VarChar(50)")>  _
+	Public Property CD_LOGIN() As String
+		Get
+			Return Me._CD_LOGIN
+		End Get
+		Set
+			If (String.Equals(Me._CD_LOGIN, value) = false) Then
+				Me._CD_LOGIN = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_PASSWORD", DbType:="VarChar(50)")>  _
+	Public Property CD_PASSWORD() As String
+		Get
+			Return Me._CD_PASSWORD
+		End Get
+		Set
+			If (String.Equals(Me._CD_PASSWORD, value) = false) Then
+				Me._CD_PASSWORD = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DESC_NOMBRE_USUARIO", DbType:="VarChar(100)")>  _
+	Public Property DESC_NOMBRE_USUARIO() As String
+		Get
+			Return Me._DESC_NOMBRE_USUARIO
+		End Get
+		Set
+			If (String.Equals(Me._DESC_NOMBRE_USUARIO, value) = false) Then
+				Me._DESC_NOMBRE_USUARIO = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID_PERFIL", DbType:="Int")>  _
+	Public Property ID_PERFIL() As System.Nullable(Of Integer)
+		Get
+			Return Me._ID_PERFIL
+		End Get
+		Set
+			If (Me._ID_PERFIL.Equals(value) = false) Then
+				Me._ID_PERFIL = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_ESTADO", DbType:="Char(1)")>  _
+	Public Property CD_ESTADO() As System.Nullable(Of Char)
+		Get
+			Return Me._CD_ESTADO
+		End Get
+		Set
+			If (Me._CD_ESTADO.Equals(value) = false) Then
+				Me._CD_ESTADO = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_CORREO_E", DbType:="VarChar(100)")>  _
+	Public Property CD_CORREO_E() As String
+		Get
+			Return Me._CD_CORREO_E
+		End Get
+		Set
+			If (String.Equals(Me._CD_CORREO_E, value) = false) Then
+				Me._CD_CORREO_E = value
+			End If
+		End Set
+	End Property
 End Class
