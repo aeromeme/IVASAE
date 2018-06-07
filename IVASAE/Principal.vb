@@ -18,7 +18,7 @@ Public Class Principal
         'SetBackGroundColorOfMdiForm()
         '' InitializeTimer()
         ' Login.ShowDialog()
-        Dim ProjAndForm = "IMACANET.Login"  '' String Of Your Project And Form Name
+        Dim ProjAndForm = "IVASAE.Login"  '' String Of Your Project And Form Name
         Dim objType As Type = Type.[GetType](ProjAndForm) '' Get Type Of your string
         Dim objForm As Form = DirectCast(Activator.CreateInstance(objType), Form) '' Convert Type to Control and now you can use this Control
         objForm.ShowDialog()

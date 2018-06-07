@@ -187,14 +187,14 @@ Public Class DataSistema
 #End Region
     'Para Conectar con Filiales IMAC
 #Region "IVA"
-    Private _ContextoIVA As IMACANET_IVA.DB_IVADataContext
-    Public ReadOnly Property ContextoIVA As IMACANET_IVA.DB_IVADataContext
+    Private _ContextoIVA As IVA.DB_IVADataContext
+    Public ReadOnly Property ContextoIVA As IVA.DB_IVADataContext
         Get
             Return _ContextoIVA
         End Get
     End Property
     Sub ConectarIVA()
-        _ContextoIVA = New IMACANET_IVA.DB_IVADataContext(_CadenaConexion)
+        _ContextoIVA = New IVA.DB_IVADataContext(_CadenaConexion)
     End Sub
 #End Region
 

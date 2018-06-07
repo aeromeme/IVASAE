@@ -21,7 +21,7 @@ Imports System.Linq
 Imports System.Linq.Expressions
 Imports System.Reflection
 
-Namespace IMACANET_IVA
+Namespace IVA
 	
 	<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="IMACANET")>  _
 	Partial Public Class DB_IVADataContext

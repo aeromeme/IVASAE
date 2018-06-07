@@ -32,7 +32,7 @@
         <elementListCompartment Id="ce2b2bcc-aead-4da3-8cb5-9c78f7434eb2" absoluteBounds="0.51499999999999968, 3.7100000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(3 : 5.00080485026042); (2.5 : 5.00080485026042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3 : 5.00080485026042); (2.5 : 5.00080485026042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DB_IVADataContext/IVA_CLIE_PROV/IVA_CLIE_PROV_IVA_DOC_NO_SAE" />
       <nodes>
         <classShapeMoniker Id="6fc4042b-c4db-4606-a1b8-35e69f7afa12" />

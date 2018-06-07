@@ -125,7 +125,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("ivasae_user")>  _
         Public Property USER_SERVER() As String
             Get
                 Return CType(Me("USER_SERVER"),String)
@@ -137,7 +137,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("atspro2018")>  _
         Public Property PASS_SERVER() As String
             Get
                 Return CType(Me("PASS_SERVER"),String)

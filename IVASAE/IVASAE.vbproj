@@ -101,6 +101,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceso a datos\Clases\Configuracion\cUsuario.vb" />
+    <Compile Include="Acceso a datos\Clases\IVA\cRIVA_COMP_RETE.vb" />
+    <Compile Include="Acceso a datos\Clases\IVA\cRLIBRO_IVA_VENTA.vb" />
     <Compile Include="Acceso a datos\DB_GENERAL.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,6 +167,12 @@
       <DependentUpon>Fusuarios.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Configuracion\Fusuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion\Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\DialogoCons.designer.vb">
@@ -246,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Configuracion\Fusuarios.resx">
       <DependentUpon>Fusuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DialogoCons.resx">
       <DependentUpon>DialogoCons.vb</DependentUpon>

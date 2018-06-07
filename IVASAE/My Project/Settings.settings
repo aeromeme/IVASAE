@@ -31,10 +31,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="USER_SERVER" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">ivasae_user</Value>
     </Setting>
     <Setting Name="PASS_SERVER" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">atspro2018</Value>
     </Setting>
     <Setting Name="STADOCHECKEN" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
