@@ -88,7 +88,7 @@ Public Class Principal
         If flgcrear Then
             Dim path As String = System.Reflection.Assembly.GetExecutingAssembly().Location
             Dim ass As Reflection.Assembly = Reflection.Assembly.LoadFrom(path)
-            Dim ProjAndForm = "IMACANET." + a.COD_FORM
+            Dim ProjAndForm = "IVASAE." + a.COD_FORM
             Dim FormInstanceType = ass.GetType(ProjAndForm)
             Dim objForm = CType(Activator.CreateInstance(FormInstanceType, New Object() {_datasistema}), Form)
             objForm.MdiParent = Me
@@ -188,12 +188,12 @@ Public Class Principal
     End Sub
     Private Sub UI_RBN_CONSULTAR_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UI_RBN_CONSULTAR.ItemClick
         If Not Me.ActiveMdiChild Is Nothing Then
-            marcarprogreso()
-            MostrarEspere(True)
+            'marcarprogreso()
+            'MostrarEspere(True)
             Dim f As Utilidades.InterfazForms = Me.ActiveMdiChild
             f.Consultar()
-            MostrarEspere(False)
-            marcarprogreso()
+            'MostrarEspere(False)
+            'marcarprogreso()
         End If
 
     End Sub
@@ -203,9 +203,9 @@ Public Class Principal
             marcarprogreso()
             If MetodosForm.Preguntar("Esta seguro de agregar un nuevo registro", "Insertar") Then
                 Dim f As Object = Me.ActiveMdiChild
-                MostrarEspere(True)
+                'MostrarEspere(True)
                 f.Insertar()
-                MostrarEspere(False)
+                'MostrarEspere(False)
             End If
             marcarprogreso()
         End If
@@ -216,9 +216,9 @@ Public Class Principal
             marcarprogreso()
             If MetodosForm.Preguntar("Esta seguro de guardar los cambios", "Guardar") Then
                 Dim f As Object = Me.ActiveMdiChild
-                MostrarEspere(True)
+                'MostrarEspere(True)
                 f.Modificar()
-                MostrarEspere(False)
+                'MostrarEspere(False)
             End If
             marcarprogreso()
         End If
@@ -229,9 +229,9 @@ Public Class Principal
             marcarprogreso()
             If MetodosForm.Preguntar("Esta seguro de eliminar el registro", "Eliminar") Then
                 Dim f As Object = Me.ActiveMdiChild
-                MostrarEspere(True)
+                'MostrarEspere(True)
                 f.Eliminar()
-                MostrarEspere(False)
+                'MostrarEspere(False)
             End If
             marcarprogreso()
         End If
@@ -239,23 +239,23 @@ Public Class Principal
 
     Private Sub UI_RBN_LIMPIAR_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UI_RBN_LIMPIAR.ItemClick
         If Not Me.ActiveMdiChild Is Nothing Then
-            marcarprogreso()
+            'marcarprogreso()
             Dim f As Object = Me.ActiveMdiChild
-            MostrarEspere(True)
+            'MostrarEspere(True)
             f.Limpiar()
-            MostrarEspere(False)
-            marcarprogreso()
+            'MostrarEspere(False)
+            'marcarprogreso()
         End If
     End Sub
 
     Private Sub UI_RBN_IMPRIMIR_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UI_RBN_IMPRIMIR.ItemClick
         If Not Me.ActiveMdiChild Is Nothing Then
-            marcarprogreso()
+            'marcarprogreso()
             Dim f As Object = Me.ActiveMdiChild
-            MostrarEspere(True)
+            'MostrarEspere(True)
             f.Imprimir()
-            MostrarEspere(False)
-            marcarprogreso()
+            'MostrarEspere(False)
+            'marcarprogreso()
         End If
     End Sub
     Private Sub UI_RBN_CERRAR_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UI_RBN_CERRAR.ItemClick
@@ -283,14 +283,14 @@ Public Class Principal
 
     Private Sub UI_RBN_ACERCA_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UI_RBN_ACERCA.ItemClick
         Dim acerca As String
-        acerca = "IMPLEMENTOS AGRICOLAS CENTROAMERICANOS" + vbNewLine + vbNewLine + "IMACANET DESKTOP " + vbNewLine + vbNewLine + "Sistema desarrollado por el departamento de informatica 2015"
+        acerca = "FRITECH" + vbNewLine + vbNewLine + "IVASAE" + vbNewLine + vbNewLine + "Sistema desarrollado por Friends Technology Company 2018"
         Dim f As New FormDialogoTexto(acerca)
         f.ShowDialog()
     End Sub
 
     Private Sub UI_RBN_AYUDA_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles UI_RBN_AYUDA.ItemClick
         Dim ayuda As String
-        ayuda = "IMPLEMENTOS AGRICOLAS CENTROAMERICANOS" + vbNewLine + vbNewLine + "IMACANET DESKTOP " + vbNewLine + vbNewLine + " La finalidad de este sistema es dar soporte a los distintos departamentos, en su fase inicial da soporte al Maestro de barras. " + vbNewLine + vbNewLine + "Para soporte tecnico" + vbNewLine + "contacte al departamento de informatica extension 252"
+        ayuda = "FRITECH" + vbNewLine + vbNewLine + "IVASAE" + vbNewLine + vbNewLine + " Este sera un sistema que servira para presentar toda la parte de IVA del gobierno de El Salvador especificamente sera un software que trabajara en conjunto con el sistema ERP SAE 7, con el cual compartira informacion para poder generar todo lo que la presentacion del IVA requiere para una empresa pequena en este caso de manera especifica para la Asociacion de Trabajadores de Occidente ATSPRO. " + vbNewLine + vbNewLine + "Para soporte tecnico contacte a ####-#####"
         Dim f As New FormDialogoTexto(ayuda)
         f.ShowDialog()
     End Sub

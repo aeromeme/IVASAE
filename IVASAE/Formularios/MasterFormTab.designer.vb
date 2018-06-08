@@ -32,40 +32,40 @@ Partial Class MasterFormTab
         Me.UINAV = New DevExpress.XtraEditors.ControlNavigator()
         Me.UIBARRAPROGRESO = New DevExpress.XtraEditors.MarqueeProgressBarControl()
         Me.UIDIALOGO_GUARDAREXCEL = New System.Windows.Forms.SaveFileDialog()
-        CType(Me.UIGROUP_MAIN, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIGROUP_MAIN.SuspendLayout()
-        CType(Me.UITABCONTROL, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UITABCONTROL.SuspendLayout()
-        Me.UITABPAG_GEN.SuspendLayout()
-        CType(Me.UIPANELDATOS, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UITABPAG_DET.SuspendLayout()
-        CType(Me.UIGRIDCONTROL, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIMENUGRID.SuspendLayout()
-        CType(Me.UIGRIDVIEW, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIPANELSTATUS, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIPANELSTATUS.SuspendLayout()
-        CType(Me.UIBARRAPROGRESO.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIGROUP_MAIN.SuspendLayout
+        CType(Me.UITABCONTROL,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UITABCONTROL.SuspendLayout
+        Me.UITABPAG_GEN.SuspendLayout
+        CType(Me.UIPANELDATOS,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UITABPAG_DET.SuspendLayout
+        CType(Me.UIGRIDCONTROL,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIMENUGRID.SuspendLayout
+        CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIPANELSTATUS.SuspendLayout
+        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'UIGROUP_MAIN
         '
-        Me.UIGROUP_MAIN.AppearanceCaption.Font = New System.Drawing.Font("Arial Narrow", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UIGROUP_MAIN.AppearanceCaption.Font = New System.Drawing.Font("Arial Narrow", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.UIGROUP_MAIN.AppearanceCaption.ForeColor = System.Drawing.Color.White
-        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseFont = True
-        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = True
+        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseFont = true
+        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = true
         Me.UIGROUP_MAIN.Controls.Add(Me.UITABCONTROL)
         Me.UIGROUP_MAIN.Controls.Add(Me.UIPANELSTATUS)
         Me.UIGROUP_MAIN.Size = New System.Drawing.Size(965, 560)
         '
         'UITABCONTROL
         '
-        Me.UITABCONTROL.AppearancePage.Header.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.UITABCONTROL.AppearancePage.Header.Options.UseFont = True
+        Me.UITABCONTROL.AppearancePage.Header.Font = New System.Drawing.Font("Arial", 10!)
+        Me.UITABCONTROL.AppearancePage.Header.Options.UseFont = true
         Me.UITABCONTROL.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.UITABCONTROL.Location = New System.Drawing.Point(2, 39)
+        Me.UITABCONTROL.Location = New System.Drawing.Point(2, 38)
         Me.UITABCONTROL.Name = "UITABCONTROL"
         Me.UITABCONTROL.SelectedTabPage = Me.UITABPAG_GEN
-        Me.UITABCONTROL.Size = New System.Drawing.Size(961, 477)
+        Me.UITABCONTROL.Size = New System.Drawing.Size(961, 478)
         Me.UITABCONTROL.TabIndex = 0
         Me.UITABCONTROL.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.UITABPAG_GEN, Me.UITABPAG_DET})
         '
@@ -73,7 +73,7 @@ Partial Class MasterFormTab
         '
         Me.UITABPAG_GEN.Controls.Add(Me.UIPANELDATOS)
         Me.UITABPAG_GEN.Name = "UITABPAG_GEN"
-        Me.UITABPAG_GEN.Size = New System.Drawing.Size(955, 446)
+        Me.UITABPAG_GEN.Size = New System.Drawing.Size(955, 447)
         Me.UITABPAG_GEN.Text = "Detalle"
         '
         'UIPANELDATOS
@@ -81,14 +81,14 @@ Partial Class MasterFormTab
         Me.UIPANELDATOS.Dock = System.Windows.Forms.DockStyle.Fill
         Me.UIPANELDATOS.Location = New System.Drawing.Point(0, 0)
         Me.UIPANELDATOS.Name = "UIPANELDATOS"
-        Me.UIPANELDATOS.Size = New System.Drawing.Size(955, 446)
+        Me.UIPANELDATOS.Size = New System.Drawing.Size(955, 447)
         Me.UIPANELDATOS.TabIndex = 1
         '
         'UITABPAG_DET
         '
         Me.UITABPAG_DET.Controls.Add(Me.UIGRIDCONTROL)
         Me.UITABPAG_DET.Name = "UITABPAG_DET"
-        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 371)
+        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 372)
         Me.UITABPAG_DET.Text = "General"
         '
         'UIGRIDCONTROL
@@ -98,7 +98,7 @@ Partial Class MasterFormTab
         Me.UIGRIDCONTROL.Location = New System.Drawing.Point(0, 0)
         Me.UIGRIDCONTROL.MainView = Me.UIGRIDVIEW
         Me.UIGRIDCONTROL.Name = "UIGRIDCONTROL"
-        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 371)
+        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 372)
         Me.UIGRIDCONTROL.TabIndex = 0
         Me.UIGRIDCONTROL.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.UIGRIDVIEW})
         '
@@ -106,7 +106,7 @@ Partial Class MasterFormTab
         '
         Me.UIMENUGRID.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportarAExcelToolStripMenuItem})
         Me.UIMENUGRID.Name = "UIMENUGRID"
-        Me.UIMENUGRID.Size = New System.Drawing.Size(156, 48)
+        Me.UIMENUGRID.Size = New System.Drawing.Size(156, 26)
         '
         'ExportarAExcelToolStripMenuItem
         '
@@ -118,12 +118,12 @@ Partial Class MasterFormTab
         '
         Me.UIGRIDVIEW.GridControl = Me.UIGRIDCONTROL
         Me.UIGRIDVIEW.Name = "UIGRIDVIEW"
-        Me.UIGRIDVIEW.OptionsBehavior.Editable = False
-        Me.UIGRIDVIEW.OptionsMenu.EnableFooterMenu = False
-        Me.UIGRIDVIEW.OptionsMenu.EnableGroupPanelMenu = False
-        Me.UIGRIDVIEW.OptionsView.ColumnAutoWidth = False
-        Me.UIGRIDVIEW.OptionsView.ShowAutoFilterRow = True
-        Me.UIGRIDVIEW.OptionsView.ShowDetailButtons = False
+        Me.UIGRIDVIEW.OptionsBehavior.Editable = false
+        Me.UIGRIDVIEW.OptionsMenu.EnableFooterMenu = false
+        Me.UIGRIDVIEW.OptionsMenu.EnableGroupPanelMenu = false
+        Me.UIGRIDVIEW.OptionsView.ColumnAutoWidth = false
+        Me.UIGRIDVIEW.OptionsView.ShowAutoFilterRow = true
+        Me.UIGRIDVIEW.OptionsView.ShowDetailButtons = false
         '
         'UIPANELSTATUS
         '
@@ -137,11 +137,11 @@ Partial Class MasterFormTab
         '
         'UINAV
         '
-        Me.UINAV.Buttons.Append.Visible = False
-        Me.UINAV.Buttons.CancelEdit.Visible = False
-        Me.UINAV.Buttons.Edit.Visible = False
-        Me.UINAV.Buttons.EndEdit.Visible = False
-        Me.UINAV.Buttons.Remove.Visible = False
+        Me.UINAV.Buttons.Append.Visible = false
+        Me.UINAV.Buttons.CancelEdit.Visible = false
+        Me.UINAV.Buttons.Edit.Visible = false
+        Me.UINAV.Buttons.EndEdit.Visible = false
+        Me.UINAV.Buttons.Remove.Visible = false
         Me.UINAV.Dock = System.Windows.Forms.DockStyle.Fill
         Me.UINAV.Location = New System.Drawing.Point(2, 2)
         Me.UINAV.Name = "UINAV"
@@ -155,9 +155,9 @@ Partial Class MasterFormTab
         '
         Me.UIBARRAPROGRESO.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.UIBARRAPROGRESO.EditValue = 0
-        Me.UIBARRAPROGRESO.Enabled = False
         Me.UIBARRAPROGRESO.Location = New System.Drawing.Point(2, 22)
         Me.UIBARRAPROGRESO.Name = "UIBARRAPROGRESO"
+        Me.UIBARRAPROGRESO.Properties.Paused = true
         Me.UIBARRAPROGRESO.Properties.ProgressAnimationMode = DevExpress.Utils.Drawing.ProgressAnimationMode.PingPong
         Me.UIBARRAPROGRESO.Size = New System.Drawing.Size(957, 18)
         Me.UIBARRAPROGRESO.TabIndex = 0
@@ -169,27 +169,27 @@ Partial Class MasterFormTab
         '
         'MasterFormTab
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 15!)
         Me.ClientSize = New System.Drawing.Size(965, 560)
-        Me.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Name = "MasterFormTab"
         Me.Controls.SetChildIndex(Me.UIGROUP_MAIN, 0)
-        CType(Me.UIGROUP_MAIN, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIGROUP_MAIN.ResumeLayout(False)
-        CType(Me.UITABCONTROL, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UITABCONTROL.ResumeLayout(False)
-        Me.UITABPAG_GEN.ResumeLayout(False)
-        CType(Me.UIPANELDATOS, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UITABPAG_DET.ResumeLayout(False)
-        CType(Me.UIGRIDCONTROL, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIMENUGRID.ResumeLayout(False)
-        CType(Me.UIGRIDVIEW, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIPANELSTATUS, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIPANELSTATUS.ResumeLayout(False)
-        CType(Me.UIBARRAPROGRESO.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIGROUP_MAIN.ResumeLayout(false)
+        CType(Me.UITABCONTROL,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UITABCONTROL.ResumeLayout(false)
+        Me.UITABPAG_GEN.ResumeLayout(false)
+        CType(Me.UIPANELDATOS,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UITABPAG_DET.ResumeLayout(false)
+        CType(Me.UIGRIDCONTROL,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIMENUGRID.ResumeLayout(false)
+        CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIPANELSTATUS.ResumeLayout(false)
+        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Public WithEvents UITABCONTROL As DevExpress.XtraTab.XtraTabControl
     Public WithEvents UIGRIDCONTROL As DevExpress.XtraGrid.GridControl
     Public WithEvents UIPANELDATOS As DevExpress.XtraEditors.PanelControl

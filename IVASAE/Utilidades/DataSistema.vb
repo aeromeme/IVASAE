@@ -17,10 +17,6 @@ Public Class DataSistema
     Private _CadenaConexion As String
     Private _NombreFormulario As String
 
-    Private _cadenaIMACASA_SV As String
-
-    Private _CadenaConexionCA As String  '---Prueba
-
     Private _CadenaConexionEF As String
     Private _perfilUsuario As GEN_PERFIL
     'Private _perfilImacasaSV As 

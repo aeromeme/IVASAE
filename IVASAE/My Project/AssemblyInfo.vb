@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("IVASAE")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("A Friends Techonology Company Software to help people from SV to check the bills")>
+<Assembly: AssemblyCompany("FRITECH")>
 <Assembly: AssemblyProduct("IVASAE")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>

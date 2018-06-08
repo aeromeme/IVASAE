@@ -22,7 +22,6 @@ Partial Class FormDialogoTexto
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormDialogoTexto))
         Me.XtraTabControl1 = New DevExpress.XtraTab.XtraTabControl()
         Me.UIINFORMACIONTABPAGE = New DevExpress.XtraTab.XtraTabPage()
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
@@ -32,19 +31,19 @@ Partial Class FormDialogoTexto
         Me.PanelControl2 = New DevExpress.XtraEditors.PanelControl()
         Me.PictureEdit1 = New DevExpress.XtraEditors.PictureEdit()
         Me.MemoEdit1 = New DevExpress.XtraEditors.MemoEdit()
-        CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.XtraTabControl1.SuspendLayout()
-        Me.UIINFORMACIONTABPAGE.SuspendLayout()
-        CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelControl1.SuspendLayout()
-        CType(Me.PictureEdit2.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UITXTLEYENDA.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.XtraTabPage2.SuspendLayout()
-        CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelControl2.SuspendLayout()
-        CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MemoEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.XtraTabControl1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.XtraTabControl1.SuspendLayout
+        Me.UIINFORMACIONTABPAGE.SuspendLayout
+        CType(Me.PanelControl1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.PanelControl1.SuspendLayout
+        CType(Me.PictureEdit2.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UITXTLEYENDA.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.XtraTabPage2.SuspendLayout
+        CType(Me.PanelControl2,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.PanelControl2.SuspendLayout
+        CType(Me.PictureEdit1.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MemoEdit1.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'XtraTabControl1
         '
@@ -75,11 +74,13 @@ Partial Class FormDialogoTexto
         '
         'PictureEdit2
         '
+        Me.PictureEdit2.Cursor = System.Windows.Forms.Cursors.Default
         Me.PictureEdit2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureEdit2.EditValue = Global.IVASAE.My.Resources.Resources._1424930818_stock_view_details
         Me.PictureEdit2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.PictureEdit2.Location = New System.Drawing.Point(2, 2)
         Me.PictureEdit2.Name = "PictureEdit2"
+        Me.PictureEdit2.Properties.ZoomAccelerationFactor = 1R
         Me.PictureEdit2.Size = New System.Drawing.Size(113, 342)
         Me.PictureEdit2.TabIndex = 1
         '
@@ -111,10 +112,12 @@ Partial Class FormDialogoTexto
         '
         'PictureEdit1
         '
+        Me.PictureEdit1.Cursor = System.Windows.Forms.Cursors.Default
         Me.PictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureEdit1.EditValue = Global.IVASAE.My.Resources.Resources.logo_imacasa
+        Me.PictureEdit1.EditValue = Global.IVASAE.My.Resources.Resources.logo_fritech
         Me.PictureEdit1.Location = New System.Drawing.Point(2, 2)
         Me.PictureEdit1.Name = "PictureEdit1"
+        Me.PictureEdit1.Properties.ZoomAccelerationFactor = 1R
         Me.PictureEdit1.Size = New System.Drawing.Size(441, 101)
         Me.PictureEdit1.TabIndex = 1
         '
@@ -122,7 +125,9 @@ Partial Class FormDialogoTexto
         '
         Me.MemoEdit1.AllowHtmlTextInToolTip = DevExpress.Utils.DefaultBoolean.[True]
         Me.MemoEdit1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.MemoEdit1.EditValue = resources.GetString("MemoEdit1.EditValue")
+        Me.MemoEdit1.EditValue = "IVASAE DESKTOP ver. 1.0"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Publicacion:"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Creado en el año 2018"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Friends Technol"& _ 
+    "ogy Company FRITECH"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Caracteristicas del desarrollo:"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Controles devExpress"& _ 
+    ""&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Arquitectura cliente servidor"
         Me.MemoEdit1.Location = New System.Drawing.Point(2, 103)
         Me.MemoEdit1.Name = "MemoEdit1"
         Me.MemoEdit1.Properties.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.[True]
@@ -131,30 +136,30 @@ Partial Class FormDialogoTexto
         '
         'FormDialogoTexto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(451, 374)
         Me.Controls.Add(Me.XtraTabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximizeBox = False
+        Me.MaximizeBox = false
         Me.Name = "FormDialogoTexto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Informacion"
-        CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.XtraTabControl1.ResumeLayout(False)
-        Me.UIINFORMACIONTABPAGE.ResumeLayout(False)
-        CType(Me.PanelControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelControl1.ResumeLayout(False)
-        CType(Me.PictureEdit2.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UITXTLEYENDA.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.XtraTabPage2.ResumeLayout(False)
-        CType(Me.PanelControl2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelControl2.ResumeLayout(False)
-        CType(Me.PictureEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MemoEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        CType(Me.XtraTabControl1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.XtraTabControl1.ResumeLayout(false)
+        Me.UIINFORMACIONTABPAGE.ResumeLayout(false)
+        CType(Me.PanelControl1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.PanelControl1.ResumeLayout(false)
+        CType(Me.PictureEdit2.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UITXTLEYENDA.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        Me.XtraTabPage2.ResumeLayout(false)
+        CType(Me.PanelControl2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.PanelControl2.ResumeLayout(false)
+        CType(Me.PictureEdit1.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MemoEdit1.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
 
-    End Sub
+End Sub
     Friend WithEvents UIINFORMACIONTABPAGE As DevExpress.XtraTab.XtraTabPage
     Friend WithEvents PanelControl1 As DevExpress.XtraEditors.PanelControl
     Friend WithEvents UITXTLEYENDA As DevExpress.XtraEditors.MemoEdit

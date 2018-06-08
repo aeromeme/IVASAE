@@ -23,7 +23,7 @@ Imports System.Reflection
 
 Namespace IVA
 	
-	<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="IMACANET")>  _
+	<Global.System.Data.Linq.Mapping.DatabaseAttribute(Name:="IVASAE")>  _
 	Partial Public Class DB_IVADataContext
 		Inherits System.Data.Linq.DataContext
 		
@@ -98,12 +98,6 @@ Namespace IVA
     End Sub
     Partial Private Sub DeleteIVA_CONTROL_PERIODO(instance As IVA_CONTROL_PERIODO)
     End Sub
-    Partial Private Sub InsertIVA_CONF(instance As IVA_CONF)
-    End Sub
-    Partial Private Sub UpdateIVA_CONF(instance As IVA_CONF)
-    End Sub
-    Partial Private Sub DeleteIVA_CONF(instance As IVA_CONF)
-    End Sub
     Partial Private Sub InsertIVA_ADUANAS(instance As IVA_ADUANAS)
     End Sub
     Partial Private Sub UpdateIVA_ADUANAS(instance As IVA_ADUANAS)
@@ -170,10 +164,16 @@ Namespace IVA
     End Sub
     Partial Private Sub DeleteIVA_DET_987_PROVEEDORES(instance As IVA_DET_987_PROVEEDORES)
     End Sub
+    Partial Private Sub InsertIVA_CONF(instance As IVA_CONF)
+    End Sub
+    Partial Private Sub UpdateIVA_CONF(instance As IVA_CONF)
+    End Sub
+    Partial Private Sub DeleteIVA_CONF(instance As IVA_CONF)
+    End Sub
     #End Region
 		
 		Public Sub New()
-			MyBase.New(Global.IVASAE.My.MySettings.Default.IMACANETConnectionString8, mappingSource)
+			MyBase.New(Global.IVASAE.My.MySettings.Default.IVASAEConnectionString, mappingSource)
 			OnCreated
 		End Sub
 		
@@ -305,12 +305,6 @@ Namespace IVA
 			End Get
 		End Property
 		
-		Public ReadOnly Property IVA_CONF() As System.Data.Linq.Table(Of IVA_CONF)
-			Get
-				Return Me.GetTable(Of IVA_CONF)
-			End Get
-		End Property
-		
 		Public ReadOnly Property IVA_ADUANAS() As System.Data.Linq.Table(Of IVA_ADUANAS)
 			Get
 				Return Me.GetTable(Of IVA_ADUANAS)
@@ -392,6 +386,12 @@ Namespace IVA
 		Public ReadOnly Property IVA_DET_987_PROVEEDORES() As System.Data.Linq.Table(Of IVA_DET_987_PROVEEDORES)
 			Get
 				Return Me.GetTable(Of IVA_DET_987_PROVEEDORES)
+			End Get
+		End Property
+		
+		Public ReadOnly Property IVA_CONF() As System.Data.Linq.Table(Of IVA_CONF)
+			Get
+				Return Me.GetTable(Of IVA_CONF)
 			End Get
 		End Property
 		
@@ -5563,134 +5563,6 @@ Namespace IVA
 		End Sub
 	End Class
 	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.IVA_CONF")>  _
-	Partial Public Class IVA_CONF
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _ID As Integer
-		
-		Private _NM_PORC_IVA As System.Nullable(Of Decimal)
-		
-		Private _DS_NOMBRE_POLIZA As String
-		
-		Private _ID_DEF_CLASE_PRODUCTO As System.Nullable(Of Integer)
-		
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnIDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnIDChanged()
-    End Sub
-    Partial Private Sub OnNM_PORC_IVAChanging(value As System.Nullable(Of Decimal))
-    End Sub
-    Partial Private Sub OnNM_PORC_IVAChanged()
-    End Sub
-    Partial Private Sub OnDS_NOMBRE_POLIZAChanging(value As String)
-    End Sub
-    Partial Private Sub OnDS_NOMBRE_POLIZAChanged()
-    End Sub
-    Partial Private Sub OnID_DEF_CLASE_PRODUCTOChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnID_DEF_CLASE_PRODUCTOChanged()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-		Public Property ID() As Integer
-			Get
-				Return Me._ID
-			End Get
-			Set
-				If ((Me._ID = value)  _
-							= false) Then
-					Me.OnIDChanging(value)
-					Me.SendPropertyChanging
-					Me._ID = value
-					Me.SendPropertyChanged("ID")
-					Me.OnIDChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_PORC_IVA", DbType:="Decimal(18,6)")>  _
-		Public Property NM_PORC_IVA() As System.Nullable(Of Decimal)
-			Get
-				Return Me._NM_PORC_IVA
-			End Get
-			Set
-				If (Me._NM_PORC_IVA.Equals(value) = false) Then
-					Me.OnNM_PORC_IVAChanging(value)
-					Me.SendPropertyChanging
-					Me._NM_PORC_IVA = value
-					Me.SendPropertyChanged("NM_PORC_IVA")
-					Me.OnNM_PORC_IVAChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMBRE_POLIZA", DbType:="VarChar(50)")>  _
-		Public Property DS_NOMBRE_POLIZA() As String
-			Get
-				Return Me._DS_NOMBRE_POLIZA
-			End Get
-			Set
-				If (String.Equals(Me._DS_NOMBRE_POLIZA, value) = false) Then
-					Me.OnDS_NOMBRE_POLIZAChanging(value)
-					Me.SendPropertyChanging
-					Me._DS_NOMBRE_POLIZA = value
-					Me.SendPropertyChanged("DS_NOMBRE_POLIZA")
-					Me.OnDS_NOMBRE_POLIZAChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID_DEF_CLASE_PRODUCTO", DbType:="Int")>  _
-		Public Property ID_DEF_CLASE_PRODUCTO() As System.Nullable(Of Integer)
-			Get
-				Return Me._ID_DEF_CLASE_PRODUCTO
-			End Get
-			Set
-				If (Me._ID_DEF_CLASE_PRODUCTO.Equals(value) = false) Then
-					Me.OnID_DEF_CLASE_PRODUCTOChanging(value)
-					Me.SendPropertyChanging
-					Me._ID_DEF_CLASE_PRODUCTO = value
-					Me.SendPropertyChanged("ID_DEF_CLASE_PRODUCTO")
-					Me.OnID_DEF_CLASE_PRODUCTOChanged
-				End If
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-	End Class
-	
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.IVA_ADUANAS")>  _
 	Partial Public Class IVA_ADUANAS
 		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
@@ -9862,6 +9734,200 @@ Namespace IVA
 					Me._NM_IVA_TOTAL = value
 					Me.SendPropertyChanged("NM_IVA_TOTAL")
 					Me.OnNM_IVA_TOTALChanged
+				End If
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.IVA_CONF")>  _
+	Partial Public Class IVA_CONF
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _ID As Integer
+		
+		Private _DS_NOMBRE_POLIZA As String
+		
+		Private _ID_DEF_CLASE_PRODUCTO As System.Nullable(Of Integer)
+		
+		Private _NM_NIT_EMPRESA As String
+		
+		Private _NM_NOMBRE_EMPRESA As String
+		
+		Private _NM_PORC_IVA As System.Nullable(Of Decimal)
+		
+		Private _NM_REG_FISC As String
+		
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnIDChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnIDChanged()
+    End Sub
+    Partial Private Sub OnDS_NOMBRE_POLIZAChanging(value As String)
+    End Sub
+    Partial Private Sub OnDS_NOMBRE_POLIZAChanged()
+    End Sub
+    Partial Private Sub OnID_DEF_CLASE_PRODUCTOChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnID_DEF_CLASE_PRODUCTOChanged()
+    End Sub
+    Partial Private Sub OnNM_NIT_EMPRESAChanging(value As String)
+    End Sub
+    Partial Private Sub OnNM_NIT_EMPRESAChanged()
+    End Sub
+    Partial Private Sub OnNM_NOMBRE_EMPRESAChanging(value As String)
+    End Sub
+    Partial Private Sub OnNM_NOMBRE_EMPRESAChanged()
+    End Sub
+    Partial Private Sub OnNM_PORC_IVAChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnNM_PORC_IVAChanged()
+    End Sub
+    Partial Private Sub OnNM_REG_FISCChanging(value As String)
+    End Sub
+    Partial Private Sub OnNM_REG_FISCChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property ID() As Integer
+			Get
+				Return Me._ID
+			End Get
+			Set
+				If ((Me._ID = value)  _
+							= false) Then
+					Me.OnIDChanging(value)
+					Me.SendPropertyChanging
+					Me._ID = value
+					Me.SendPropertyChanged("ID")
+					Me.OnIDChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMBRE_POLIZA", DbType:="VarChar(50)")>  _
+		Public Property DS_NOMBRE_POLIZA() As String
+			Get
+				Return Me._DS_NOMBRE_POLIZA
+			End Get
+			Set
+				If (String.Equals(Me._DS_NOMBRE_POLIZA, value) = false) Then
+					Me.OnDS_NOMBRE_POLIZAChanging(value)
+					Me.SendPropertyChanging
+					Me._DS_NOMBRE_POLIZA = value
+					Me.SendPropertyChanged("DS_NOMBRE_POLIZA")
+					Me.OnDS_NOMBRE_POLIZAChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID_DEF_CLASE_PRODUCTO", DbType:="Int")>  _
+		Public Property ID_DEF_CLASE_PRODUCTO() As System.Nullable(Of Integer)
+			Get
+				Return Me._ID_DEF_CLASE_PRODUCTO
+			End Get
+			Set
+				If (Me._ID_DEF_CLASE_PRODUCTO.Equals(value) = false) Then
+					Me.OnID_DEF_CLASE_PRODUCTOChanging(value)
+					Me.SendPropertyChanging
+					Me._ID_DEF_CLASE_PRODUCTO = value
+					Me.SendPropertyChanged("ID_DEF_CLASE_PRODUCTO")
+					Me.OnID_DEF_CLASE_PRODUCTOChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_NIT_EMPRESA", DbType:="VarChar(20)")>  _
+		Public Property NM_NIT_EMPRESA() As String
+			Get
+				Return Me._NM_NIT_EMPRESA
+			End Get
+			Set
+				If (String.Equals(Me._NM_NIT_EMPRESA, value) = false) Then
+					Me.OnNM_NIT_EMPRESAChanging(value)
+					Me.SendPropertyChanging
+					Me._NM_NIT_EMPRESA = value
+					Me.SendPropertyChanged("NM_NIT_EMPRESA")
+					Me.OnNM_NIT_EMPRESAChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_NOMBRE_EMPRESA", DbType:="VarChar(100)")>  _
+		Public Property NM_NOMBRE_EMPRESA() As String
+			Get
+				Return Me._NM_NOMBRE_EMPRESA
+			End Get
+			Set
+				If (String.Equals(Me._NM_NOMBRE_EMPRESA, value) = false) Then
+					Me.OnNM_NOMBRE_EMPRESAChanging(value)
+					Me.SendPropertyChanging
+					Me._NM_NOMBRE_EMPRESA = value
+					Me.SendPropertyChanged("NM_NOMBRE_EMPRESA")
+					Me.OnNM_NOMBRE_EMPRESAChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_PORC_IVA", DbType:="Decimal(18,6)")>  _
+		Public Property NM_PORC_IVA() As System.Nullable(Of Decimal)
+			Get
+				Return Me._NM_PORC_IVA
+			End Get
+			Set
+				If (Me._NM_PORC_IVA.Equals(value) = false) Then
+					Me.OnNM_PORC_IVAChanging(value)
+					Me.SendPropertyChanging
+					Me._NM_PORC_IVA = value
+					Me.SendPropertyChanged("NM_PORC_IVA")
+					Me.OnNM_PORC_IVAChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_REG_FISC", DbType:="VarChar(20)")>  _
+		Public Property NM_REG_FISC() As String
+			Get
+				Return Me._NM_REG_FISC
+			End Get
+			Set
+				If (String.Equals(Me._NM_REG_FISC, value) = false) Then
+					Me.OnNM_REG_FISCChanging(value)
+					Me.SendPropertyChanging
+					Me._NM_REG_FISC = value
+					Me.SendPropertyChanged("NM_REG_FISC")
+					Me.OnNM_REG_FISCChanged
 				End If
 			End Set
 		End Property

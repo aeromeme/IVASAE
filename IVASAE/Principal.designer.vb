@@ -477,6 +477,7 @@ Partial Class Principal
         Me.UINB_MENU.Location = New System.Drawing.Point(0, 116)
         Me.UINB_MENU.Name = "UINB_MENU"
         Me.UINB_MENU.OptionsNavPane.ExpandedWidth = 180
+        Me.UINB_MENU.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane
         Me.UINB_MENU.Size = New System.Drawing.Size(180, 421)
         Me.UINB_MENU.TabIndex = 1
         Me.UINB_MENU.Text = "Menu"
@@ -663,7 +664,7 @@ Partial Class Principal
         Me.IsMdiContainer = true
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "Principal"
-        Me.Text = "IMACANET"
+        Me.Text = "IVASAE"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.RibbonControl1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.uids_mes,System.ComponentModel.ISupportInitialize).EndInit

@@ -64,7 +64,7 @@ Partial Class Login
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.IVASAE.My.Resources.Resources.logo_imacasa
+        Me.PictureBox1.Image = Global.IVASAE.My.Resources.Resources.logo_fritech
         Me.PictureBox1.Location = New System.Drawing.Point(88, -1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(188, 59)

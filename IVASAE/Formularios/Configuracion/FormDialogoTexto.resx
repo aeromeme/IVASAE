@@ -117,20 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MemoEdit1.EditValue" xml:space="preserve">
-    <value>IMPLEMENTOS AGRICOLAS CENTROAMERICANOS
-IMACANET DESKTOP ver. 1.0
-
-Publicacion:
-
-Creado en el año 2015
-Publicado en Mayo del 2015
-Departamento de informatica
-
-
-Caracteristicas del desarrollo:
-
-Controles devExpress
-Arquitectura cliente servidor</value>
-  </data>
 </root>
