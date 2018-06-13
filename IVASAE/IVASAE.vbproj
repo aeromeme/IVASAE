@@ -184,6 +184,18 @@
     <Compile Include="Formularios\DialogoCons.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_TIPO_DOC.designer.vb">
+      <DependentUpon>FORM_IVA_TIPO_DOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_TIPO_DOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_TIPO_DOC_VENTA.designer.vb">
+      <DependentUpon>FORM_IVA_TIPO_DOC_VENTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_TIPO_DOC_VENTA.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\MasterForm.designer.vb">
       <DependentUpon>MasterForm.vb</DependentUpon>
     </Compile>
@@ -264,6 +276,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\DialogoCons.resx">
       <DependentUpon>DialogoCons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_TIPO_DOC.resx">
+      <DependentUpon>FORM_IVA_TIPO_DOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_TIPO_DOC_VENTA.resx">
+      <DependentUpon>FORM_IVA_TIPO_DOC_VENTA.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MasterForm.resx">
       <DependentUpon>MasterForm.vb</DependentUpon>
