@@ -184,6 +184,48 @@
     <Compile Include="Formularios\DialogoCons.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_CLIE.designer.vb">
+      <DependentUpon>FORM_IVA_CLIE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_CLIE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_COMP_RETE.designer.vb">
+      <DependentUpon>FORM_IVA_COMP_RETE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_COMP_RETE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.designer.vb">
+      <DependentUpon>FORM_IVA_COMP_RETE_ALTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_NOSAE.designer.vb">
+      <DependentUpon>FORM_IVA_DOC_NOSAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_NOSAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_NOSAE_VENTA.designer.vb">
+      <DependentUpon>FORM_IVA_DOC_NOSAE_VENTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_NOSAE_VENTA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_PROV.designer.vb">
+      <DependentUpon>FORM_IVA_PROV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_PROV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_SELECT_DOC_PERC_SAE.designer.vb">
+      <DependentUpon>FORM_IVA_SELECT_DOC_PERC_SAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_SELECT_DOC_PERC_SAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\IVA\FORM_IVA_TIPO_DOC.designer.vb">
       <DependentUpon>FORM_IVA_TIPO_DOC.vb</DependentUpon>
     </Compile>
@@ -228,6 +270,12 @@
     </Compile>
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_IVA_COMP_RETE.designer.vb">
+      <DependentUpon>RPT_IVA_COMP_RETE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_IVA_COMP_RETE.vb">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Utilidades\cImagen.vb" />
     <Compile Include="Utilidades\clasegenericapares.vb" />
@@ -277,6 +325,27 @@
     <EmbeddedResource Include="Formularios\DialogoCons.resx">
       <DependentUpon>DialogoCons.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_CLIE.resx">
+      <DependentUpon>FORM_IVA_CLIE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_COMP_RETE.resx">
+      <DependentUpon>FORM_IVA_COMP_RETE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.resx">
+      <DependentUpon>FORM_IVA_COMP_RETE_ALTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DOC_NOSAE.resx">
+      <DependentUpon>FORM_IVA_DOC_NOSAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DOC_NOSAE_VENTA.resx">
+      <DependentUpon>FORM_IVA_DOC_NOSAE_VENTA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_PROV.resx">
+      <DependentUpon>FORM_IVA_PROV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_SELECT_DOC_PERC_SAE.resx">
+      <DependentUpon>FORM_IVA_SELECT_DOC_PERC_SAE.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_TIPO_DOC.resx">
       <DependentUpon>FORM_IVA_TIPO_DOC.vb</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Configuracion\WFEspere.resx">
       <DependentUpon>WFEspere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_IVA_COMP_RETE.resx">
+      <DependentUpon>RPT_IVA_COMP_RETE.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="Acceso a datos\DB_GENERAL.dbml.layout">
       <DependentUpon>DB_GENERAL.dbml</DependentUpon>
@@ -339,7 +411,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logica de negocios\" />
-    <Folder Include="Reportes\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\_android.png" />
