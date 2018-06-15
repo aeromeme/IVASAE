@@ -179,7 +179,7 @@ Partial Class FORM_IVA_DOC_NOSAE
         '
         'VIVADOCNOSAEBindingSource
         '
-        Me.VIVADOCNOSAEBindingSource.DataSource = GetType(IMACANET.IMACANET_IVA.V_IVA_DOC_NO_SAE)
+        Me.VIVADOCNOSAEBindingSource.DataSource = GetType(IVA.V_IVA_DOC_NO_SAE)
         '
         'colID
         '
@@ -466,7 +466,7 @@ Partial Class FORM_IVA_DOC_NOSAE
         '
         'IVACLIEPROVBindingSource
         '
-        Me.IVACLIEPROVBindingSource.DataSource = GetType(IMACANET.IMACANET_IVA.IVA_CLIE_PROV)
+        Me.IVACLIEPROVBindingSource.DataSource = GetType(IVA.IVA_CLIE_PROV)
         '
         'GridLookUpEdit1View
         '
@@ -535,7 +535,7 @@ Partial Class FORM_IVA_DOC_NOSAE
         '
         'IVATIPODOCUMENTOBindingSource
         '
-        Me.IVATIPODOCUMENTOBindingSource.DataSource = GetType(IMACANET.IMACANET_IVA.IVA_TIPO_DOCUMENTO)
+        Me.IVATIPODOCUMENTOBindingSource.DataSource = GetType(IVA.IVA_TIPO_DOCUMENTO)
         '
         'UICVE_DOC
         '

@@ -271,10 +271,58 @@
     <Compile Include="Principal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\IVA\RPT_DETALLE_VENTA.designer.vb">
+      <DependentUpon>RPT_DETALLE_VENTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_DETALLE_VENTA.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\IVA\RPT_IVA_COMP_RETE.designer.vb">
       <DependentUpon>RPT_IVA_COMP_RETE.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\IVA\RPT_IVA_COMP_RETE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_EXPORTACION.designer.vb">
+      <DependentUpon>RPT_LIBRO_EXPORTACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_EXPORTACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_COMPRA.designer.vb">
+      <DependentUpon>RPT_LIBRO_IVA_COMPRA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_COMPRA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_COMPRA_V2.designer.vb">
+      <DependentUpon>RPT_LIBRO_IVA_COMPRA_V2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_COMPRA_V2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_EXPO.designer.vb">
+      <DependentUpon>RPT_LIBRO_IVA_EXPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_EXPO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA.designer.vb">
+      <DependentUpon>RPT_LIBRO_IVA_VENTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_CONSUFINAL.designer.vb">
+      <DependentUpon>RPT_LIBRO_IVA_VENTA_CONSUFINAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_CONSUFINAL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_V2.designer.vb">
+      <DependentUpon>RPT_LIBRO_IVA_VENTA_V2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_V2.vb">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Utilidades\cImagen.vb" />
@@ -365,8 +413,32 @@
     <EmbeddedResource Include="Formularios\Configuracion\WFEspere.resx">
       <DependentUpon>WFEspere.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_DETALLE_VENTA.resx">
+      <DependentUpon>RPT_DETALLE_VENTA.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\IVA\RPT_IVA_COMP_RETE.resx">
       <DependentUpon>RPT_IVA_COMP_RETE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_EXPORTACION.resx">
+      <DependentUpon>RPT_LIBRO_EXPORTACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_COMPRA.resx">
+      <DependentUpon>RPT_LIBRO_IVA_COMPRA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_COMPRA_V2.resx">
+      <DependentUpon>RPT_LIBRO_IVA_COMPRA_V2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_EXPO.resx">
+      <DependentUpon>RPT_LIBRO_IVA_EXPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA.resx">
+      <DependentUpon>RPT_LIBRO_IVA_VENTA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_CONSUFINAL.resx">
+      <DependentUpon>RPT_LIBRO_IVA_VENTA_CONSUFINAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_V2.resx">
+      <DependentUpon>RPT_LIBRO_IVA_VENTA_V2.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="Acceso a datos\DB_GENERAL.dbml.layout">
       <DependentUpon>DB_GENERAL.dbml</DependentUpon>
