@@ -67,7 +67,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_V2
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.uilblsubtitulo_MES = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrSubreport1 = New DevExpress.XtraReports.UI.XRSubreport()
-        Me.RpT_SUB_LIBRO_IVA_VENTA_V21 = New IMACANET.RPT_SUB_LIBRO_IVA_VENTA_V2()
+        Me.RpT_SUB_LIBRO_IVA_VENTA_V21 = New RPT_SUB_LIBRO_IVA_VENTA_V2()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RpT_SUB_LIBRO_IVA_VENTA_V21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -545,7 +545,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_V2
         '
         'BindingSource1
         '
-        Me.BindingSource1.DataSource = GetType(IMACANET.IMACANET_IVA.IVA_LIBRO_VENTA_CONTRIBUYENTE)
+        Me.BindingSource1.DataSource = GetType(IVA.IVA_LIBRO_VENTA_CONTRIBUYENTE)
         '
         'uilblsubtitulo_MES
         '
@@ -565,7 +565,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_V2
         Me.XrSubreport1.Dpi = 254.0!
         Me.XrSubreport1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 202.7691!)
         Me.XrSubreport1.Name = "XrSubreport1"
-        Me.XrSubreport1.ReportSource = New IMACANET.RPT_SUB_LIBRO_IVA_VENTA_V2()
+        Me.XrSubreport1.ReportSource = New RPT_SUB_LIBRO_IVA_VENTA_V2()
         Me.XrSubreport1.SizeF = New System.Drawing.SizeF(1968.0!, 238.2309!)
         '
         'RpT_SUB_LIBRO_IVA_VENTA_V21
@@ -637,7 +637,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_V2
     Friend WithEvents uilblnopag As DevExpress.XtraReports.UI.XRPageInfo
     Friend WithEvents FLG_MOSTRAR_ENCABEZADO As DevExpress.XtraReports.Parameters.Parameter
     Friend WithEvents XrSubreport1 As DevExpress.XtraReports.UI.XRSubreport
-    Friend WithEvents RpT_SUB_LIBRO_IVA_VENTA_V21 As IMACANET.RPT_SUB_LIBRO_IVA_VENTA_V2
+    Friend WithEvents RpT_SUB_LIBRO_IVA_VENTA_V21 As RPT_SUB_LIBRO_IVA_VENTA_V2
     Friend WithEvents uilblnrc As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents uilblnit As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents uilblnombreContrib As DevExpress.XtraReports.UI.XRLabel

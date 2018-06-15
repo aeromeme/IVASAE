@@ -434,7 +434,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         '
         'BindingSource1
         '
-        Me.BindingSource1.DataSource = GetType(IMACANET.IMACANET_IVA.IVA_LIBRO_VENTA_CONTRIBUYENTE)
+        Me.BindingSource1.DataSource = GetType(IVA.IVA_LIBRO_VENTA_CONTRIBUYENTE)
         '
         'ReportFooter
         '
@@ -559,7 +559,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         Me.XrSubreport1.Dpi = 254.0!
         Me.XrSubreport1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 227.4358!)
         Me.XrSubreport1.Name = "XrSubreport1"
-        Me.XrSubreport1.ReportSource = New IMACANET.RPT_SUB_LIBRO_IVA_VENTA_V2()
+        Me.XrSubreport1.ReportSource = New RPT_SUB_LIBRO_IVA_VENTA_V2()
         Me.XrSubreport1.SizeF = New System.Drawing.SizeF(2537.46!, 238.2309!)
         '
         'RPT_LIBRO_IVA_VENTA

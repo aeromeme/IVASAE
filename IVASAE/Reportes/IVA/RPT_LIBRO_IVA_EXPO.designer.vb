@@ -287,7 +287,7 @@ Partial Public Class RPT_LIBRO_IVA_EXPO
         '
         'BindingSource1
         '
-        Me.BindingSource1.DataSource = GetType(IMACANET.IMACANET_IVA.V_IVA_DETALLE_VENTA)
+        Me.BindingSource1.DataSource = GetType(IVA.V_IVA_DETALLE_VENTA)
         '
         'ReportFooter
         '

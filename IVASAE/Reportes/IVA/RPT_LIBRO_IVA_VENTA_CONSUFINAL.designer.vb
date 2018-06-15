@@ -613,7 +613,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         '
         'BindingSource1
         '
-        Me.BindingSource1.DataSource = GetType(IMACANET.IMACANET_IVA.IVA_LIBRO_VENTA_CONSUMIDOR)
+        Me.BindingSource1.DataSource = GetType(IVA.IVA_LIBRO_VENTA_CONSUMIDOR)
         '
         'RPT_LIBRO_IVA_VENTA_CONSUFINAL
         '

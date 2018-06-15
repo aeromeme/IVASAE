@@ -202,6 +202,18 @@
     <Compile Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DET.designer.vb">
+      <DependentUpon>FORM_IVA_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_COMPRA_SAE.designer.vb">
+      <DependentUpon>FORM_IVA_DOC_COMPRA_SAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_COMPRA_SAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\IVA\FORM_IVA_DOC_NOSAE.designer.vb">
       <DependentUpon>FORM_IVA_DOC_NOSAE.vb</DependentUpon>
     </Compile>
@@ -212,6 +224,18 @@
       <DependentUpon>FORM_IVA_DOC_NOSAE_VENTA.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\IVA\FORM_IVA_DOC_NOSAE_VENTA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_VENTA_SAE.designer.vb">
+      <DependentUpon>FORM_IVA_DOC_VENTA_SAE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_DOC_VENTA_SAE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_LIBROS.designer.vb">
+      <DependentUpon>FORM_IVA_LIBROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_LIBROS.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\IVA\FORM_IVA_PROV.designer.vb">
@@ -248,6 +272,18 @@
       <DependentUpon>MasterFormTab.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\MasterFormTab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MasterFromEdit.designer.vb">
+      <DependentUpon>MasterFromEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MasterFromEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MasterPrintXRForm.designer.vb">
+      <DependentUpon>MasterPrintXRForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MasterPrintXRForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -325,6 +361,18 @@
     <Compile Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_V2.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\IVA\RPT_SUB_LIBRO_IVA_VENTA.designer.vb">
+      <DependentUpon>RPT_SUB_LIBRO_IVA_VENTA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_SUB_LIBRO_IVA_VENTA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_SUB_LIBRO_IVA_VENTA_V2.designer.vb">
+      <DependentUpon>RPT_SUB_LIBRO_IVA_VENTA_V2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\IVA\RPT_SUB_LIBRO_IVA_VENTA_V2.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Utilidades\cImagen.vb" />
     <Compile Include="Utilidades\clasegenericapares.vb" />
     <Compile Include="Utilidades\conexion.vb" />
@@ -382,11 +430,23 @@
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.resx">
       <DependentUpon>FORM_IVA_COMP_RETE_ALTER.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DET.resx">
+      <DependentUpon>FORM_IVA_DET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DOC_COMPRA_SAE.resx">
+      <DependentUpon>FORM_IVA_DOC_COMPRA_SAE.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DOC_NOSAE.resx">
       <DependentUpon>FORM_IVA_DOC_NOSAE.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DOC_NOSAE_VENTA.resx">
       <DependentUpon>FORM_IVA_DOC_NOSAE_VENTA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DOC_VENTA_SAE.resx">
+      <DependentUpon>FORM_IVA_DOC_VENTA_SAE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_LIBROS.resx">
+      <DependentUpon>FORM_IVA_LIBROS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_PROV.resx">
       <DependentUpon>FORM_IVA_PROV.vb</DependentUpon>
@@ -405,6 +465,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MasterFormTab.resx">
       <DependentUpon>MasterFormTab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MasterFromEdit.resx">
+      <DependentUpon>MasterFromEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MasterPrintXRForm.resx">
+      <DependentUpon>MasterPrintXRForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="Principal.resx">
@@ -439,6 +505,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\IVA\RPT_LIBRO_IVA_VENTA_V2.resx">
       <DependentUpon>RPT_LIBRO_IVA_VENTA_V2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_SUB_LIBRO_IVA_VENTA.resx">
+      <DependentUpon>RPT_SUB_LIBRO_IVA_VENTA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\IVA\RPT_SUB_LIBRO_IVA_VENTA_V2.resx">
+      <DependentUpon>RPT_SUB_LIBRO_IVA_VENTA_V2.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="Acceso a datos\DB_GENERAL.dbml.layout">
       <DependentUpon>DB_GENERAL.dbml</DependentUpon>

@@ -743,7 +743,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         '
         'BindingSource1
         '
-        Me.BindingSource1.DataSource = GetType(IMACANET.IMACANET_IVA.IVA_LIBRO_COMPRA)
+        Me.BindingSource1.DataSource = GetType(IVA.IVA_LIBRO_COMPRA)
         '
         'FLG_MOSTRAR_ENCABEZADO
         '
