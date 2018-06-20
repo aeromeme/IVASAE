@@ -202,6 +202,18 @@
     <Compile Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_CONF.designer.vb">
+      <DependentUpon>FORM_IVA_CONF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_CONF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_CONF_COMP.designer.vb">
+      <DependentUpon>FORM_IVA_CONF_COMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IVA\FORM_IVA_CONF_COMP.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\IVA\FORM_IVA_DET.designer.vb">
       <DependentUpon>FORM_IVA_DET.vb</DependentUpon>
     </Compile>
@@ -429,6 +441,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_COMP_RETE_ALTER.resx">
       <DependentUpon>FORM_IVA_COMP_RETE_ALTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_CONF.resx">
+      <DependentUpon>FORM_IVA_CONF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IVA\FORM_IVA_CONF_COMP.resx">
+      <DependentUpon>FORM_IVA_CONF_COMP.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IVA\FORM_IVA_DET.resx">
       <DependentUpon>FORM_IVA_DET.vb</DependentUpon>
