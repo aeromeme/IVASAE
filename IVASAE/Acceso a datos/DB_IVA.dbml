@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IVASAE" EntityNamespace="IVA" ContextNamespace="IVA" Class="DB_IVADataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\MANUSQL;Initial Catalog=IVASAE;Integrated Security=True" SettingsObjectName="IVASAE.My.MySettings" SettingsPropertyName="IVASAEConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.IVA_TIPO_DOCUMENTO" Member="IVA_TIPO_DOCUMENTO">
-    <Type Name="IVA_TIPO_DOCUMENTO">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="DS_NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="SIS_SUFIJO" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
-      <Column Name="SIS_EXCLU_SUFIJO" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
-      <Column Name="NM_CHARS_SERIE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CD_DET" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CD_TIPO" Type="System.String" DbType="Char(3)" CanBeNull="true" />
-      <Column Name="FLG_COMPRA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="FLG_VENTA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="FLG_IMPO_SAE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="FLG_COMPRA_GRAVADA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
-      <Column Name="NM_CHARS_SUFIJO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SIS_EXCLU_SUFIJO_2" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
-      <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE" Member="IVA_DOC_NO_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_NO_SAE" />
-      <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE" Member="IVA_DOC_COMPRA_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_COMPRA_SAE" />
-      <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE" Member="IVA_DOC_VENTA_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_VENTA_SAE" />
-    </Type>
-  </Table>
   <Table Name="dbo.IVA_CLIE_PROV" Member="IVA_CLIE_PROV">
     <Type Name="IVA_CLIE_PROV">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -567,6 +547,23 @@
       <Column Name="NM_NOMBRE_EMPRESA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="NM_PORC_IVA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
       <Column Name="NM_REG_FISC" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IVA_TIPO_DOCUMENTO" Member="IVA_TIPO_DOCUMENTO">
+    <Type Name="IVA_TIPO_DOCUMENTO">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DS_NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CD_DET" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CD_TIPO" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="FLG_COMPRA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FLG_VENTA" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="FLG_IMPO_SAE" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CD_SERIE_1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="CD_SERIE_2" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="NM_CHARS_SERIE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE" Member="IVA_DOC_NO_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_NO_SAE" />
+      <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE" Member="IVA_DOC_COMPRA_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_COMPRA_SAE" />
+      <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE" Member="IVA_DOC_VENTA_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_VENTA_SAE" />
     </Type>
   </Table>
   <Function Name="dbo.PR_IVA_IMPO_CLIE_PROV" Method="PR_IVA_IMPO_CLIE_PROV">

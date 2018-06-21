@@ -32,12 +32,6 @@ Namespace IVA
     #Region "Extensibility Method Definitions"
     Partial Private Sub OnCreated()
     End Sub
-    Partial Private Sub InsertIVA_TIPO_DOCUMENTO(instance As IVA_TIPO_DOCUMENTO)
-    End Sub
-    Partial Private Sub UpdateIVA_TIPO_DOCUMENTO(instance As IVA_TIPO_DOCUMENTO)
-    End Sub
-    Partial Private Sub DeleteIVA_TIPO_DOCUMENTO(instance As IVA_TIPO_DOCUMENTO)
-    End Sub
     Partial Private Sub InsertIVA_CLIE_PROV(instance As IVA_CLIE_PROV)
     End Sub
     Partial Private Sub UpdateIVA_CLIE_PROV(instance As IVA_CLIE_PROV)
@@ -170,6 +164,12 @@ Namespace IVA
     End Sub
     Partial Private Sub DeleteIVA_CONF(instance As IVA_CONF)
     End Sub
+    Partial Private Sub InsertIVA_TIPO_DOCUMENTO(instance As IVA_TIPO_DOCUMENTO)
+    End Sub
+    Partial Private Sub UpdateIVA_TIPO_DOCUMENTO(instance As IVA_TIPO_DOCUMENTO)
+    End Sub
+    Partial Private Sub DeleteIVA_TIPO_DOCUMENTO(instance As IVA_TIPO_DOCUMENTO)
+    End Sub
     #End Region
 		
 		Public Sub New()
@@ -196,12 +196,6 @@ Namespace IVA
 			MyBase.New(connection, mappingSource)
 			OnCreated
 		End Sub
-		
-		Public ReadOnly Property IVA_TIPO_DOCUMENTO() As System.Data.Linq.Table(Of IVA_TIPO_DOCUMENTO)
-			Get
-				Return Me.GetTable(Of IVA_TIPO_DOCUMENTO)
-			End Get
-		End Property
 		
 		Public ReadOnly Property IVA_CLIE_PROV() As System.Data.Linq.Table(Of IVA_CLIE_PROV)
 			Get
@@ -395,6 +389,12 @@ Namespace IVA
 			End Get
 		End Property
 		
+		Public ReadOnly Property IVA_TIPO_DOCUMENTO() As System.Data.Linq.Table(Of IVA_TIPO_DOCUMENTO)
+			Get
+				Return Me.GetTable(Of IVA_TIPO_DOCUMENTO)
+			End Get
+		End Property
+		
 		<Global.System.Data.Linq.Mapping.FunctionAttribute(Name:="dbo.PR_IVA_IMPO_CLIE_PROV")>  _
 		Public Function PR_IVA_IMPO_CLIE_PROV(<Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="NM_ERROR", DbType:="Int")> ByVal nM_ERROR As System.Nullable(Of Integer), <Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="MSJ", DbType:="VarChar(100)")> ByVal mSJ As String) As Integer
 			Dim result As IExecuteResult = Me.ExecuteMethodCall(Me, CType(MethodInfo.GetCurrentMethod,MethodInfo), nM_ERROR, mSJ)
@@ -471,401 +471,6 @@ Namespace IVA
 			Dim result As IExecuteResult = Me.ExecuteMethodCall(Me, CType(MethodInfo.GetCurrentMethod,MethodInfo), mONTH, tEMPORADA)
 			Return CType(result.ReturnValue,ISingleResult(Of PR_IVA_DATA_RETEN_PERCEPResult))
 		End Function
-	End Class
-	
-	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.IVA_TIPO_DOCUMENTO")>  _
-	Partial Public Class IVA_TIPO_DOCUMENTO
-		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
-		
-		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
-		
-		Private _ID As Integer
-		
-		Private _DS_NOMBRE As String
-		
-		Private _SIS_SUFIJO As String
-		
-		Private _SIS_EXCLU_SUFIJO As String
-		
-		Private _NM_CHARS_SERIE As System.Nullable(Of Integer)
-		
-		Private _CD_DET As System.Nullable(Of Integer)
-		
-		Private _CD_TIPO As String
-		
-		Private _FLG_COMPRA As System.Nullable(Of Char)
-		
-		Private _FLG_VENTA As System.Nullable(Of Char)
-		
-		Private _FLG_IMPO_SAE As System.Nullable(Of Char)
-		
-		Private _FLG_COMPRA_GRAVADA As System.Nullable(Of Char)
-		
-		Private _NM_CHARS_SUFIJO As System.Nullable(Of Integer)
-		
-		Private _SIS_EXCLU_SUFIJO_2 As String
-		
-		Private _IVA_DOC_NO_SAE As EntitySet(Of IVA_DOC_NO_SAE)
-		
-		Private _IVA_DOC_COMPRA_SAE As EntitySet(Of IVA_DOC_COMPRA_SAE)
-		
-		Private _IVA_DOC_VENTA_SAE As EntitySet(Of IVA_DOC_VENTA_SAE)
-		
-    #Region "Extensibility Method Definitions"
-    Partial Private Sub OnLoaded()
-    End Sub
-    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
-    End Sub
-    Partial Private Sub OnCreated()
-    End Sub
-    Partial Private Sub OnIDChanging(value As Integer)
-    End Sub
-    Partial Private Sub OnIDChanged()
-    End Sub
-    Partial Private Sub OnDS_NOMBREChanging(value As String)
-    End Sub
-    Partial Private Sub OnDS_NOMBREChanged()
-    End Sub
-    Partial Private Sub OnSIS_SUFIJOChanging(value As String)
-    End Sub
-    Partial Private Sub OnSIS_SUFIJOChanged()
-    End Sub
-    Partial Private Sub OnSIS_EXCLU_SUFIJOChanging(value As String)
-    End Sub
-    Partial Private Sub OnSIS_EXCLU_SUFIJOChanged()
-    End Sub
-    Partial Private Sub OnNM_CHARS_SERIEChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnNM_CHARS_SERIEChanged()
-    End Sub
-    Partial Private Sub OnCD_DETChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnCD_DETChanged()
-    End Sub
-    Partial Private Sub OnCD_TIPOChanging(value As String)
-    End Sub
-    Partial Private Sub OnCD_TIPOChanged()
-    End Sub
-    Partial Private Sub OnFLG_COMPRAChanging(value As System.Nullable(Of Char))
-    End Sub
-    Partial Private Sub OnFLG_COMPRAChanged()
-    End Sub
-    Partial Private Sub OnFLG_VENTAChanging(value As System.Nullable(Of Char))
-    End Sub
-    Partial Private Sub OnFLG_VENTAChanged()
-    End Sub
-    Partial Private Sub OnFLG_IMPO_SAEChanging(value As System.Nullable(Of Char))
-    End Sub
-    Partial Private Sub OnFLG_IMPO_SAEChanged()
-    End Sub
-    Partial Private Sub OnFLG_COMPRA_GRAVADAChanging(value As System.Nullable(Of Char))
-    End Sub
-    Partial Private Sub OnFLG_COMPRA_GRAVADAChanged()
-    End Sub
-    Partial Private Sub OnNM_CHARS_SUFIJOChanging(value As System.Nullable(Of Integer))
-    End Sub
-    Partial Private Sub OnNM_CHARS_SUFIJOChanged()
-    End Sub
-    Partial Private Sub OnSIS_EXCLU_SUFIJO_2Changing(value As String)
-    End Sub
-    Partial Private Sub OnSIS_EXCLU_SUFIJO_2Changed()
-    End Sub
-    #End Region
-		
-		Public Sub New()
-			MyBase.New
-			Me._IVA_DOC_NO_SAE = New EntitySet(Of IVA_DOC_NO_SAE)(AddressOf Me.attach_IVA_DOC_NO_SAE, AddressOf Me.detach_IVA_DOC_NO_SAE)
-			Me._IVA_DOC_COMPRA_SAE = New EntitySet(Of IVA_DOC_COMPRA_SAE)(AddressOf Me.attach_IVA_DOC_COMPRA_SAE, AddressOf Me.detach_IVA_DOC_COMPRA_SAE)
-			Me._IVA_DOC_VENTA_SAE = New EntitySet(Of IVA_DOC_VENTA_SAE)(AddressOf Me.attach_IVA_DOC_VENTA_SAE, AddressOf Me.detach_IVA_DOC_VENTA_SAE)
-			OnCreated
-		End Sub
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
-		Public Property ID() As Integer
-			Get
-				Return Me._ID
-			End Get
-			Set
-				If ((Me._ID = value)  _
-							= false) Then
-					Me.OnIDChanging(value)
-					Me.SendPropertyChanging
-					Me._ID = value
-					Me.SendPropertyChanged("ID")
-					Me.OnIDChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMBRE", DbType:="VarChar(50)")>  _
-		Public Property DS_NOMBRE() As String
-			Get
-				Return Me._DS_NOMBRE
-			End Get
-			Set
-				If (String.Equals(Me._DS_NOMBRE, value) = false) Then
-					Me.OnDS_NOMBREChanging(value)
-					Me.SendPropertyChanging
-					Me._DS_NOMBRE = value
-					Me.SendPropertyChanged("DS_NOMBRE")
-					Me.OnDS_NOMBREChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SIS_SUFIJO", DbType:="VarChar(5)")>  _
-		Public Property SIS_SUFIJO() As String
-			Get
-				Return Me._SIS_SUFIJO
-			End Get
-			Set
-				If (String.Equals(Me._SIS_SUFIJO, value) = false) Then
-					Me.OnSIS_SUFIJOChanging(value)
-					Me.SendPropertyChanging
-					Me._SIS_SUFIJO = value
-					Me.SendPropertyChanged("SIS_SUFIJO")
-					Me.OnSIS_SUFIJOChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SIS_EXCLU_SUFIJO", DbType:="VarChar(5)")>  _
-		Public Property SIS_EXCLU_SUFIJO() As String
-			Get
-				Return Me._SIS_EXCLU_SUFIJO
-			End Get
-			Set
-				If (String.Equals(Me._SIS_EXCLU_SUFIJO, value) = false) Then
-					Me.OnSIS_EXCLU_SUFIJOChanging(value)
-					Me.SendPropertyChanging
-					Me._SIS_EXCLU_SUFIJO = value
-					Me.SendPropertyChanged("SIS_EXCLU_SUFIJO")
-					Me.OnSIS_EXCLU_SUFIJOChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_CHARS_SERIE", DbType:="Int")>  _
-		Public Property NM_CHARS_SERIE() As System.Nullable(Of Integer)
-			Get
-				Return Me._NM_CHARS_SERIE
-			End Get
-			Set
-				If (Me._NM_CHARS_SERIE.Equals(value) = false) Then
-					Me.OnNM_CHARS_SERIEChanging(value)
-					Me.SendPropertyChanging
-					Me._NM_CHARS_SERIE = value
-					Me.SendPropertyChanged("NM_CHARS_SERIE")
-					Me.OnNM_CHARS_SERIEChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_DET", DbType:="Int")>  _
-		Public Property CD_DET() As System.Nullable(Of Integer)
-			Get
-				Return Me._CD_DET
-			End Get
-			Set
-				If (Me._CD_DET.Equals(value) = false) Then
-					Me.OnCD_DETChanging(value)
-					Me.SendPropertyChanging
-					Me._CD_DET = value
-					Me.SendPropertyChanged("CD_DET")
-					Me.OnCD_DETChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_TIPO", DbType:="Char(3)")>  _
-		Public Property CD_TIPO() As String
-			Get
-				Return Me._CD_TIPO
-			End Get
-			Set
-				If (String.Equals(Me._CD_TIPO, value) = false) Then
-					Me.OnCD_TIPOChanging(value)
-					Me.SendPropertyChanging
-					Me._CD_TIPO = value
-					Me.SendPropertyChanged("CD_TIPO")
-					Me.OnCD_TIPOChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_COMPRA", DbType:="Char(1)")>  _
-		Public Property FLG_COMPRA() As System.Nullable(Of Char)
-			Get
-				Return Me._FLG_COMPRA
-			End Get
-			Set
-				If (Me._FLG_COMPRA.Equals(value) = false) Then
-					Me.OnFLG_COMPRAChanging(value)
-					Me.SendPropertyChanging
-					Me._FLG_COMPRA = value
-					Me.SendPropertyChanged("FLG_COMPRA")
-					Me.OnFLG_COMPRAChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_VENTA", DbType:="Char(1)")>  _
-		Public Property FLG_VENTA() As System.Nullable(Of Char)
-			Get
-				Return Me._FLG_VENTA
-			End Get
-			Set
-				If (Me._FLG_VENTA.Equals(value) = false) Then
-					Me.OnFLG_VENTAChanging(value)
-					Me.SendPropertyChanging
-					Me._FLG_VENTA = value
-					Me.SendPropertyChanged("FLG_VENTA")
-					Me.OnFLG_VENTAChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_IMPO_SAE", DbType:="Char(1)")>  _
-		Public Property FLG_IMPO_SAE() As System.Nullable(Of Char)
-			Get
-				Return Me._FLG_IMPO_SAE
-			End Get
-			Set
-				If (Me._FLG_IMPO_SAE.Equals(value) = false) Then
-					Me.OnFLG_IMPO_SAEChanging(value)
-					Me.SendPropertyChanging
-					Me._FLG_IMPO_SAE = value
-					Me.SendPropertyChanged("FLG_IMPO_SAE")
-					Me.OnFLG_IMPO_SAEChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_COMPRA_GRAVADA", DbType:="Char(1)")>  _
-		Public Property FLG_COMPRA_GRAVADA() As System.Nullable(Of Char)
-			Get
-				Return Me._FLG_COMPRA_GRAVADA
-			End Get
-			Set
-				If (Me._FLG_COMPRA_GRAVADA.Equals(value) = false) Then
-					Me.OnFLG_COMPRA_GRAVADAChanging(value)
-					Me.SendPropertyChanging
-					Me._FLG_COMPRA_GRAVADA = value
-					Me.SendPropertyChanged("FLG_COMPRA_GRAVADA")
-					Me.OnFLG_COMPRA_GRAVADAChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_CHARS_SUFIJO", DbType:="Int")>  _
-		Public Property NM_CHARS_SUFIJO() As System.Nullable(Of Integer)
-			Get
-				Return Me._NM_CHARS_SUFIJO
-			End Get
-			Set
-				If (Me._NM_CHARS_SUFIJO.Equals(value) = false) Then
-					Me.OnNM_CHARS_SUFIJOChanging(value)
-					Me.SendPropertyChanging
-					Me._NM_CHARS_SUFIJO = value
-					Me.SendPropertyChanged("NM_CHARS_SUFIJO")
-					Me.OnNM_CHARS_SUFIJOChanged
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_SIS_EXCLU_SUFIJO_2", DbType:="VarChar(5)")>  _
-		Public Property SIS_EXCLU_SUFIJO_2() As String
-			Get
-				Return Me._SIS_EXCLU_SUFIJO_2
-			End Get
-			Set
-				If (String.Equals(Me._SIS_EXCLU_SUFIJO_2, value) = false) Then
-					Me.OnSIS_EXCLU_SUFIJO_2Changing(value)
-					Me.SendPropertyChanging
-					Me._SIS_EXCLU_SUFIJO_2 = value
-					Me.SendPropertyChanged("SIS_EXCLU_SUFIJO_2")
-					Me.OnSIS_EXCLU_SUFIJO_2Changed
-				End If
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE", Storage:="_IVA_DOC_NO_SAE", ThisKey:="ID", OtherKey:="ID_TIPO_DOC")>  _
-		Public Property IVA_DOC_NO_SAE() As EntitySet(Of IVA_DOC_NO_SAE)
-			Get
-				Return Me._IVA_DOC_NO_SAE
-			End Get
-			Set
-				Me._IVA_DOC_NO_SAE.Assign(value)
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE", Storage:="_IVA_DOC_COMPRA_SAE", ThisKey:="ID", OtherKey:="ID_TIPO_DOC")>  _
-		Public Property IVA_DOC_COMPRA_SAE() As EntitySet(Of IVA_DOC_COMPRA_SAE)
-			Get
-				Return Me._IVA_DOC_COMPRA_SAE
-			End Get
-			Set
-				Me._IVA_DOC_COMPRA_SAE.Assign(value)
-			End Set
-		End Property
-		
-		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE", Storage:="_IVA_DOC_VENTA_SAE", ThisKey:="ID", OtherKey:="ID_TIPO_DOC")>  _
-		Public Property IVA_DOC_VENTA_SAE() As EntitySet(Of IVA_DOC_VENTA_SAE)
-			Get
-				Return Me._IVA_DOC_VENTA_SAE
-			End Get
-			Set
-				Me._IVA_DOC_VENTA_SAE.Assign(value)
-			End Set
-		End Property
-		
-		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
-		
-		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
-		
-		Protected Overridable Sub SendPropertyChanging()
-			If ((Me.PropertyChangingEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
-			End If
-		End Sub
-		
-		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
-			If ((Me.PropertyChangedEvent Is Nothing)  _
-						= false) Then
-				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
-			End If
-		End Sub
-		
-		Private Sub attach_IVA_DOC_NO_SAE(ByVal entity As IVA_DOC_NO_SAE)
-			Me.SendPropertyChanging
-			entity.IVA_TIPO_DOCUMENTO = Me
-		End Sub
-		
-		Private Sub detach_IVA_DOC_NO_SAE(ByVal entity As IVA_DOC_NO_SAE)
-			Me.SendPropertyChanging
-			entity.IVA_TIPO_DOCUMENTO = Nothing
-		End Sub
-		
-		Private Sub attach_IVA_DOC_COMPRA_SAE(ByVal entity As IVA_DOC_COMPRA_SAE)
-			Me.SendPropertyChanging
-			entity.IVA_TIPO_DOCUMENTO = Me
-		End Sub
-		
-		Private Sub detach_IVA_DOC_COMPRA_SAE(ByVal entity As IVA_DOC_COMPRA_SAE)
-			Me.SendPropertyChanging
-			entity.IVA_TIPO_DOCUMENTO = Nothing
-		End Sub
-		
-		Private Sub attach_IVA_DOC_VENTA_SAE(ByVal entity As IVA_DOC_VENTA_SAE)
-			Me.SendPropertyChanging
-			entity.IVA_TIPO_DOCUMENTO = Me
-		End Sub
-		
-		Private Sub detach_IVA_DOC_VENTA_SAE(ByVal entity As IVA_DOC_VENTA_SAE)
-			Me.SendPropertyChanging
-			entity.IVA_TIPO_DOCUMENTO = Nothing
-		End Sub
 	End Class
 	
 	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.IVA_CLIE_PROV")>  _
@@ -9948,6 +9553,335 @@ Namespace IVA
 						= false) Then
 				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 			End If
+		End Sub
+	End Class
+	
+	<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.IVA_TIPO_DOCUMENTO")>  _
+	Partial Public Class IVA_TIPO_DOCUMENTO
+		Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+		
+		Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+		
+		Private _ID As Integer
+		
+		Private _DS_NOMBRE As String
+		
+		Private _CD_DET As System.Nullable(Of Integer)
+		
+		Private _CD_TIPO As String
+		
+		Private _FLG_COMPRA As System.Nullable(Of Char)
+		
+		Private _FLG_VENTA As System.Nullable(Of Char)
+		
+		Private _FLG_IMPO_SAE As System.Nullable(Of Char)
+		
+		Private _CD_SERIE_1 As String
+		
+		Private _CD_SERIE_2 As String
+		
+		Private _NM_CHARS_SERIE As System.Nullable(Of Integer)
+		
+		Private _IVA_DOC_NO_SAE As EntitySet(Of IVA_DOC_NO_SAE)
+		
+		Private _IVA_DOC_COMPRA_SAE As EntitySet(Of IVA_DOC_COMPRA_SAE)
+		
+		Private _IVA_DOC_VENTA_SAE As EntitySet(Of IVA_DOC_VENTA_SAE)
+		
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnIDChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnIDChanged()
+    End Sub
+    Partial Private Sub OnDS_NOMBREChanging(value As String)
+    End Sub
+    Partial Private Sub OnDS_NOMBREChanged()
+    End Sub
+    Partial Private Sub OnCD_DETChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnCD_DETChanged()
+    End Sub
+    Partial Private Sub OnCD_TIPOChanging(value As String)
+    End Sub
+    Partial Private Sub OnCD_TIPOChanged()
+    End Sub
+    Partial Private Sub OnFLG_COMPRAChanging(value As System.Nullable(Of Char))
+    End Sub
+    Partial Private Sub OnFLG_COMPRAChanged()
+    End Sub
+    Partial Private Sub OnFLG_VENTAChanging(value As System.Nullable(Of Char))
+    End Sub
+    Partial Private Sub OnFLG_VENTAChanged()
+    End Sub
+    Partial Private Sub OnFLG_IMPO_SAEChanging(value As System.Nullable(Of Char))
+    End Sub
+    Partial Private Sub OnFLG_IMPO_SAEChanged()
+    End Sub
+    Partial Private Sub OnCD_SERIE_1Changing(value As String)
+    End Sub
+    Partial Private Sub OnCD_SERIE_1Changed()
+    End Sub
+    Partial Private Sub OnCD_SERIE_2Changing(value As String)
+    End Sub
+    Partial Private Sub OnCD_SERIE_2Changed()
+    End Sub
+    Partial Private Sub OnNM_CHARS_SERIEChanging(value As System.Nullable(Of Integer))
+    End Sub
+    Partial Private Sub OnNM_CHARS_SERIEChanged()
+    End Sub
+    #End Region
+		
+		Public Sub New()
+			MyBase.New
+			Me._IVA_DOC_NO_SAE = New EntitySet(Of IVA_DOC_NO_SAE)(AddressOf Me.attach_IVA_DOC_NO_SAE, AddressOf Me.detach_IVA_DOC_NO_SAE)
+			Me._IVA_DOC_COMPRA_SAE = New EntitySet(Of IVA_DOC_COMPRA_SAE)(AddressOf Me.attach_IVA_DOC_COMPRA_SAE, AddressOf Me.detach_IVA_DOC_COMPRA_SAE)
+			Me._IVA_DOC_VENTA_SAE = New EntitySet(Of IVA_DOC_VENTA_SAE)(AddressOf Me.attach_IVA_DOC_VENTA_SAE, AddressOf Me.detach_IVA_DOC_VENTA_SAE)
+			OnCreated
+		End Sub
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_ID", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+		Public Property ID() As Integer
+			Get
+				Return Me._ID
+			End Get
+			Set
+				If ((Me._ID = value)  _
+							= false) Then
+					Me.OnIDChanging(value)
+					Me.SendPropertyChanging
+					Me._ID = value
+					Me.SendPropertyChanged("ID")
+					Me.OnIDChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DS_NOMBRE", DbType:="VarChar(50)")>  _
+		Public Property DS_NOMBRE() As String
+			Get
+				Return Me._DS_NOMBRE
+			End Get
+			Set
+				If (String.Equals(Me._DS_NOMBRE, value) = false) Then
+					Me.OnDS_NOMBREChanging(value)
+					Me.SendPropertyChanging
+					Me._DS_NOMBRE = value
+					Me.SendPropertyChanged("DS_NOMBRE")
+					Me.OnDS_NOMBREChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_DET", DbType:="Int")>  _
+		Public Property CD_DET() As System.Nullable(Of Integer)
+			Get
+				Return Me._CD_DET
+			End Get
+			Set
+				If (Me._CD_DET.Equals(value) = false) Then
+					Me.OnCD_DETChanging(value)
+					Me.SendPropertyChanging
+					Me._CD_DET = value
+					Me.SendPropertyChanged("CD_DET")
+					Me.OnCD_DETChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_TIPO", DbType:="Char(3)")>  _
+		Public Property CD_TIPO() As String
+			Get
+				Return Me._CD_TIPO
+			End Get
+			Set
+				If (String.Equals(Me._CD_TIPO, value) = false) Then
+					Me.OnCD_TIPOChanging(value)
+					Me.SendPropertyChanging
+					Me._CD_TIPO = value
+					Me.SendPropertyChanged("CD_TIPO")
+					Me.OnCD_TIPOChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_COMPRA", DbType:="Char(1)")>  _
+		Public Property FLG_COMPRA() As System.Nullable(Of Char)
+			Get
+				Return Me._FLG_COMPRA
+			End Get
+			Set
+				If (Me._FLG_COMPRA.Equals(value) = false) Then
+					Me.OnFLG_COMPRAChanging(value)
+					Me.SendPropertyChanging
+					Me._FLG_COMPRA = value
+					Me.SendPropertyChanged("FLG_COMPRA")
+					Me.OnFLG_COMPRAChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_VENTA", DbType:="Char(1)")>  _
+		Public Property FLG_VENTA() As System.Nullable(Of Char)
+			Get
+				Return Me._FLG_VENTA
+			End Get
+			Set
+				If (Me._FLG_VENTA.Equals(value) = false) Then
+					Me.OnFLG_VENTAChanging(value)
+					Me.SendPropertyChanging
+					Me._FLG_VENTA = value
+					Me.SendPropertyChanged("FLG_VENTA")
+					Me.OnFLG_VENTAChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FLG_IMPO_SAE", DbType:="Char(1)")>  _
+		Public Property FLG_IMPO_SAE() As System.Nullable(Of Char)
+			Get
+				Return Me._FLG_IMPO_SAE
+			End Get
+			Set
+				If (Me._FLG_IMPO_SAE.Equals(value) = false) Then
+					Me.OnFLG_IMPO_SAEChanging(value)
+					Me.SendPropertyChanging
+					Me._FLG_IMPO_SAE = value
+					Me.SendPropertyChanged("FLG_IMPO_SAE")
+					Me.OnFLG_IMPO_SAEChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_SERIE_1", DbType:="VarChar(5)")>  _
+		Public Property CD_SERIE_1() As String
+			Get
+				Return Me._CD_SERIE_1
+			End Get
+			Set
+				If (String.Equals(Me._CD_SERIE_1, value) = false) Then
+					Me.OnCD_SERIE_1Changing(value)
+					Me.SendPropertyChanging
+					Me._CD_SERIE_1 = value
+					Me.SendPropertyChanged("CD_SERIE_1")
+					Me.OnCD_SERIE_1Changed
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CD_SERIE_2", DbType:="VarChar(5)")>  _
+		Public Property CD_SERIE_2() As String
+			Get
+				Return Me._CD_SERIE_2
+			End Get
+			Set
+				If (String.Equals(Me._CD_SERIE_2, value) = false) Then
+					Me.OnCD_SERIE_2Changing(value)
+					Me.SendPropertyChanging
+					Me._CD_SERIE_2 = value
+					Me.SendPropertyChanged("CD_SERIE_2")
+					Me.OnCD_SERIE_2Changed
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_NM_CHARS_SERIE", DbType:="Int")>  _
+		Public Property NM_CHARS_SERIE() As System.Nullable(Of Integer)
+			Get
+				Return Me._NM_CHARS_SERIE
+			End Get
+			Set
+				If (Me._NM_CHARS_SERIE.Equals(value) = false) Then
+					Me.OnNM_CHARS_SERIEChanging(value)
+					Me.SendPropertyChanging
+					Me._NM_CHARS_SERIE = value
+					Me.SendPropertyChanged("NM_CHARS_SERIE")
+					Me.OnNM_CHARS_SERIEChanged
+				End If
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE", Storage:="_IVA_DOC_NO_SAE", ThisKey:="ID", OtherKey:="ID_TIPO_DOC")>  _
+		Public Property IVA_DOC_NO_SAE() As EntitySet(Of IVA_DOC_NO_SAE)
+			Get
+				Return Me._IVA_DOC_NO_SAE
+			End Get
+			Set
+				Me._IVA_DOC_NO_SAE.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE", Storage:="_IVA_DOC_COMPRA_SAE", ThisKey:="ID", OtherKey:="ID_TIPO_DOC")>  _
+		Public Property IVA_DOC_COMPRA_SAE() As EntitySet(Of IVA_DOC_COMPRA_SAE)
+			Get
+				Return Me._IVA_DOC_COMPRA_SAE
+			End Get
+			Set
+				Me._IVA_DOC_COMPRA_SAE.Assign(value)
+			End Set
+		End Property
+		
+		<Global.System.Data.Linq.Mapping.AssociationAttribute(Name:="IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE", Storage:="_IVA_DOC_VENTA_SAE", ThisKey:="ID", OtherKey:="ID_TIPO_DOC")>  _
+		Public Property IVA_DOC_VENTA_SAE() As EntitySet(Of IVA_DOC_VENTA_SAE)
+			Get
+				Return Me._IVA_DOC_VENTA_SAE
+			End Get
+			Set
+				Me._IVA_DOC_VENTA_SAE.Assign(value)
+			End Set
+		End Property
+		
+		Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+		
+		Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+		
+		Protected Overridable Sub SendPropertyChanging()
+			If ((Me.PropertyChangingEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+			End If
+		End Sub
+		
+		Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+			If ((Me.PropertyChangedEvent Is Nothing)  _
+						= false) Then
+				RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+			End If
+		End Sub
+		
+		Private Sub attach_IVA_DOC_NO_SAE(ByVal entity As IVA_DOC_NO_SAE)
+			Me.SendPropertyChanging
+			entity.IVA_TIPO_DOCUMENTO = Me
+		End Sub
+		
+		Private Sub detach_IVA_DOC_NO_SAE(ByVal entity As IVA_DOC_NO_SAE)
+			Me.SendPropertyChanging
+			entity.IVA_TIPO_DOCUMENTO = Nothing
+		End Sub
+		
+		Private Sub attach_IVA_DOC_COMPRA_SAE(ByVal entity As IVA_DOC_COMPRA_SAE)
+			Me.SendPropertyChanging
+			entity.IVA_TIPO_DOCUMENTO = Me
+		End Sub
+		
+		Private Sub detach_IVA_DOC_COMPRA_SAE(ByVal entity As IVA_DOC_COMPRA_SAE)
+			Me.SendPropertyChanging
+			entity.IVA_TIPO_DOCUMENTO = Nothing
+		End Sub
+		
+		Private Sub attach_IVA_DOC_VENTA_SAE(ByVal entity As IVA_DOC_VENTA_SAE)
+			Me.SendPropertyChanging
+			entity.IVA_TIPO_DOCUMENTO = Me
+		End Sub
+		
+		Private Sub detach_IVA_DOC_VENTA_SAE(ByVal entity As IVA_DOC_VENTA_SAE)
+			Me.SendPropertyChanging
+			entity.IVA_TIPO_DOCUMENTO = Nothing
 		End Sub
 	End Class
 	

@@ -18,7 +18,7 @@ Public Class FORM_IVA_TIPO_DOC
         MyBase.New(ds)
         ' Llamada necesaria para el diseñador.
         InitializeComponent()
-
+        flgventa=false
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
 
     End Sub
@@ -26,15 +26,12 @@ Public Class FORM_IVA_TIPO_DOC
     Public Sub bindear() Implements InterfazForms.bindear
         UIID.DataBindings.Add("EditValue", varlista, "ID", False, DataSourceUpdateMode.Never)
         UIDS_NOMBRE.DataBindings.Add("EditValue", varlista, "DS_NOMBRE", False, DataSourceUpdateMode.Never)
-        UISIS_SUFIJO.DataBindings.Add("EditValue", varlista, "SIS_SUFIJO", False, DataSourceUpdateMode.Never)
-        UISIS_EXCLU_SUFIJO.DataBindings.Add("EditValue", varlista, "SIS_EXCLU_SUFIJO", False, DataSourceUpdateMode.Never)
-        UISIS_EXCLU_SUFIJO_2.DataBindings.Add("EditValue", varlista, "SIS_EXCLU_SUFIJO_2", False, DataSourceUpdateMode.Never)
+        UICD_SERIE_1.DataBindings.Add("EditValue", varlista, "CD_SERIE_1", False, DataSourceUpdateMode.Never)
+        UICD_SERIE_2.DataBindings.Add("EditValue", varlista, "CD_SERIE_2", False, DataSourceUpdateMode.Never)
         UINM_CHARS_SERIE.DataBindings.Add("EditValue", varlista, "NM_CHARS_SERIE", False, DataSourceUpdateMode.Never)
-        UINM_CHARS_SUFIJO.DataBindings.Add("EditValue", varlista, "NM_CHARS_SUFIJO", False, DataSourceUpdateMode.Never)
         UICD_DET.DataBindings.Add("EditValue", varlista, "CD_DET", False, DataSourceUpdateMode.Never)
         UICD_TIPO.DataBindings.Add("EditValue", varlista, "CD_TIPO", False, DataSourceUpdateMode.Never)
         UIFLG_IMPO_SAE.DataBindings.Add("EditValue", varlista, "FLG_IMPO_SAE", False, DataSourceUpdateMode.Never)
-        UIFLG_COMPRA_GRAVADA.DataBindings.Add("EditValue", varlista, "FLG_COMPRA_GRAVADA", False, DataSourceUpdateMode.Never)
 
     End Sub
     Public Sub llenarcombos()
@@ -46,11 +43,11 @@ Public Class FORM_IVA_TIPO_DOC
             If flgVenta Then
                 VENTA = "S"
                 COMPRA = "N"
-                UIFLG_COMPRA_GRAVADA.Visible = False
+                UIGRP_IMPOR_PARAM .Visible = true
             Else
                 VENTA = "N"
                 COMPRA = "S"
-                UIFLG_COMPRA_GRAVADA.Visible = True
+                UIGRP_IMPOR_PARAM.Visible = false
             End If
 
             _datasistema.ConectarIVA()
@@ -73,15 +70,12 @@ Public Class FORM_IVA_TIPO_DOC
     Public Sub desbindear() Implements InterfazForms.desbindear
         UIID.DataBindings.Clear()
         UIDS_NOMBRE.DataBindings.Clear()
-        UISIS_SUFIJO.DataBindings.Clear()
-        UISIS_EXCLU_SUFIJO.DataBindings.Clear()
-        UISIS_EXCLU_SUFIJO_2.DataBindings.Clear()
+        UICD_SERIE_1.DataBindings.Clear()
+        UICD_SERIE_2.DataBindings.Clear()
         UINM_CHARS_SERIE.DataBindings.Clear()
-        UINM_CHARS_SUFIJO.DataBindings.Clear()
         UICD_DET.DataBindings.Clear()
         UICD_TIPO.DataBindings.Clear()
         UIFLG_IMPO_SAE.DataBindings.Clear()
-        UIFLG_COMPRA_GRAVADA.DataBindings.Clear()
     End Sub
 
     Public Sub Eliminar() Implements InterfazForms.Eliminar
@@ -119,15 +113,12 @@ Public Class FORM_IVA_TIPO_DOC
         desbindear()
         UIID.Text = ""
         UIDS_NOMBRE.Text = ""
-        UISIS_SUFIJO.Text = ""
-        UISIS_EXCLU_SUFIJO.Text = ""
-        UISIS_EXCLU_SUFIJO_2.Text = ""
+        UICD_SERIE_1.Text = ""
+        UICD_SERIE_2.Text = ""
         UINM_CHARS_SERIE.Text = ""
-        UINM_CHARS_SUFIJO.Text = ""
         UICD_DET.Text = ""
         UICD_TIPO.Text = ""
         UIFLG_IMPO_SAE.Checked = False
-        UIFLG_COMPRA_GRAVADA.Checked = False
     End Sub
 
     Public Sub Modificar() Implements InterfazForms.Modificar
@@ -141,15 +132,12 @@ Public Class FORM_IVA_TIPO_DOC
 
 
                     tupla.DS_NOMBRE = UIDS_NOMBRE.Text
-                    tupla.SIS_SUFIJO = UISIS_SUFIJO.Text
-                    tupla.SIS_EXCLU_SUFIJO = UISIS_EXCLU_SUFIJO.Text
-                    tupla.SIS_EXCLU_SUFIJO_2 = UISIS_EXCLU_SUFIJO_2.Text
+                    tupla.CD_SERIE_1  = UICD_SERIE_1.Text
+                    tupla.CD_SERIE_2  = UICD_SERIE_2.Text
                     tupla.NM_CHARS_SERIE = Val(UINM_CHARS_SERIE.EditValue)
-                    tupla.NM_CHARS_SUFIJO = Val(UINM_CHARS_SUFIJO.EditValue)
                     tupla.CD_DET = Val(UICD_DET.EditValue)
                     tupla.CD_TIPO = UICD_TIPO.EditValue.ToString
                     tupla.FLG_IMPO_SAE = UIFLG_IMPO_SAE.EditValue.ToString
-                    tupla.FLG_COMPRA_GRAVADA = UIFLG_COMPRA_GRAVADA.EditValue.ToString
 
 
                     _datasistema.ContextoIVA.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues)
@@ -172,17 +160,14 @@ Public Class FORM_IVA_TIPO_DOC
                 Dim A As New IVA_TIPO_DOCUMENTO With
          {.ID = 0,
           .DS_NOMBRE = UIDS_NOMBRE.Text,
-          .SIS_SUFIJO = UISIS_SUFIJO.Text,
-          .SIS_EXCLU_SUFIJO = UISIS_EXCLU_SUFIJO.Text,
-           .SIS_EXCLU_SUFIJO_2 = UISIS_EXCLU_SUFIJO_2.Text,
+          .CD_SERIE_1  = UICD_SERIE_1.Text,
+          .CD_SERIE_2 = UICD_SERIE_2.Text,
           .NM_CHARS_SERIE = Val(UINM_CHARS_SERIE.EditValue),
-          .NM_CHARS_SUFIJO = Val(UINM_CHARS_SUFIJO.EditValue),
           .CD_DET = Val(UICD_DET.EditValue),
           .CD_TIPO = UICD_TIPO.EditValue.ToString,
           .FLG_COMPRA = COMPRA,
           .FLG_VENTA = VENTA,
-          .FLG_IMPO_SAE = UIFLG_IMPO_SAE.EditValue.ToString,
-          .FLG_COMPRA_GRAVADA = UIFLG_COMPRA_GRAVADA.EditValue.ToString
+          .FLG_IMPO_SAE = UIFLG_IMPO_SAE.EditValue.ToString
          }
 
                 _datasistema.ContextoIVA.Refresh(Data.Linq.RefreshMode.OverwriteCurrentValues)
@@ -212,7 +197,7 @@ Public Class FORM_IVA_TIPO_DOC
     End Sub
 
     Private Sub UIFLG_IMPO_SAE_CheckedChanged(sender As Object, e As EventArgs) Handles UIFLG_IMPO_SAE.CheckedChanged
-        If UIFLG_IMPO_SAE.Checked Then
+        If UIFLG_IMPO_SAE.Checked and flgVenta Then
             UIGRP_IMPOR_PARAM.Visible = True
         Else
             UIGRP_IMPOR_PARAM.Visible = False

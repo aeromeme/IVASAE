@@ -2,12 +2,6 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.375, 46.5" name="DB_IVA">
   <DataContextMoniker Name="/DB_IVADataContext" />
   <nestedChildShapes>
-    <classShape Id="88d4db93-e7e4-4d51-a15a-d3231bf9b39f" absoluteBounds="6, 4.25, 2, 3.3093082682291666">
-      <DataClassMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO" />
-      <nestedChildShapes>
-        <elementListCompartment Id="38f37dff-dd94-440e-82fb-fbda614b6840" absoluteBounds="6.015, 4.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="6fc4042b-c4db-4606-a1b8-35e69f7afa12" absoluteBounds="3, 3.25, 2, 3.5016097005208326">
       <DataClassMoniker Name="/DB_IVADataContext/IVA_CLIE_PROV" />
       <nestedChildShapes>
@@ -39,13 +33,6 @@
         <classShapeMoniker Id="ba70ec11-9097-4b44-9c4b-55414b758762" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(6 : 6.9751611328125); (2.5 : 6.9751611328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO/IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE" />
-      <nodes>
-        <classShapeMoniker Id="88d4db93-e7e4-4d51-a15a-d3231bf9b39f" />
-        <classShapeMoniker Id="ba70ec11-9097-4b44-9c4b-55414b758762" />
-      </nodes>
-    </associationConnector>
     <classShape Id="6da691c8-d4c8-4d17-b695-d5c47c2e5504" absoluteBounds="6.125, 8, 2, 4.8477197265625">
       <DataClassMoniker Name="/DB_IVADataContext/V_IVA_DOC_NO_SAE" />
       <nestedChildShapes>
@@ -64,26 +51,12 @@
         <elementListCompartment Id="6be5896c-d3e4-417c-8258-5238a5885d81" absoluteBounds="0.51500000000000012, 8.96, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(6 : 7.55930826822917); (5.625 : 7.93430826822917); (1.5 : 7.93430826822917); (1.5 : 8.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO/IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE" />
-      <nodes>
-        <classShapeMoniker Id="88d4db93-e7e4-4d51-a15a-d3231bf9b39f" />
-        <classShapeMoniker Id="cc407b8e-5644-4820-b885-1c7b5a99477d" />
-      </nodes>
-    </associationConnector>
     <classShape Id="0470982a-8735-4924-9c62-2095269ed6b8" absoluteBounds="3.125, 8.75, 2, 4.4631168619791666">
       <DataClassMoniker Name="/DB_IVADataContext/IVA_DOC_VENTA_SAE" />
       <nestedChildShapes>
         <elementListCompartment Id="43fdc9de-7b55-40cf-a446-2e805182c740" absoluteBounds="3.1399999999999997, 9.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(6.03125 : 7.55930826822917); (6.03125 : 13.0616682942708); (5.125 : 13.0616682942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO/IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE" />
-      <nodes>
-        <classShapeMoniker Id="88d4db93-e7e4-4d51-a15a-d3231bf9b39f" />
-        <classShapeMoniker Id="0470982a-8735-4924-9c62-2095269ed6b8" />
-      </nodes>
-    </associationConnector>
     <classShape Id="645453f3-524e-44f4-94f2-04068e5bb624" absoluteBounds="1, 13.75, 2, 5.0400211588541657">
       <DataClassMoniker Name="/DB_IVADataContext/V_IVA_DOC_COMPRA_SAE" />
       <nestedChildShapes>
@@ -256,5 +229,32 @@
         <elementListCompartment Id="ebca8e70-8b6b-4f35-96c1-7dc6119eb710" absoluteBounds="6.14, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="57044747-d7a2-466b-87aa-1962710c129e" absoluteBounds="6.125, 4.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="065ceefd-a3f5-4a0d-9a19-11e8a0ab872a" absoluteBounds="6.14, 5.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 6.9751611328125); (2.5 : 6.9751611328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO/IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE" />
+      <nodes>
+        <classShapeMoniker Id="57044747-d7a2-466b-87aa-1962710c129e" />
+        <classShapeMoniker Id="ba70ec11-9097-4b44-9c4b-55414b758762" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 7.35740397135417); (5.75 : 7.73240397135417); (5.17708333333333 : 7.73240397135417 : JumpStart); (5.01041666666667 : 7.73240397135417 : JumpEnd); (1.5 : 7.73240397135417); (1.5 : 8.5)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO/IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE" />
+      <nodes>
+        <classShapeMoniker Id="57044747-d7a2-466b-87aa-1962710c129e" />
+        <classShapeMoniker Id="cc407b8e-5644-4820-b885-1c7b5a99477d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 7.16628255208333); (5.09375 : 7.16628255208333); (5.09375 : 8.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DB_IVADataContext/IVA_TIPO_DOCUMENTO/IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE" />
+      <nodes>
+        <classShapeMoniker Id="57044747-d7a2-466b-87aa-1962710c129e" />
+        <classShapeMoniker Id="0470982a-8735-4924-9c62-2095269ed6b8" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
