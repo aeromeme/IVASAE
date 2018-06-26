@@ -30,7 +30,6 @@ Partial Class MasterFormTab
         Me.UIGRIDVIEW = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.UIPANELSTATUS = New DevExpress.XtraEditors.PanelControl()
         Me.UINAV = New DevExpress.XtraEditors.ControlNavigator()
-        Me.UIBARRAPROGRESO = New DevExpress.XtraEditors.MarqueeProgressBarControl()
         Me.UIDIALOGO_GUARDAREXCEL = New System.Windows.Forms.SaveFileDialog()
         CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).BeginInit
         Me.UIGROUP_MAIN.SuspendLayout
@@ -44,7 +43,6 @@ Partial Class MasterFormTab
         CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).BeginInit
         Me.UIPANELSTATUS.SuspendLayout
-        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'UIGROUP_MAIN
@@ -55,7 +53,7 @@ Partial Class MasterFormTab
         Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = true
         Me.UIGROUP_MAIN.Controls.Add(Me.UITABCONTROL)
         Me.UIGROUP_MAIN.Controls.Add(Me.UIPANELSTATUS)
-        Me.UIGROUP_MAIN.Size = New System.Drawing.Size(965, 560)
+        Me.UIGROUP_MAIN.Size = New System.Drawing.Size(965, 529)
         '
         'UITABCONTROL
         '
@@ -65,7 +63,7 @@ Partial Class MasterFormTab
         Me.UITABCONTROL.Location = New System.Drawing.Point(2, 38)
         Me.UITABCONTROL.Name = "UITABCONTROL"
         Me.UITABCONTROL.SelectedTabPage = Me.UITABPAG_GEN
-        Me.UITABCONTROL.Size = New System.Drawing.Size(961, 494)
+        Me.UITABCONTROL.Size = New System.Drawing.Size(961, 462)
         Me.UITABCONTROL.TabIndex = 0
         Me.UITABCONTROL.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.UITABPAG_GEN, Me.UITABPAG_DET})
         '
@@ -73,7 +71,7 @@ Partial Class MasterFormTab
         '
         Me.UITABPAG_GEN.Controls.Add(Me.UIPANELDATOS)
         Me.UITABPAG_GEN.Name = "UITABPAG_GEN"
-        Me.UITABPAG_GEN.Size = New System.Drawing.Size(955, 463)
+        Me.UITABPAG_GEN.Size = New System.Drawing.Size(955, 495)
         Me.UITABPAG_GEN.Text = "Detalle"
         '
         'UIPANELDATOS
@@ -81,14 +79,14 @@ Partial Class MasterFormTab
         Me.UIPANELDATOS.Dock = System.Windows.Forms.DockStyle.Fill
         Me.UIPANELDATOS.Location = New System.Drawing.Point(0, 0)
         Me.UIPANELDATOS.Name = "UIPANELDATOS"
-        Me.UIPANELDATOS.Size = New System.Drawing.Size(955, 463)
+        Me.UIPANELDATOS.Size = New System.Drawing.Size(955, 495)
         Me.UIPANELDATOS.TabIndex = 1
         '
         'UITABPAG_DET
         '
         Me.UITABPAG_DET.Controls.Add(Me.UIGRIDCONTROL)
         Me.UITABPAG_DET.Name = "UITABPAG_DET"
-        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 388)
+        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 431)
         Me.UITABPAG_DET.Text = "General"
         '
         'UIGRIDCONTROL
@@ -98,7 +96,7 @@ Partial Class MasterFormTab
         Me.UIGRIDCONTROL.Location = New System.Drawing.Point(0, 0)
         Me.UIGRIDCONTROL.MainView = Me.UIGRIDVIEW
         Me.UIGRIDCONTROL.Name = "UIGRIDCONTROL"
-        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 388)
+        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 431)
         Me.UIGRIDCONTROL.TabIndex = 0
         Me.UIGRIDCONTROL.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.UIGRIDVIEW})
         '
@@ -128,11 +126,10 @@ Partial Class MasterFormTab
         'UIPANELSTATUS
         '
         Me.UIPANELSTATUS.Controls.Add(Me.UINAV)
-        Me.UIPANELSTATUS.Controls.Add(Me.UIBARRAPROGRESO)
         Me.UIPANELSTATUS.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.UIPANELSTATUS.Location = New System.Drawing.Point(2, 532)
+        Me.UIPANELSTATUS.Location = New System.Drawing.Point(2, 500)
         Me.UIPANELSTATUS.Name = "UIPANELSTATUS"
-        Me.UIPANELSTATUS.Size = New System.Drawing.Size(961, 26)
+        Me.UIPANELSTATUS.Size = New System.Drawing.Size(961, 27)
         Me.UIPANELSTATUS.TabIndex = 2
         '
         'UINAV
@@ -146,24 +143,10 @@ Partial Class MasterFormTab
         Me.UINAV.Location = New System.Drawing.Point(2, 2)
         Me.UINAV.Name = "UINAV"
         Me.UINAV.NavigatableControl = Me.UIGRIDCONTROL
-        Me.UINAV.Size = New System.Drawing.Size(957, 19)
+        Me.UINAV.Size = New System.Drawing.Size(957, 23)
         Me.UINAV.TabIndex = 1
         Me.UINAV.Text = "ControlNavigator1"
         Me.UINAV.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center
-        '
-        'UIBARRAPROGRESO
-        '
-        Me.UIBARRAPROGRESO.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.UIBARRAPROGRESO.EditValue = 0
-        Me.UIBARRAPROGRESO.Enabled = false
-        Me.UIBARRAPROGRESO.Location = New System.Drawing.Point(2, 6)
-        Me.UIBARRAPROGRESO.Name = "UIBARRAPROGRESO"
-        Me.UIBARRAPROGRESO.Properties.Paused = true
-        Me.UIBARRAPROGRESO.Properties.ProgressAnimationMode = DevExpress.Utils.Drawing.ProgressAnimationMode.PingPong
-        Me.UIBARRAPROGRESO.Size = New System.Drawing.Size(957, 18)
-        Me.UIBARRAPROGRESO.TabIndex = 0
-        Me.UIBARRAPROGRESO.ToolTip = "Procesando"
-        Me.UIBARRAPROGRESO.Visible = false
         '
         'UIDIALOGO_GUARDAREXCEL
         '
@@ -172,7 +155,7 @@ Partial Class MasterFormTab
         'MasterFormTab
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 15!)
-        Me.ClientSize = New System.Drawing.Size(965, 560)
+        Me.ClientSize = New System.Drawing.Size(965, 529)
         Me.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Name = "MasterFormTab"
         Me.Controls.SetChildIndex(Me.UIGROUP_MAIN, 0)
@@ -188,7 +171,6 @@ Partial Class MasterFormTab
         CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).EndInit
         Me.UIPANELSTATUS.ResumeLayout(false)
-        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
 
 End Sub
@@ -203,5 +185,4 @@ End Sub
     Friend WithEvents UIMENUGRID As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ExportarAExcelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UIDIALOGO_GUARDAREXCEL As System.Windows.Forms.SaveFileDialog
-    Public WithEvents UIBARRAPROGRESO As DevExpress.XtraEditors.MarqueeProgressBarControl
 End Class

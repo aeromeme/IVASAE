@@ -70,7 +70,6 @@ Partial Class FORM_IVA_CLIE
         Me.UIPANELDATOS.SuspendLayout()
         CType(Me.UIPANELSTATUS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UIPANELSTATUS.SuspendLayout()
-        CType(Me.UIBARRAPROGRESO.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UITABPAG_GEN.SuspendLayout()
         Me.UITABPAG_DET.SuspendLayout()
         CType(Me.UIGRIDVIEW, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,10 +143,7 @@ Partial Class FORM_IVA_CLIE
         Me.UINAV.Buttons.EndEdit.Visible = False
         Me.UINAV.Buttons.Remove.Visible = False
         Me.UINAV.Size = New System.Drawing.Size(1030, 20)
-        '
-        'UIBARRAPROGRESO
-        '
-        Me.UIBARRAPROGRESO.Size = New System.Drawing.Size(1030, 18)
+
         '
         'UITABPAG_GEN
         '
@@ -507,7 +503,6 @@ Partial Class FORM_IVA_CLIE
         Me.UIPANELDATOS.PerformLayout()
         CType(Me.UIPANELSTATUS, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UIPANELSTATUS.ResumeLayout(False)
-        CType(Me.UIBARRAPROGRESO.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.UITABPAG_GEN.ResumeLayout(False)
         Me.UITABPAG_DET.ResumeLayout(False)
         CType(Me.UIGRIDVIEW, System.ComponentModel.ISupportInitialize).EndInit()

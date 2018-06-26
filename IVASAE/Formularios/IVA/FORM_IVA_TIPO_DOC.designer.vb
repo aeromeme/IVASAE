@@ -55,7 +55,6 @@ Partial Class FORM_IVA_TIPO_DOC
         Me.UIPANELDATOS.SuspendLayout
         CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).BeginInit
         Me.UIPANELSTATUS.SuspendLayout
-        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         Me.UITABPAG_GEN.SuspendLayout
         Me.UITABPAG_DET.SuspendLayout
         CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).BeginInit
@@ -83,7 +82,7 @@ Partial Class FORM_IVA_TIPO_DOC
         'UIGRIDCONTROL
         '
         Me.UIGRIDCONTROL.DataSource = Me.IVATIPODOCUMENTOBindingSource
-        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 447)
+        Me.UIGRIDCONTROL.Size = New System.Drawing.Size(955, 463)
         '
         'UIPANELDATOS
         '
@@ -108,12 +107,9 @@ Partial Class FORM_IVA_TIPO_DOC
         Me.UINAV.Buttons.EndEdit.Visible = false
         Me.UINAV.Buttons.Remove.Visible = false
         '
-        'UIBARRAPROGRESO
-        '
-        '
         'UITABPAG_DET
         '
-        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 447)
+        Me.UITABPAG_DET.Size = New System.Drawing.Size(955, 463)
         '
         'UIGRIDVIEW
         '
@@ -124,6 +120,9 @@ Partial Class FORM_IVA_TIPO_DOC
         Me.UIGRIDVIEW.OptionsView.ColumnAutoWidth = false
         Me.UIGRIDVIEW.OptionsView.ShowAutoFilterRow = true
         Me.UIGRIDVIEW.OptionsView.ShowDetailButtons = false
+        '
+        'UIBARRAPROGRESO
+        '
         '
         'UIGROUP_MAIN
         '
@@ -348,7 +347,6 @@ Partial Class FORM_IVA_TIPO_DOC
         Me.UIPANELDATOS.PerformLayout
         CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).EndInit
         Me.UIPANELSTATUS.ResumeLayout(false)
-        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).EndInit
         Me.UITABPAG_GEN.ResumeLayout(false)
         Me.UITABPAG_DET.ResumeLayout(false)
         CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).EndInit

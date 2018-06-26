@@ -77,7 +77,6 @@ Partial Class FORM_PERF
         Me.UIPANELDATOS.SuspendLayout
         CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).BeginInit
         Me.UIPANELSTATUS.SuspendLayout
-        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         Me.UITABPAG_GEN.SuspendLayout
         Me.UITABPAG_DET.SuspendLayout
         CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).BeginInit
@@ -544,7 +543,6 @@ Partial Class FORM_PERF
         Me.UIPANELDATOS.ResumeLayout(false)
         CType(Me.UIPANELSTATUS,System.ComponentModel.ISupportInitialize).EndInit
         Me.UIPANELSTATUS.ResumeLayout(false)
-        CType(Me.UIBARRAPROGRESO.Properties,System.ComponentModel.ISupportInitialize).EndInit
         Me.UITABPAG_GEN.ResumeLayout(false)
         Me.UITABPAG_DET.ResumeLayout(false)
         CType(Me.UIGRIDVIEW,System.ComponentModel.ISupportInitialize).EndInit
