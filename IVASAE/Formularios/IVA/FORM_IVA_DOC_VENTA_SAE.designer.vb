@@ -131,7 +131,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colCVE_DOC.Name = "colCVE_DOC"
         Me.colCVE_DOC.Visible = true
         Me.colCVE_DOC.VisibleIndex = 0
-        Me.colCVE_DOC.Width = 133
+        Me.colCVE_DOC.Width = 77
         '
         'colCVE_CLIE
         '
@@ -143,7 +143,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colCVE_CLIE.OptionsColumn.ReadOnly = true
         Me.colCVE_CLIE.Visible = true
         Me.colCVE_CLIE.VisibleIndex = 2
-        Me.colCVE_CLIE.Width = 368
+        Me.colCVE_CLIE.Width = 213
         '
         'UIGR_CVECLIE
         '
@@ -193,7 +193,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colFE_FECHA.Name = "colFE_FECHA"
         Me.colFE_FECHA.Visible = true
         Me.colFE_FECHA.VisibleIndex = 5
-        Me.colFE_FECHA.Width = 108
+        Me.colFE_FECHA.Width = 62
         '
         'colFE_ELABORACION
         '
@@ -202,7 +202,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colFE_ELABORACION.Name = "colFE_ELABORACION"
         Me.colFE_ELABORACION.Visible = true
         Me.colFE_ELABORACION.VisibleIndex = 6
-        Me.colFE_ELABORACION.Width = 108
+        Me.colFE_ELABORACION.Width = 62
         '
         'colNM_MES
         '
@@ -227,7 +227,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colNM_EXENTO.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "NM_EXENTO", "{0:n2}")})
         Me.colNM_EXENTO.Visible = true
         Me.colNM_EXENTO.VisibleIndex = 7
-        Me.colNM_EXENTO.Width = 108
+        Me.colNM_EXENTO.Width = 62
         '
         'UICALC
         '
@@ -245,7 +245,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colNM_GRAVADO.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "NM_GRAVADO", "{0:n2}")})
         Me.colNM_GRAVADO.Visible = true
         Me.colNM_GRAVADO.VisibleIndex = 8
-        Me.colNM_GRAVADO.Width = 108
+        Me.colNM_GRAVADO.Width = 62
         '
         'colNM_IVA
         '
@@ -256,7 +256,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colNM_IVA.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "NM_IVA", "{0:n2}")})
         Me.colNM_IVA.Visible = true
         Me.colNM_IVA.VisibleIndex = 9
-        Me.colNM_IVA.Width = 108
+        Me.colNM_IVA.Width = 62
         '
         'colNM_RENTA
         '
@@ -268,11 +268,16 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         '
         'colNM_IVA_RETENIDO
         '
+        Me.colNM_IVA_RETENIDO.Caption = "Retencion"
         Me.colNM_IVA_RETENIDO.ColumnEdit = Me.UICALC
         Me.colNM_IVA_RETENIDO.FieldName = "NM_IVA_RETENIDO"
         Me.colNM_IVA_RETENIDO.Name = "colNM_IVA_RETENIDO"
         Me.colNM_IVA_RETENIDO.OptionsColumn.AllowEdit = false
         Me.colNM_IVA_RETENIDO.OptionsColumn.ReadOnly = true
+        Me.colNM_IVA_RETENIDO.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "NM_IVA_RETENIDO", "{0:n2}")})
+        Me.colNM_IVA_RETENIDO.Visible = true
+        Me.colNM_IVA_RETENIDO.VisibleIndex = 10
+        Me.colNM_IVA_RETENIDO.Width = 60
         '
         'colNM_IVA_PERCIVIDO
         '
@@ -281,8 +286,6 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colNM_IVA_PERCIVIDO.FieldName = "NM_IVA_PERCIVIDO"
         Me.colNM_IVA_PERCIVIDO.Name = "colNM_IVA_PERCIVIDO"
         Me.colNM_IVA_PERCIVIDO.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "NM_IVA_PERCIVIDO", "{0:n2}")})
-        Me.colNM_IVA_PERCIVIDO.Visible = true
-        Me.colNM_IVA_PERCIVIDO.VisibleIndex = 10
         Me.colNM_IVA_PERCIVIDO.Width = 108
         '
         'colNM_TOTAL
@@ -296,7 +299,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colNM_TOTAL.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "NM_TOTAL", "{0:n2}")})
         Me.colNM_TOTAL.Visible = true
         Me.colNM_TOTAL.VisibleIndex = 11
-        Me.colNM_TOTAL.Width = 108
+        Me.colNM_TOTAL.Width = 56
         '
         'colID_TIPO_DOC
         '
@@ -306,7 +309,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colID_TIPO_DOC.Name = "colID_TIPO_DOC"
         Me.colID_TIPO_DOC.Visible = true
         Me.colID_TIPO_DOC.VisibleIndex = 1
-        Me.colID_TIPO_DOC.Width = 133
+        Me.colID_TIPO_DOC.Width = 77
         '
         'UIGR_TIPODOC
         '
@@ -339,7 +342,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colFLG_BLOQUEADO.OptionsColumn.ReadOnly = true
         Me.colFLG_BLOQUEADO.Visible = true
         Me.colFLG_BLOQUEADO.VisibleIndex = 12
-        Me.colFLG_BLOQUEADO.Width = 128
+        Me.colFLG_BLOQUEADO.Width = 66
         '
         'RepositoryItemCheckEdit1
         '
@@ -364,7 +367,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colDS_NUM_REG_FISC.OptionsColumn.ReadOnly = true
         Me.colDS_NUM_REG_FISC.Visible = true
         Me.colDS_NUM_REG_FISC.VisibleIndex = 3
-        Me.colDS_NUM_REG_FISC.Width = 108
+        Me.colDS_NUM_REG_FISC.Width = 62
         '
         'colDS_NIT
         '
@@ -375,7 +378,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colDS_NIT.OptionsColumn.ReadOnly = true
         Me.colDS_NIT.Visible = true
         Me.colDS_NIT.VisibleIndex = 4
-        Me.colDS_NIT.Width = 108
+        Me.colDS_NIT.Width = 62
         '
         'colDS_TIPO_DOC
         '
@@ -436,6 +439,7 @@ Partial Class FORM_IVA_DOC_VENTA_SAE
         Me.colFLG_NO_INCLUIR.Name = "colFLG_NO_INCLUIR"
         Me.colFLG_NO_INCLUIR.Visible = true
         Me.colFLG_NO_INCLUIR.VisibleIndex = 13
+        Me.colFLG_NO_INCLUIR.Width = 46
         '
         'FORM_IVA_DOC_VENTA_SAE
         '

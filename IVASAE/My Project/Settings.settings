@@ -22,7 +22,7 @@
       <Value Profile="(Default)">LOCALHOST</Value>
     </Setting>
     <Setting Name="DATABASE" Type="System.String" Scope="User">
-      <Value Profile="(Default)">IVASAE</Value>
+      <Value Profile="(Default)">IVASAE_ATSPRO</Value>
     </Setting>
     <Setting Name="USUARIO" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

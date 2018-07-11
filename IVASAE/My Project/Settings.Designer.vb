@@ -89,7 +89,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("IVASAE")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("IVASAE_ATSPRO")>  _
         Public Property DATABASE() As String
             Get
                 Return CType(Me("DATABASE"),String)
