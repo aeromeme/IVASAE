@@ -116,7 +116,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         '
         'XrLabel12
         '
-        Me.XrLabel12.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_RETENCION", "{0:n2}")})
+        Me.XrLabel12.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_PERCEPCION", "{0:n2}")})
         Me.XrLabel12.Dpi = 254!
         Me.XrLabel12.Font = New System.Drawing.Font("Times New Roman", 6!)
         Me.XrLabel12.LocationFloat = New DevExpress.Utils.PointFloat(1790!, 0!)
@@ -125,7 +125,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.XrLabel12.SizeF = New System.Drawing.SizeF(100!, 50!)
         Me.XrLabel12.StylePriority.UseFont = false
         Me.XrLabel12.StylePriority.UseTextAlignment = false
-        Me.XrLabel12.Text = "XrLabel12"
         Me.XrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'XrLabel11
@@ -332,7 +331,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.uilblretencion.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.uilblretencion.SizeF = New System.Drawing.SizeF(100!, 34.63165!)
         Me.uilblretencion.StylePriority.UseFont = false
-        Me.uilblretencion.Text = "Retenc."
+        Me.uilblretencion.Text = "Percepcion"
         '
         'uilbltotal
         '
@@ -570,7 +569,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         'BottomMargin
         '
         Me.BottomMargin.Dpi = 254!
-        Me.BottomMargin.HeightF = 104!
+        Me.BottomMargin.HeightF = 106.3152!
         Me.BottomMargin.Name = "BottomMargin"
         Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254!)
         Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -679,7 +678,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         '
         'XrLabel20
         '
-        Me.XrLabel20.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_RETENCION")})
+        Me.XrLabel20.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_PERCEPCION")})
         Me.XrLabel20.Dpi = 254!
         Me.XrLabel20.Font = New System.Drawing.Font("Times New Roman", 6!, System.Drawing.FontStyle.Bold)
         Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(1750.312!, 25.40002!)
@@ -691,7 +690,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         XrSummary7.FormatString = "{0:n2}"
         XrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
         Me.XrLabel20.Summary = XrSummary7
-        Me.XrLabel20.Text = "XrLabel20"
         Me.XrLabel20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'XrLabel21
@@ -815,7 +813,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         '
         'XrLabel23
         '
-        Me.XrLabel23.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_RETENCION")})
+        Me.XrLabel23.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_PERCEPCION")})
         Me.XrLabel23.Dpi = 254!
         Me.XrLabel23.Font = New System.Drawing.Font("Times New Roman", 6!, System.Drawing.FontStyle.Bold)
         Me.XrLabel23.LocationFloat = New DevExpress.Utils.PointFloat(1750.312!, 25.00001!)
@@ -828,7 +826,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         XrSummary10.Func = DevExpress.XtraReports.UI.SummaryFunc.RunningSum
         XrSummary10.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
         Me.XrLabel23.Summary = XrSummary10
-        Me.XrLabel23.Text = "XrLabel23"
         Me.XrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'XrLabel24
@@ -957,7 +954,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.ReportFooter, Me.PageFooter})
         Me.DataSource = Me.BindingSource1
         Me.Dpi = 254!
-        Me.Margins = New System.Drawing.Printing.Margins(79, 41, 400, 104)
+        Me.Margins = New System.Drawing.Printing.Margins(79, 41, 400, 106)
         Me.PageHeight = 2794
         Me.PageWidth = 2159
         Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.FLG_MOSTRAR_ENCABEZADO})

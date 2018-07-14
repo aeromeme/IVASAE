@@ -86,16 +86,16 @@ Public Class FORM_IVA_DOC_NOSAE
             If flgVenta Then
                 VENTA = "S"
                 COMPRA = "N"
-                UINM_IVA_RETENIDO.Visible = False
-                uilblretencion.Visible = False
+                uilblpercepcion.Visible = False
+                UINM_IVA_PERCIVIDO.Visible = False
                 uilblrenta.Visible = False
                 UINM_RENTA.Visible = False
                 uilblclieprov.Text = "Cliente"
             Else
                 VENTA = "N"
-                COMPRA = "S"
-                uilblpercepcion.Visible = False
-                UINM_IVA_PERCIVIDO.Visible = False
+                COMPRA = "S"              
+                UINM_IVA_RETENIDO.Visible = False
+                uilblretencion.Visible = False
                 uilblclieprov.Text = "Proveedor"
 
             End If

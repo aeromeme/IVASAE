@@ -96,7 +96,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         '
         'XrLabel9
         '
-        Me.XrLabel9.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_PERCEPCION", "{0:n2}")})
+        Me.XrLabel9.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_RETENCION", "{0:n2}")})
         Me.XrLabel9.Dpi = 254!
         Me.XrLabel9.Font = New System.Drawing.Font("Times New Roman", 8!)
         Me.XrLabel9.LocationFloat = New DevExpress.Utils.PointFloat(2346.96!, 0!)
@@ -105,7 +105,6 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         Me.XrLabel9.SizeF = New System.Drawing.SizeF(190.5!, 58.42!)
         Me.XrLabel9.StylePriority.UseFont = false
         Me.XrLabel9.StylePriority.UseTextAlignment = false
-        Me.XrLabel9.Text = "XrLabel9"
         Me.XrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'XrLabel8
@@ -232,7 +231,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         Me.uilblpercepcion.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.uilblpercepcion.SizeF = New System.Drawing.SizeF(190.5!, 58.41998!)
         Me.uilblpercepcion.StylePriority.UseFont = false
-        Me.uilblpercepcion.Text = "Percepcion"
+        Me.uilblpercepcion.Text = "Retencion"
         '
         'uilblIVA
         '
@@ -536,7 +535,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         '
         'XrLabel15
         '
-        Me.XrLabel15.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_PERCEPCION")})
+        Me.XrLabel15.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_RETENCION")})
         Me.XrLabel15.Dpi = 254!
         Me.XrLabel15.Font = New System.Drawing.Font("Times New Roman", 8!, System.Drawing.FontStyle.Bold)
         Me.XrLabel15.LocationFloat = New DevExpress.Utils.PointFloat(2346.96!, 24.65919!)
@@ -548,7 +547,6 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         XrSummary5.FormatString = "{0:n2}"
         XrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
         Me.XrLabel15.Summary = XrSummary5
-        Me.XrLabel15.Text = "XrLabel15"
         Me.XrLabel15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'NM_FACTURACION
