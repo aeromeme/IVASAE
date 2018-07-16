@@ -20,13 +20,15 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim XrSummary1 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
-        Dim XrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary3 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary4 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary5 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary6 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Dim XrSummary7 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+        Dim XrSummary8 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+        Dim XrSummary9 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+        Dim XrSummary2 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
+        Dim XrSummary1 As DevExpress.XtraReports.UI.XRSummary = New DevExpress.XtraReports.UI.XRSummary()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
         Me.XrLabel10 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel8 = New DevExpress.XtraReports.UI.XRLabel()
@@ -72,6 +74,12 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.FLG_MOSTRAR_ENCABEZADO = New DevExpress.XtraReports.Parameters.Parameter()
         Me.NM_FACTURA = New DevExpress.XtraReports.UI.CalculatedField()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.XrLabel4 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel21 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel22 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel23 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel24 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.BindingSource1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me,System.ComponentModel.ISupportInitialize).BeginInit
         '
@@ -407,9 +415,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         '
         'ReportFooter
         '
-        Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel31, Me.XrLabel20, Me.XrLabel19, Me.XrLabel18, Me.XrLabel17, Me.XrLabel16, Me.XrLabel15, Me.XrLabel14, Me.XrLabel13, Me.XrLabel12, Me.XrLabel11, Me.XrLabel30})
+        Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel24, Me.XrLabel23, Me.XrLabel22, Me.XrLabel21, Me.XrLabel5, Me.XrLabel4, Me.XrLabel31, Me.XrLabel20, Me.XrLabel19, Me.XrLabel18, Me.XrLabel17, Me.XrLabel16, Me.XrLabel15, Me.XrLabel14, Me.XrLabel13, Me.XrLabel12, Me.XrLabel11, Me.XrLabel30})
         Me.ReportFooter.Dpi = 254!
-        Me.ReportFooter.HeightF = 384!
+        Me.ReportFooter.HeightF = 525!
         Me.ReportFooter.KeepTogether = true
         Me.ReportFooter.Name = "ReportFooter"
         '
@@ -424,9 +432,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel31.SizeF = New System.Drawing.SizeF(140!, 58.42!)
         Me.XrLabel31.StylePriority.UseFont = false
         Me.XrLabel31.StylePriority.UseTextAlignment = false
-        XrSummary1.FormatString = "{0:n2}"
-        XrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel31.Summary = XrSummary1
+        XrSummary3.FormatString = "{0:n2}"
+        XrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel31.Summary = XrSummary3
         Me.XrLabel31.Text = "XrLabel31"
         Me.XrLabel31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -434,7 +442,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         '
         Me.XrLabel20.Dpi = 254!
         Me.XrLabel20.Font = New System.Drawing.Font("Times New Roman", 8!, System.Drawing.FontStyle.Bold)
-        Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(119.0625!, 266.5942!)
+        Me.XrLabel20.LocationFloat = New DevExpress.Utils.PointFloat(119.0626!, 266.5942!)
         Me.XrLabel20.Name = "XrLabel20"
         Me.XrLabel20.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.XrLabel20.SizeF = New System.Drawing.SizeF(209.0208!, 58.41998!)
@@ -485,9 +493,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel16.SizeF = New System.Drawing.SizeF(176.4584!, 58.42!)
         Me.XrLabel16.StylePriority.UseFont = false
         Me.XrLabel16.StylePriority.UseTextAlignment = false
-        XrSummary2.FormatString = "{0:n2}"
-        XrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel16.Summary = XrSummary2
+        XrSummary4.FormatString = "{0:n2}"
+        XrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel16.Summary = XrSummary4
         Me.XrLabel16.Text = "XrLabel16"
         Me.XrLabel16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -502,9 +510,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel15.SizeF = New System.Drawing.SizeF(180!, 58.42!)
         Me.XrLabel15.StylePriority.UseFont = false
         Me.XrLabel15.StylePriority.UseTextAlignment = false
-        XrSummary3.FormatString = "{0:n2}"
-        XrSummary3.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel15.Summary = XrSummary3
+        XrSummary5.FormatString = "{0:n2}"
+        XrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel15.Summary = XrSummary5
         Me.XrLabel15.Text = "XrLabel15"
         Me.XrLabel15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -519,9 +527,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel14.SizeF = New System.Drawing.SizeF(150!, 58.42!)
         Me.XrLabel14.StylePriority.UseFont = false
         Me.XrLabel14.StylePriority.UseTextAlignment = false
-        XrSummary4.FormatString = "{0:n2}"
-        XrSummary4.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel14.Summary = XrSummary4
+        XrSummary6.FormatString = "{0:n2}"
+        XrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel14.Summary = XrSummary6
         Me.XrLabel14.Text = "XrLabel14"
         Me.XrLabel14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -536,9 +544,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel13.SizeF = New System.Drawing.SizeF(254.0001!, 58.41998!)
         Me.XrLabel13.StylePriority.UseFont = false
         Me.XrLabel13.StylePriority.UseTextAlignment = false
-        XrSummary5.FormatString = "{0:n2}"
-        XrSummary5.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel13.Summary = XrSummary5
+        XrSummary7.FormatString = "{0:n2}"
+        XrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel13.Summary = XrSummary7
         Me.XrLabel13.Text = "XrLabel13"
         Me.XrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -553,9 +561,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel12.SizeF = New System.Drawing.SizeF(254.0001!, 58.42004!)
         Me.XrLabel12.StylePriority.UseFont = false
         Me.XrLabel12.StylePriority.UseTextAlignment = false
-        XrSummary6.FormatString = "{0:n2}"
-        XrSummary6.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel12.Summary = XrSummary6
+        XrSummary8.FormatString = "{0:n2}"
+        XrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel12.Summary = XrSummary8
         Me.XrLabel12.Text = "XrLabel12"
         Me.XrLabel12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -570,9 +578,9 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         Me.XrLabel11.SizeF = New System.Drawing.SizeF(254.0001!, 58.42!)
         Me.XrLabel11.StylePriority.UseFont = false
         Me.XrLabel11.StylePriority.UseTextAlignment = false
-        XrSummary7.FormatString = "{0:n2}"
-        XrSummary7.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
-        Me.XrLabel11.Summary = XrSummary7
+        XrSummary9.FormatString = "{0:n2}"
+        XrSummary9.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel11.Summary = XrSummary9
         Me.XrLabel11.Text = "XrLabel11"
         Me.XrLabel11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
@@ -615,6 +623,81 @@ Partial Public Class RPT_LIBRO_IVA_VENTA_CONSUFINAL
         'BindingSource1
         '
         Me.BindingSource1.DataSource = GetType(IVASAE.IVA.IVA_LIBRO_VENTA_CONSUMIDOR)
+        '
+        'XrLabel4
+        '
+        Me.XrLabel4.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_EXENTAS")})
+        Me.XrLabel4.Dpi = 254!
+        Me.XrLabel4.Font = New System.Drawing.Font("Times New Roman", 8!)
+        Me.XrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(375.9999!, 383.4341!)
+        Me.XrLabel4.Name = "XrLabel4"
+        Me.XrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96!)
+        Me.XrLabel4.SizeF = New System.Drawing.SizeF(254!, 58.42!)
+        Me.XrLabel4.StylePriority.UseFont = false
+        Me.XrLabel4.StylePriority.UseTextAlignment = false
+        XrSummary2.FormatString = "{0:n2}"
+        XrSummary2.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel4.Summary = XrSummary2
+        Me.XrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
+        '
+        'XrLabel5
+        '
+        Me.XrLabel5.Dpi = 254!
+        Me.XrLabel5.Font = New System.Drawing.Font("Times New Roman", 8!)
+        Me.XrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(119.0626!, 383.4341!)
+        Me.XrLabel5.Name = "XrLabel5"
+        Me.XrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
+        Me.XrLabel5.SizeF = New System.Drawing.SizeF(209.0209!, 58.42004!)
+        Me.XrLabel5.StylePriority.UseFont = false
+        Me.XrLabel5.Text = "Exento"
+        '
+        'XrLabel21
+        '
+        Me.XrLabel21.Dpi = 254!
+        Me.XrLabel21.Font = New System.Drawing.Font("Times New Roman", 8!)
+        Me.XrLabel21.LocationFloat = New DevExpress.Utils.PointFloat(119.0623!, 325.0141!)
+        Me.XrLabel21.Name = "XrLabel21"
+        Me.XrLabel21.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
+        Me.XrLabel21.SizeF = New System.Drawing.SizeF(209.0209!, 58.42004!)
+        Me.XrLabel21.StylePriority.UseFont = false
+        Me.XrLabel21.Text = "No sujeto"
+        '
+        'XrLabel22
+        '
+        Me.XrLabel22.Dpi = 254!
+        Me.XrLabel22.Font = New System.Drawing.Font("Times New Roman", 8!)
+        Me.XrLabel22.LocationFloat = New DevExpress.Utils.PointFloat(375.9999!, 325.0141!)
+        Me.XrLabel22.Name = "XrLabel22"
+        Me.XrLabel22.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
+        Me.XrLabel22.SizeF = New System.Drawing.SizeF(253.9998!, 58.42004!)
+        Me.XrLabel22.StylePriority.UseFont = false
+        Me.XrLabel22.Text = "No sujeto"
+        '
+        'XrLabel23
+        '
+        Me.XrLabel23.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_TOTAL")})
+        Me.XrLabel23.Dpi = 254!
+        Me.XrLabel23.Font = New System.Drawing.Font("Times New Roman", 8!, System.Drawing.FontStyle.Bold)
+        Me.XrLabel23.LocationFloat = New DevExpress.Utils.PointFloat(375.9999!, 441.8542!)
+        Me.XrLabel23.Name = "XrLabel23"
+        Me.XrLabel23.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96!)
+        Me.XrLabel23.SizeF = New System.Drawing.SizeF(254!, 58.42!)
+        Me.XrLabel23.StylePriority.UseFont = false
+        Me.XrLabel23.StylePriority.UseTextAlignment = false
+        XrSummary1.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
+        Me.XrLabel23.Summary = XrSummary1
+        Me.XrLabel23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
+        '
+        'XrLabel24
+        '
+        Me.XrLabel24.Dpi = 254!
+        Me.XrLabel24.Font = New System.Drawing.Font("Times New Roman", 8!, System.Drawing.FontStyle.Bold)
+        Me.XrLabel24.LocationFloat = New DevExpress.Utils.PointFloat(119.0626!, 441.8541!)
+        Me.XrLabel24.Name = "XrLabel24"
+        Me.XrLabel24.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
+        Me.XrLabel24.SizeF = New System.Drawing.SizeF(209.0209!, 58.42004!)
+        Me.XrLabel24.StylePriority.UseFont = false
+        Me.XrLabel24.Text = "TOTAL"
         '
         'RPT_LIBRO_IVA_VENTA_CONSUFINAL
         '
@@ -679,4 +762,10 @@ End Sub
     Friend WithEvents XrLabel2 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel3 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents uilblsubtitulo_MES As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel24 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel23 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel22 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel21 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel5 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel4 As DevExpress.XtraReports.UI.XRLabel
 End Class

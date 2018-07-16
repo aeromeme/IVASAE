@@ -14,7 +14,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>D:\IVASAE\</PublishUrl>
+    <PublishUrl>C:\Users\Manuel Guerra\Desktop\IVASAE\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -26,11 +26,11 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>http://192.168.12.2/ivasae/</InstallUrl>
     <ProductName>IVASAE</ProductName>
-    <PublisherName>Manuel Guerra</PublisherName>
+    <PublisherName>Fritech</PublisherName>
     <SuiteName>Fritech</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

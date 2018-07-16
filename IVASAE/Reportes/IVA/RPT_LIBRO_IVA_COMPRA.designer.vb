@@ -240,7 +240,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         '
         'XrLabel13
         '
-        Me.XrLabel13.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_COMPRAS_A_TERCEROS", "{0:n2}")})
+        Me.XrLabel13.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_COMPRAS_NO_CONTRIB", "{0:n2}")})
         Me.XrLabel13.Font = New System.Drawing.Font("Times New Roman", 8!)
         Me.XrLabel13.LocationFloat = New DevExpress.Utils.PointFloat(976.9999!, 0!)
         Me.XrLabel13.Name = "XrLabel13"
@@ -248,7 +248,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         Me.XrLabel13.SizeF = New System.Drawing.SizeF(45!, 23!)
         Me.XrLabel13.StylePriority.UseFont = false
         Me.XrLabel13.StylePriority.UseTextAlignment = false
-        Me.XrLabel13.Text = "XrLabel13"
         Me.XrLabel13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'TopMargin
@@ -268,7 +267,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         Me.uilblcomprasaterceros.SizeF = New System.Drawing.SizeF(45!, 43.83333!)
         Me.uilblcomprasaterceros.StylePriority.UseFont = false
         Me.uilblcomprasaterceros.StylePriority.UseTextAlignment = false
-        Me.uilblcomprasaterceros.Text = "Compras a terceros"
+        Me.uilblcomprasaterceros.Text = "Compras a sujetos excluidos"
         Me.uilblcomprasaterceros.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
         'uilblretencion
@@ -616,7 +615,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         '
         'XrLabel21
         '
-        Me.XrLabel21.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_COMPRAS_A_TERCEROS")})
+        Me.XrLabel21.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "NM_COMPRAS_NO_CONTRIB")})
         Me.XrLabel21.Font = New System.Drawing.Font("Times New Roman", 8!, System.Drawing.FontStyle.Bold)
         Me.XrLabel21.LocationFloat = New DevExpress.Utils.PointFloat(976.9999!, 10.00001!)
         Me.XrLabel21.Name = "XrLabel21"
@@ -627,7 +626,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         XrSummary8.FormatString = "{0:n2}"
         XrSummary8.Running = DevExpress.XtraReports.UI.SummaryRunning.Report
         Me.XrLabel21.Summary = XrSummary8
-        Me.XrLabel21.Text = "XrLabel21"
         Me.XrLabel21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'ReportFooter

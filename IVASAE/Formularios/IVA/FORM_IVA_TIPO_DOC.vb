@@ -43,11 +43,11 @@ Public Class FORM_IVA_TIPO_DOC
             If flgVenta Then
                 VENTA = "S"
                 COMPRA = "N"
-                UIGRP_IMPOR_PARAM .Visible = true
+                'UIGRP_IMPOR_PARAM .Visible = true
             Else
                 VENTA = "N"
                 COMPRA = "S"
-                UIGRP_IMPOR_PARAM.Visible = false
+                'UIGRP_IMPOR_PARAM.Visible = false
             End If
 
             _datasistema.ConectarIVA()
@@ -197,7 +197,7 @@ Public Class FORM_IVA_TIPO_DOC
     End Sub
 
     Private Sub UIFLG_IMPO_SAE_CheckedChanged(sender As Object, e As EventArgs) Handles UIFLG_IMPO_SAE.CheckedChanged
-        If UIFLG_IMPO_SAE.Checked and flgVenta Then
+        If UIFLG_IMPO_SAE.Checked Then
             UIGRP_IMPOR_PARAM.Visible = True
         Else
             UIGRP_IMPOR_PARAM.Visible = False
