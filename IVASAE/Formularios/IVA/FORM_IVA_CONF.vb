@@ -29,6 +29,8 @@ Public Class FORM_IVA_CONF
                     'UIID_DEF_CLASE_PRODUCTO.EditValue = tupla.ID_DEF_CLASE_PRODUCTO
                     'UIDS_NOMBRE_POLIZA.EditValue = tupla.DS_NOMBRE_POLIZA
                     UINM_PORC_IVA.EditValue = tupla.NM_PORC_IVA
+                    UIDS_NOMBRE_CONTADOR .Text =tupla.DS_NOMBRE_CONTADOR 
+                    UIDS_NUM_ACREDITACION.Text =tupla.DS_NUM_ACREDITACION 
                     
 
                 Else
@@ -70,6 +72,8 @@ Public Class FORM_IVA_CONF
                 If Not tupla Is Nothing Then
 
                     tupla.NM_PORC_IVA = UINM_PORC_IVA.EditValue
+                    tupla.DS_NOMBRE_CONTADOR =UIDS_NOMBRE_CONTADOR .Text 
+                    tupla.DS_NUM_ACREDITACION = UIDS_NUM_ACREDITACION.Text
                     'tupla.DS_NOMBRE_POLIZA = UIDS_NOMBRE_POLIZA.EditValue
                     'tupla.ID_DEF_CLASE_PRODUCTO = UIID_DEF_CLASE_PRODUCTO.EditValue
 

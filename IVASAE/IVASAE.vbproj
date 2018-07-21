@@ -30,7 +30,7 @@
     <SuiteName>Fritech</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -155,6 +155,9 @@
     <Compile Include="Acceso a datos\DB_IVA.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>DB_IVA.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Acceso a datos\DB_IVA.vb">
       <DependentUpon>DB_IVA.dbml</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">

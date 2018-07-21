@@ -391,7 +391,7 @@ Partial Public Class RPT_LIBRO_IVA_VENTA
         Me.uilblnit.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.uilblnit.SizeF = New System.Drawing.SizeF(460.375!, 58.42001!)
         Me.uilblnit.StylePriority.UseFont = false
-        Me.uilblnit.Text = "NIT 0210-120364-001-2"
+        Me.uilblnit.Text = "NIT 0210-080290-101-3"
         '
         'uilblnrc
         '

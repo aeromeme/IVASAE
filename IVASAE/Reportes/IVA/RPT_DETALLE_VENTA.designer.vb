@@ -203,7 +203,7 @@ Partial Public Class RPT_DETALLE_VENTA
         Me.uilblnit.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100!)
         Me.uilblnit.SizeF = New System.Drawing.SizeF(131.6665!, 23!)
         Me.uilblnit.StylePriority.UseFont = false
-        Me.uilblnit.Text = "NIT 0210-120364-001-2"
+        Me.uilblnit.Text = "NIT 0210-080290-101-3"
         '
         'uilblnombreContrib
         '

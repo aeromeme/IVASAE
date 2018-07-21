@@ -31,30 +31,31 @@ Partial Class FORM_IVA_LIBROS
         Me.uigridviewexport = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
         Me.UIDIALOGO_GUARDAREXCEL = New System.Windows.Forms.SaveFileDialog()
-        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LayoutControl1.SuspendLayout()
-        CType(Me.uipanelfiltro, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.uipanelfiltro.SuspendLayout()
-        CType(Me.uipanelcolapsefiltro, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIRBNCONTROL_REPORT, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIPRINTRIBBONCONTROL, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UIGROUP_MAIN, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.UIGROUP_MAIN.SuspendLayout()
-        CType(Me.uicd_libro.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ClasegenericaparesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.uiflgenca.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.uigridexport, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.uigridviewexport, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.LayoutControl1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.LayoutControl1.SuspendLayout
+        CType(Me.uipanelfiltro,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.uipanelfiltro.SuspendLayout
+        CType(Me.uipanelcolapsefiltro,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlItem1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIRBNCONTROL_REPORT,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIPRINTRIBBONCONTROL,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlItem4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlItem3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlGroup1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.LayoutControlGroup2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.UIGROUP_MAIN.SuspendLayout
+        CType(Me.uicd_libro.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.ClasegenericaparesBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.uiflgenca.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.uigridexport,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.uigridviewexport,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'LayoutControl1
         '
-        Me.LayoutControl1.Size = New System.Drawing.Size(1254, 581)
+        Me.LayoutControl1.Location = New System.Drawing.Point(2, 38)
+        Me.LayoutControl1.Size = New System.Drawing.Size(1254, 582)
         Me.LayoutControl1.Controls.SetChildIndex(Me.uipanelfiltro, 0)
         Me.LayoutControl1.Controls.SetChildIndex(Me.UIREPORT_STATUS, 0)
         Me.LayoutControl1.Controls.SetChildIndex(Me.UIVISOR_REPORTES, 0)
@@ -69,7 +70,7 @@ Partial Class FORM_IVA_LIBROS
         Me.uipanelfiltro.Controls.Add(Me.uibtngenerar)
         Me.uipanelfiltro.Controls.Add(Me.LabelControl1)
         Me.uipanelfiltro.Controls.Add(Me.uicd_libro)
-        Me.uipanelfiltro.Location = New System.Drawing.Point(1054, 24)
+        Me.uipanelfiltro.Location = New System.Drawing.Point(1054, 23)
         Me.uipanelfiltro.TabIndex = 2
         '
         'uipanelcolapsefiltro
@@ -79,12 +80,15 @@ Partial Class FORM_IVA_LIBROS
         'UIRBNCONTROL_REPORT
         '
         Me.UIRBNCONTROL_REPORT.ExpandCollapseItem.Id = 0
-        Me.UIRBNCONTROL_REPORT.Size = New System.Drawing.Size(1258, 142)
+        Me.UIRBNCONTROL_REPORT.Location = New System.Drawing.Point(0, 481)
+        Me.UIRBNCONTROL_REPORT.Size = New System.Drawing.Size(1258, 141)
         '
         'UIVISOR_REPORTES
         '
-        Me.UIVISOR_REPORTES.Size = New System.Drawing.Size(1002, 484)
+        Me.UIVISOR_REPORTES.HorizontalScrollBarVisibility = DevExpress.XtraEditors.ViewInfo.ScrollBarVisibility.Visible
+        Me.UIVISOR_REPORTES.Size = New System.Drawing.Size(1002, 486)
         Me.UIVISOR_REPORTES.TabIndex = 0
+        Me.UIVISOR_REPORTES.VerticalScrollBarVisibility = DevExpress.XtraEditors.ViewInfo.ScrollBarVisibility.Visible
         '
         'UIREPORT_STATUS
         '
@@ -92,7 +96,7 @@ Partial Class FORM_IVA_LIBROS
         '
         'LayoutControlItem4
         '
-        Me.LayoutControlItem4.Size = New System.Drawing.Size(1006, 488)
+        Me.LayoutControlItem4.Size = New System.Drawing.Size(1006, 490)
         '
         'LayoutControlItem3
         '
@@ -100,18 +104,18 @@ Partial Class FORM_IVA_LIBROS
         '
         'LayoutControlGroup1
         '
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1254, 581)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1254, 582)
         '
         'LayoutControlGroup2
         '
-        Me.LayoutControlGroup2.Size = New System.Drawing.Size(1030, 561)
+        Me.LayoutControlGroup2.Size = New System.Drawing.Size(1030, 562)
         '
         'UIGROUP_MAIN
         '
-        Me.UIGROUP_MAIN.AppearanceCaption.Font = New System.Drawing.Font("Arial Narrow", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UIGROUP_MAIN.AppearanceCaption.Font = New System.Drawing.Font("Arial Narrow", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.UIGROUP_MAIN.AppearanceCaption.ForeColor = System.Drawing.Color.White
-        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseFont = True
-        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = True
+        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseFont = true
+        Me.UIGROUP_MAIN.AppearanceCaption.Options.UseForeColor = true
         Me.UIGROUP_MAIN.Size = New System.Drawing.Size(1258, 622)
         '
         'uicd_libro
@@ -120,7 +124,7 @@ Partial Class FORM_IVA_LIBROS
         Me.uicd_libro.MenuManager = Me.UIRBNCONTROL_REPORT
         Me.uicd_libro.Name = "uicd_libro"
         Me.uicd_libro.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.uicd_libro.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Codigo", "Codigo", 56, DevExpress.Utils.FormatType.None, "", False, DevExpress.Utils.HorzAlignment.Near), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Libro", 64, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.Near)})
+        Me.uicd_libro.Properties.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Codigo", "Codigo", 56, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Descripcion", "Libro", 64, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)})
         Me.uicd_libro.Properties.DataSource = Me.ClasegenericaparesBindingSource
         Me.uicd_libro.Properties.DisplayMember = "Descripcion"
         Me.uicd_libro.Properties.ValueMember = "Codigo"
@@ -141,7 +145,7 @@ Partial Class FORM_IVA_LIBROS
         '
         'uibtngenerar
         '
-        Me.uibtngenerar.Location = New System.Drawing.Point(17, 118)
+        Me.uibtngenerar.Location = New System.Drawing.Point(17, 180)
         Me.uibtngenerar.Name = "uibtngenerar"
         Me.uibtngenerar.Size = New System.Drawing.Size(129, 35)
         Me.uibtngenerar.TabIndex = 2
@@ -149,7 +153,7 @@ Partial Class FORM_IVA_LIBROS
         '
         'uibtnpreparar
         '
-        Me.uibtnpreparar.Location = New System.Drawing.Point(17, 170)
+        Me.uibtnpreparar.Location = New System.Drawing.Point(17, 139)
         Me.uibtnpreparar.Name = "uibtnpreparar"
         Me.uibtnpreparar.Size = New System.Drawing.Size(129, 35)
         Me.uibtnpreparar.TabIndex = 3
@@ -166,7 +170,7 @@ Partial Class FORM_IVA_LIBROS
         '
         'uibtncerrarPeriodo
         '
-        Me.uibtncerrarPeriodo.Image = Global.IVASAE.My.Resources.Resources._1424930626_change_password
+        Me.uibtncerrarPeriodo.ImageOptions.Image = Global.IVASAE.My.Resources.Resources._1424930626_change_password
         Me.uibtncerrarPeriodo.Location = New System.Drawing.Point(17, 221)
         Me.uibtncerrarPeriodo.Name = "uibtncerrarPeriodo"
         Me.uibtncerrarPeriodo.Size = New System.Drawing.Size(129, 35)
@@ -182,7 +186,7 @@ Partial Class FORM_IVA_LIBROS
         Me.uigridexport.Size = New System.Drawing.Size(357, 257)
         Me.uigridexport.TabIndex = 6
         Me.uigridexport.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.uigridviewexport})
-        Me.uigridexport.Visible = False
+        Me.uigridexport.Visible = false
         '
         'uigridviewexport
         '
@@ -203,32 +207,33 @@ Partial Class FORM_IVA_LIBROS
         '
         'FORM_IVA_LIBROS
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.ClientSize = New System.Drawing.Size(1258, 622)
         Me.Name = "FORM_IVA_LIBROS"
-        CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LayoutControl1.ResumeLayout(False)
-        CType(Me.uipanelfiltro, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.uipanelfiltro.ResumeLayout(False)
-        Me.uipanelfiltro.PerformLayout()
-        CType(Me.uipanelcolapsefiltro, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIRBNCONTROL_REPORT, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIPRINTRIBBONCONTROL, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LayoutControlGroup2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UIGROUP_MAIN, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.UIGROUP_MAIN.ResumeLayout(False)
-        CType(Me.uicd_libro.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ClasegenericaparesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.uiflgenca.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.uigridexport, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.uigridviewexport, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
+        CType(Me.LayoutControl1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.LayoutControl1.ResumeLayout(false)
+        CType(Me.uipanelfiltro,System.ComponentModel.ISupportInitialize).EndInit
+        Me.uipanelfiltro.ResumeLayout(false)
+        Me.uipanelfiltro.PerformLayout
+        CType(Me.uipanelcolapsefiltro,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlItem1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIRBNCONTROL_REPORT,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIPRINTRIBBONCONTROL,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlItem4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlItem3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlGroup1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.LayoutControlGroup2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.UIGROUP_MAIN,System.ComponentModel.ISupportInitialize).EndInit
+        Me.UIGROUP_MAIN.ResumeLayout(false)
+        CType(Me.uicd_libro.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.ClasegenericaparesBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.uiflgenca.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.uigridexport,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.uigridviewexport,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents uibtngenerar As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents uicd_libro As DevExpress.XtraEditors.LookUpEdit

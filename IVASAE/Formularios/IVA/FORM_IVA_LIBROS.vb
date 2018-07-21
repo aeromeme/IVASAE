@@ -101,6 +101,10 @@ Public Class FORM_IVA_LIBROS
 
     Private Sub uibtnpreparar_Click(sender As Object, e As EventArgs) Handles uibtnpreparar.Click
         Try
+             if uicd_libro.EditValue is nothing
+                MetodosForm.MensajeErrorDefault ("Seleccione un tipo de libro")
+                return
+            End If
             If MetodosForm.Preguntar("¿Esta seguro de procesar los libros de IVA?") Then
                 _datasistema.ConectarIVA()
                 Dim nmerror As Integer = 0
@@ -129,18 +133,36 @@ Public Class FORM_IVA_LIBROS
 
     Private Sub uibtngenerar_Click(sender As Object, e As EventArgs) Handles uibtngenerar.Click
         Try
+             _datasistema.ConectarIVA()
+            dim contador as string = ""
+            dim numacre as string = ""
+             Dim tupla As IVA_CONF = (From a In _datasistema.ContextoIVA.IVA_CONF Select a).ToList()(0)
+                If Not tupla Is Nothing Then
+                    contador=tupla.DS_NOMBRE_CONTADOR 
+                    numacre =tupla.DS_NUM_ACREDITACION 
+                End If
             flgreporte = False
             uigridexport.DataSource = Nothing
             uigridviewexport.Columns.Clear()
+            if uicd_libro.EditValue is nothing
+                MetodosForm.MensajeErrorDefault ("Seleccione un tipo de libro")
+                return
+            End If
             Select Case uicd_libro.EditValue.ToString
 
                 Case "COM"
-                    _datasistema.ConectarIVA()
+                   
                     Dim data As Generic.List(Of IVA_LIBRO_COMPRA)
                     data = (From u In _datasistema.ContextoIVA.IVA_LIBRO_COMPRA Where u.NM_ANIO = nmanio And u.NM_MES = nmmes Order By u.CD_CORR Ascending).ToList
+                    if data.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
                     Dim rpt As New RPT_LIBRO_IVA_COMPRA_V2
                     rpt.DataSource = data
                     rpt.FLG_MOSTRAR_ENCABEZADO.Value = If(uiflgenca.Checked, "S", "N")
+                    rpt.acreditacion.value=numacre
+                    rpt.contador.value=contador
                     rpt.RequestParameters = False
                     UIVISOR_REPORTES.PrintingSystem = rpt.PrintingSystem
                     rpt.CreateDocument()
@@ -148,12 +170,19 @@ Public Class FORM_IVA_LIBROS
                     uigridexport.DataSource = data
                     flgreporte = True
                 Case "VEN"
-                    _datasistema.ConectarIVA()
                     Dim data As Generic.List(Of IVA_LIBRO_VENTA_CONTRIBUYENTE)
                     data = (From u In _datasistema.ContextoIVA.IVA_LIBRO_VENTA_CONTRIBUYENTE Where u.NM_ANIO = nmanio And u.NM_MES = nmmes Order By u.CD_CORR Ascending, u.FECHA.Value.Day Ascending, u.CVE_DOC Ascending Select u).ToList
+                    if data.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
 
                     Dim dataconsu As Generic.List(Of IVA_LIBRO_VENTA_CONSUMIDOR)
                     dataconsu = (From u In _datasistema.ContextoIVA.IVA_LIBRO_VENTA_CONSUMIDOR Where u.NM_ANIO = nmanio And u.NM_MES = nmmes).ToList
+                    if dataconsu.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
 
                     Dim datasub As New Generic.List(Of cRLIBRO_IVA_VENTA)
                     Dim itemsub As New cRLIBRO_IVA_VENTA
@@ -176,7 +205,8 @@ Public Class FORM_IVA_LIBROS
                     Dim rpt As New RPT_LIBRO_IVA_VENTA_V2
                     rpt.DataSource = data
                     rpt.FLG_MOSTRAR_ENCABEZADO.Value = If(uiflgenca.Checked, "S", "N")
-
+                    rpt.acreditacion.value=numacre
+                    rpt.contador.value=contador
                     rpt.XrSubreport1.ReportSource.DataSource = datasub
 
 
@@ -187,22 +217,30 @@ Public Class FORM_IVA_LIBROS
                     uigridexport.DataSource = data
                     flgreporte = True
                 Case "VCF"
-                    _datasistema.ConectarIVA()
                     Dim data As Generic.List(Of IVA_LIBRO_VENTA_CONSUMIDOR)
                     data = (From u In _datasistema.ContextoIVA.IVA_LIBRO_VENTA_CONSUMIDOR Where u.NM_ANIO = nmanio And u.NM_MES = nmmes Order By u.CD_CORR Ascending).ToList
+                    if data.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
                     Dim rpt As New RPT_LIBRO_IVA_VENTA_CONSUFINAL
                     rpt.DataSource = data
                     rpt.FLG_MOSTRAR_ENCABEZADO.Value = If(uiflgenca.Checked, "S", "N")
+                    rpt.acreditacion.value=numacre
+                    rpt.contador.value=contador
                     UIVISOR_REPORTES.PrintingSystem = rpt.PrintingSystem
                     rpt.CreateDocument()
                     Principal.RibbonControl1.SelectedPage = Principal.RibbonControl1.MergedPages(0)
                     uigridexport.DataSource = data
                     flgreporte = True
                 Case "DCF"
-                    _datasistema.ConectarIVA()
                     Dim data As Generic.List(Of V_IVA_DETALLE_VENTA)
                     data = (From u In _datasistema.ContextoIVA.V_IVA_DETALLE_VENTA Where u.NM_ANIO = nmanio And u.NM_MES = nmmes And (u.CD_TIPO = "FAC" Or u.CD_TIPO = "NCF")
                            Order By u.DIA Ascending, u.CVE_DOC Ascending Select u).ToList
+                    if data.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
                     Dim rpt As New RPT_DETALLE_VENTA
                     rpt.DataSource = data
                     rpt.DS_TITULO.Value = "VENTAS A CONSUMIDOR FINAL"
@@ -212,10 +250,13 @@ Public Class FORM_IVA_LIBROS
                     uigridexport.DataSource = data
                     flgreporte = True
                 Case "DFE"
-                    _datasistema.ConectarIVA()
                     Dim data As Generic.List(Of V_IVA_DETALLE_VENTA)
                     data = (From u In _datasistema.ContextoIVA.V_IVA_DETALLE_VENTA Where u.NM_ANIO = nmanio And u.NM_MES = nmmes And (u.CD_TIPO = "FEX" Or u.CD_TIPO = "NCE")
                            Order By u.DIA Ascending, u.CVE_DOC Ascending Select u).ToList
+                    if data.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
                     Dim rpt As New RPT_DETALLE_VENTA
                     rpt.DataSource = data
                     rpt.DS_TITULO.Value = "EXPORTACIONES"
@@ -225,10 +266,13 @@ Public Class FORM_IVA_LIBROS
                     uigridexport.DataSource = data
                     flgreporte = True
                 Case "FEL"
-                    _datasistema.ConectarIVA()
                     Dim data As Generic.List(Of V_IVA_DETALLE_VENTA)
                     data = (From u In _datasistema.ContextoIVA.V_IVA_DETALLE_VENTA Where u.NM_ANIO = nmanio And u.NM_MES = nmmes And (u.CD_TIPO = "FEX" Or u.CD_TIPO = "NCE")
                            Order By u.DIA Ascending, u.CVE_DOC Ascending Select u).ToList
+                    if data.Count =0
+                        MetodosForm .MensajeErrorDefault ("No hay datos que mostrar, asegurese de que exista informacion para este o haya preparado el libro antes")
+                        return
+                    End If
                     Dim rpt As New RPT_LIBRO_IVA_EXPO
                     rpt.DataSource = data
                     ''rpt.DS_TITULO.Value = "EXPORTACIONES"

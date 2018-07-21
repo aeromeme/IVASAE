@@ -87,7 +87,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.XrLine4 = New DevExpress.XtraReports.UI.XRLine()
         Me.XrLine3 = New DevExpress.XtraReports.UI.XRLine()
         Me.uilblTotalTodo = New DevExpress.XtraReports.UI.XRLabel()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.FLG_MOSTRAR_ENCABEZADO = New DevExpress.XtraReports.Parameters.Parameter()
         Me.PageFooter = New DevExpress.XtraReports.UI.PageFooterBand()
         Me.XrLine2 = New DevExpress.XtraReports.UI.XRLine()
@@ -101,6 +100,13 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.XrLabel28 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel29 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel30 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.contador = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.acreditacion = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.XrLabel31 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel32 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel33 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel34 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me.BindingSource1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me,System.ComponentModel.ISupportInitialize).BeginInit
         '
@@ -330,7 +336,9 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.uilblretencion.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.uilblretencion.SizeF = New System.Drawing.SizeF(100!, 34.63165!)
         Me.uilblretencion.StylePriority.UseFont = false
-        Me.uilblretencion.Text = "Percepcion"
+        Me.uilblretencion.StylePriority.UseTextAlignment = false
+        Me.uilblretencion.Text = "Percep."
+        Me.uilblretencion.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'uilbltotal
         '
@@ -341,7 +349,9 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.uilbltotal.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.uilbltotal.SizeF = New System.Drawing.SizeF(100!, 34.63165!)
         Me.uilbltotal.StylePriority.UseFont = false
+        Me.uilbltotal.StylePriority.UseTextAlignment = false
         Me.uilbltotal.Text = "Total"
+        Me.uilbltotal.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'uilbliva
         '
@@ -354,7 +364,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.uilbliva.StylePriority.UseFont = false
         Me.uilbliva.StylePriority.UseTextAlignment = false
         Me.uilbliva.Text = "IVA"
-        Me.uilbliva.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        Me.uilbliva.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
         'uilblgravlocal
         '
@@ -526,7 +536,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.uilblnit.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
         Me.uilblnit.SizeF = New System.Drawing.SizeF(359.8333!, 58.42!)
         Me.uilblnit.StylePriority.UseFont = false
-        Me.uilblnit.Text = "NIT: 0210-120364-001-2"
+        Me.uilblnit.Text = "NIT: 0210-080290-101-3"
         '
         'uilblnombreContrib
         '
@@ -709,9 +719,9 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         '
         'ReportFooter
         '
-        Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLine4, Me.XrLine3, Me.uilblTotalTodo, Me.XrLabel14, Me.XrLabel15, Me.XrLabel16, Me.XrLabel17, Me.XrLabel18, Me.XrLabel19, Me.XrLabel20, Me.XrLabel21})
+        Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel34, Me.XrLabel33, Me.XrLabel32, Me.XrLabel31, Me.XrLine4, Me.XrLine3, Me.uilblTotalTodo, Me.XrLabel14, Me.XrLabel15, Me.XrLabel16, Me.XrLabel17, Me.XrLabel18, Me.XrLabel19, Me.XrLabel20, Me.XrLabel21})
         Me.ReportFooter.Dpi = 254!
-        Me.ReportFooter.HeightF = 159.0833!
+        Me.ReportFooter.HeightF = 476.5833!
         Me.ReportFooter.KeepTogether = true
         Me.ReportFooter.Name = "ReportFooter"
         '
@@ -749,10 +759,6 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.uilblTotalTodo.StylePriority.UseTextAlignment = false
         Me.uilblTotalTodo.Text = "TOTALES GENERALES"
         Me.uilblTotalTodo.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
-        '
-        'BindingSource1
-        '
-        Me.BindingSource1.DataSource = GetType(IVASAE.IVA.IVA_LIBRO_COMPRA)
         '
         'FLG_MOSTRAR_ENCABEZADO
         '
@@ -946,6 +952,76 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.XrLabel30.Text = "SUBTOTALES"
         Me.XrLabel30.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
         '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataSource = GetType(IVASAE.IVA.IVA_LIBRO_COMPRA)
+        '
+        'contador
+        '
+        Me.contador.Description = "nombre del contador"
+        Me.contador.Name = "contador"
+        Me.contador.Visible = false
+        '
+        'acreditacion
+        '
+        Me.acreditacion.Description = "numero de acreditacion"
+        Me.acreditacion.Name = "acreditacion"
+        Me.acreditacion.Visible = false
+        '
+        'XrLabel31
+        '
+        Me.XrLabel31.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.contador, "Text", "")})
+        Me.XrLabel31.Dpi = 254!
+        Me.XrLabel31.Font = New System.Drawing.Font("Times New Roman", 6!)
+        Me.XrLabel31.LocationFloat = New DevExpress.Utils.PointFloat(1351.393!, 325.3316!)
+        Me.XrLabel31.Name = "XrLabel31"
+        Me.XrLabel31.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96!)
+        Me.XrLabel31.SizeF = New System.Drawing.SizeF(662.6072!, 58.41998!)
+        Me.XrLabel31.StylePriority.UseFont = false
+        Me.XrLabel31.StylePriority.UseTextAlignment = false
+        Me.XrLabel31.Text = "XrLabel31"
+        Me.XrLabel31.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
+        '
+        'XrLabel32
+        '
+        Me.XrLabel32.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding(Me.acreditacion, "Text", "")})
+        Me.XrLabel32.Dpi = 254!
+        Me.XrLabel32.Font = New System.Drawing.Font("Times New Roman", 6!)
+        Me.XrLabel32.LocationFloat = New DevExpress.Utils.PointFloat(1653.018!, 383.7516!)
+        Me.XrLabel32.Name = "XrLabel32"
+        Me.XrLabel32.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96!)
+        Me.XrLabel32.SizeF = New System.Drawing.SizeF(360.9822!, 58.42004!)
+        Me.XrLabel32.StylePriority.UseFont = false
+        Me.XrLabel32.Text = "XrLabel32"
+        '
+        'XrLabel33
+        '
+        Me.XrLabel33.Dpi = 254!
+        Me.XrLabel33.Font = New System.Drawing.Font("Times New Roman", 6!, System.Drawing.FontStyle.Bold)
+        Me.XrLabel33.LocationFloat = New DevExpress.Utils.PointFloat(1351.393!, 383.7516!)
+        Me.XrLabel33.Name = "XrLabel33"
+        Me.XrLabel33.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
+        Me.XrLabel33.SizeF = New System.Drawing.SizeF(268.6067!, 58.42004!)
+        Me.XrLabel33.StylePriority.UseFont = false
+        Me.XrLabel33.StylePriority.UseTextAlignment = false
+        Me.XrLabel33.Text = "No. de acreditacion"
+        Me.XrLabel33.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight
+        '
+        'XrLabel34
+        '
+        Me.XrLabel34.Borders = DevExpress.XtraPrinting.BorderSide.Bottom
+        Me.XrLabel34.Dpi = 254!
+        Me.XrLabel34.Font = New System.Drawing.Font("Times New Roman", 6!, System.Drawing.FontStyle.Bold)
+        Me.XrLabel34.LocationFloat = New DevExpress.Utils.PointFloat(1351.393!, 266.9116!)
+        Me.XrLabel34.Name = "XrLabel34"
+        Me.XrLabel34.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254!)
+        Me.XrLabel34.SizeF = New System.Drawing.SizeF(662.6064!, 58.42004!)
+        Me.XrLabel34.StylePriority.UseBorders = false
+        Me.XrLabel34.StylePriority.UseFont = false
+        Me.XrLabel34.StylePriority.UseTextAlignment = false
+        Me.XrLabel34.Text = "F. "
+        Me.XrLabel34.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        '
         'RPT_LIBRO_IVA_COMPRA_V2
         '
         Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.ReportFooter, Me.PageFooter})
@@ -954,7 +1030,7 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA_V2
         Me.Margins = New System.Drawing.Printing.Margins(79, 41, 400, 106)
         Me.PageHeight = 2794
         Me.PageWidth = 2159
-        Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.FLG_MOSTRAR_ENCABEZADO})
+        Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.FLG_MOSTRAR_ENCABEZADO, Me.contador, Me.acreditacion})
         Me.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter
         Me.ScriptLanguage = DevExpress.XtraReports.ScriptLanguage.VisualBasic
         Me.SnapGridSize = 31.75!
@@ -1028,4 +1104,10 @@ End Sub
     Friend WithEvents XrLine4 As DevExpress.XtraReports.UI.XRLine
     Friend WithEvents XrLine3 As DevExpress.XtraReports.UI.XRLine
     Friend WithEvents uilblsubtitulo_MES As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents contador As DevExpress.XtraReports.Parameters.Parameter
+    Friend WithEvents acreditacion As DevExpress.XtraReports.Parameters.Parameter
+    Friend WithEvents XrLabel31 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel33 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel32 As DevExpress.XtraReports.UI.XRLabel
+    Friend WithEvents XrLabel34 As DevExpress.XtraReports.UI.XRLabel
 End Class

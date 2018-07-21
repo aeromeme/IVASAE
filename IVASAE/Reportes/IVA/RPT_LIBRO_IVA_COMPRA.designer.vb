@@ -77,8 +77,8 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         Me.XrLabel21 = New DevExpress.XtraReports.UI.XRLabel()
         Me.ReportFooter = New DevExpress.XtraReports.UI.ReportFooterBand()
         Me.uilblTotalTodo = New DevExpress.XtraReports.UI.XRLabel()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.FLG_MOSTRAR_ENCABEZADO = New DevExpress.XtraReports.Parameters.Parameter()
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.BindingSource1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me,System.ComponentModel.ISupportInitialize).BeginInit
         '
@@ -645,16 +645,16 @@ Partial Public Class RPT_LIBRO_IVA_COMPRA
         Me.uilblTotalTodo.StylePriority.UseFont = false
         Me.uilblTotalTodo.Text = "TOTALES"
         '
-        'BindingSource1
-        '
-        Me.BindingSource1.DataSource = GetType(IVASAE.IVA.IVA_LIBRO_COMPRA)
-        '
         'FLG_MOSTRAR_ENCABEZADO
         '
         Me.FLG_MOSTRAR_ENCABEZADO.Description = "Parameter1"
         Me.FLG_MOSTRAR_ENCABEZADO.Name = "FLG_MOSTRAR_ENCABEZADO"
         Me.FLG_MOSTRAR_ENCABEZADO.ValueInfo = "S"
         Me.FLG_MOSTRAR_ENCABEZADO.Visible = false
+        '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataSource = GetType(IVASAE.IVA.IVA_LIBRO_COMPRA)
         '
         'RPT_LIBRO_IVA_COMPRA
         '

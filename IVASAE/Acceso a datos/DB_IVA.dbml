@@ -495,17 +495,6 @@
       <Column Name="NM_IVA_TOTAL" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.IVA_CONF" Member="IVA_CONF">
-    <Type Name="IVA_CONF">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="DS_NOMBRE_POLIZA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="ID_DEF_CLASE_PRODUCTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NM_NIT_EMPRESA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NM_NOMBRE_EMPRESA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="NM_PORC_IVA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_REG_FISC" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.IVA_TIPO_DOCUMENTO" Member="IVA_TIPO_DOCUMENTO">
     <Type Name="IVA_TIPO_DOCUMENTO">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -521,6 +510,28 @@
       <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_NO_SAE" Member="IVA_DOC_NO_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_NO_SAE" />
       <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_COMPRA_SAE" Member="IVA_DOC_COMPRA_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_COMPRA_SAE" />
       <Association Name="IVA_TIPO_DOCUMENTO_IVA_DOC_VENTA_SAE" Member="IVA_DOC_VENTA_SAE" ThisKey="ID" OtherKey="ID_TIPO_DOC" Type="IVA_DOC_VENTA_SAE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IVA_LIBRO_VENTA_CONTRIBUYENTE" Member="IVA_LIBRO_VENTA_CONTRIBUYENTE">
+    <Type Name="IVA_LIBRO_VENTA_CONTRIBUYENTE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CD_CORR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NM_ANIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NM_MES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FECHA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CVE_DOC" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_NRF" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CVE_CLIE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_CLIENTE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="NM_NO_SUJETAS" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_EXENTO" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_GRAVADO" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_IVA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_PERCEPCION" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_TOTAL" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="DS_CORR" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NM_RETENCION" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_RENTA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.IVA_LIBRO_COMPRA" Member="IVA_LIBRO_COMPRA">
@@ -546,28 +557,20 @@
       <Column Name="DS_CORR" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
       <Column Name="NM_RENTA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
       <Column Name="NM_PERCEPCION" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="DS_NIT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.IVA_LIBRO_VENTA_CONTRIBUYENTE" Member="IVA_LIBRO_VENTA_CONTRIBUYENTE">
-    <Type Name="IVA_LIBRO_VENTA_CONTRIBUYENTE">
+  <Table Name="dbo.IVA_CONF" Member="IVA_CONF">
+    <Type Name="IVA_CONF">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="CD_CORR" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NM_ANIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NM_MES" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FECHA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CVE_DOC" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="DS_NRF" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="CVE_CLIE" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="DS_CLIENTE" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="NM_NO_SUJETAS" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_EXENTO" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_GRAVADO" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_IVA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_PERCEPCION" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_TOTAL" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="DS_CORR" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
-      <Column Name="NM_RETENCION" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
-      <Column Name="NM_RENTA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_POLIZA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_DEF_CLASE_PRODUCTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NM_NIT_EMPRESA" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NM_NOMBRE_EMPRESA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NM_PORC_IVA" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="NM_REG_FISC" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DS_NOMBRE_CONTADOR" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DS_NUM_ACREDITACION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
   <Function Name="dbo.PR_IVA_IMPO_CLIE_PROV" Method="PR_IVA_IMPO_CLIE_PROV">
