@@ -77,7 +77,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("LOCALHOST")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("192.168.12.2")>  _
         Public Property SERVER() As String
             Get
                 Return CType(Me("SERVER"),String)
@@ -89,7 +89,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("IVASAE_ATSPRO")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("IVASAE")>  _
         Public Property DATABASE() As String
             Get
                 Return CType(Me("DATABASE"),String)
